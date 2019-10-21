@@ -1,0 +1,183 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family:"GreatViebes-Regular"; 
+    src: url("GreatViebes-Regular.otf");
+}
+.imgh1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #616161;
+    padding-top: 15px;
+}
+.photo
+{
+    transform: skew(20deg) translate(10px, 20px);
+    border-radius: 0 20px ;
+}    
+
+h1  /*developpeur,intégrateur web*/
+{   
+    /*text-align: center;*/
+    padding: 20px; 
+}   
+                /*partie du header*/
+                
+header
+{    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9e9e9e; 
+    font-size: 25px;
+    
+}
+        /*partie article*/
+p
+{
+    text-align: center;
+    font-size: 25px;
+} 
+
+
+b.rond  
+{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    width: 100px;
+    height: 40px;
+    border: 1px dashed #272727;
+    font-size: 25px;
+}
+.cercle
+{
+    float: left;   
+    margin:10px;
+    width:120px;
+    height:120px;
+    text-align:center;
+    border-radius:100px;
+    line-height: 90px; /* 100 - 10 */
+    margin-right: 300px;
+    padding-top: 10px;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+         /*----fin du header---*/ 
+
+section,article          /*image de fond*/
+{
+   
+    background: url(image/fondgris.png)fixed no-repeat;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */  
+}  
+h2,h3
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}   
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.elementcentre
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 110px 0;  
+} 
+
+.categorie
+{
+    width: 400px;
+    height: 450px;
+    border: solid 1px silver;
+    padding: 40px 10px 40px 10px;
+    background-color: #ccaaff;
+    border-radius: 20px;
+    margin-right: 90px;
+    animation: mouv 2s linear 1s 4;
+
+}
+@keyframes mouv /*animation rectangle*/
+{
+    
+    0%
+    {
+        transform: translateX(0);
+    }
+    50%
+    {
+        transform: rotate(10deg);
+        
+    }
+    100%
+    {
+        transform: translateX(0);
+    }  
+}
+.mesform,.mescomp,.moiperso
+{
+    padding-top: 50px;
+    text-align: center;
+}
+.perso 
+{
+    
+    font-size: 25px;
+}
+li
+{
+    list-style-type: none;  
+}
+footer
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    background-color: #616161; 
+}
+i
+{
+    color:black ;
+    margin: 12px;
+    margin-left: 10px;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    padding: 5px;   
+} 
+.cv:hover
+{
+       color: #ccaaff; 
+       transform: translateX(10px); 
+       margin-left: 30px; 
+}
+.cv 
+{
+    transition: all 0.5s ease-out; /*texte animé*/   
+}
+
+
+
+
+
+
+     

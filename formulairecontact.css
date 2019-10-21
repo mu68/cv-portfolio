@@ -1,0 +1,126 @@
+body
+{
+    
+   
+}
+.fond
+{
+    background: url(image/fondgris.png)fixed no-repeat;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */ 
+    display: flex;
+    justify-content: center;
+}
+h1
+{
+    color:mediumblue;
+    text-align: center;
+}
+fieldset
+{
+    border-radius: 20px;
+    width: 30%;
+    margin: 20px;
+    border-color:blueviolet;
+    display: flex;
+    justify-content: center;
+}
+legend
+{
+    color: rgb(43, 61, 226);
+    margin-right: 10px;
+    text-align: center;
+}
+label 
+{
+    color: rgb(43, 61, 226);
+}
+input
+{
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+}
+form        /*l'ensemble du formulaire*/
+{
+    display: flex;
+    flex-direction: row;
+   
+}
+textarea
+{
+    color: rgb(43, 61, 226);
+    border-color:blueviolet;
+    margin-right: 20px;
+}
+.elementbas  /*mesage + bouton*/
+{
+    margin-top: 50px;
+}
+.bouton
+{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    background-color: rgb(159, 99, 214);
+}
+
+div.rond{
+	margin: auto;
+	width: 155px;
+	height: 155px;
+    position: relative;
+    background-color: black;
+}
+
+div.rond div{
+	position: absolute;
+}
+
+@keyframes animCercle{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+div.cercle1{
+	background: url("image/cercle1.png");
+	width: 155px;
+	height: 155px;
+	animation: animCercle 12s linear infinite;
+}
+                /*animation*/
+div.stats
+{
+    width: 104px;
+	height: 128px;
+	left: 50%;
+	top: 50%;
+    margin: -47px 0px 0px -52px;
+    
+}
+
+div.cercle2
+{
+	background: url("image/cercle2.png");
+	width: 110px;
+	height: 110px;
+	left: 50%;
+	top: 50%;
+	margin: -55px 0px 0px -55px;
+	animation: animCercle 6s linear reverse infinite;
+}
+
+div.cerclem
+{
+	background: url("image/cerclem.png");
+	width: 90px;
+	height: 90px;
+	left: 50%;
+	top: 50%;
+	margin: -45px 0px 0px -45px;
+}
