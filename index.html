@@ -13,9 +13,11 @@
 </head>
 
 <body>
-    <h1> Développeur intégrateur web</h1>
-        <hr>   
-        <header>
+    <header>
+       <h1> Développeur intégrateur web</h1>
+    </header>
+          
+        <aside>
             <nav id="menu">
                 <ul>
                     <li class="cercle1 cercle"><a href="cv.html"> Acceuil</a></li>
@@ -23,26 +25,13 @@
                     <li class="cercle3 cercle"><a href="projets.html"></a>Projets</li>
                 </ul>
             </nav>
-     
-            
-            <div class="fond">
-                
-                <form id="formulaire" action="https://formspree.io/sperissen.murielle@orange.fr" method="POST">
-                    <fieldset>
-                        <legend>Contact</legend>
-                        <label for="nom">Nom : </label><input type="text"name="nom"id="nom" required><br>
-                        <label for="nom">Entreprise : </label><input type="text"name="nom"id="nom"><br>
-                        <label for="email">Email : </label><input type="email" name="email" id="email" required/> <br/>
-                        <label for="telephone">Téléphone : </label><input type="tel" name="telephone" id="telephone"  placeholder="05 45 59 42 16"/>
-                    </fieldset>
-                    <div class="elementbas">
-                        <textarea name="message" id="message" cols="50" rows="10"> Laissez moi un message....</textarea>
-                        <input class="bouton" type="submit" value="valider" />
-                    </div>
-                </form>
-            </div>
-            
-    </header>
+                <div class="coordonnee">
+                    <p class="fbas"><i class="fas fa-home"></i>9 avenue de la gare 86400 ST-SAVIOL 
+                    <p class="fbas"><i class="fas fa-phone-alt"></i>06-16-55-16-08</p>
+                    <p class="fbas"><i class="fas fa-at"></i>sperissen.murielle@orange.fr</p>
+                </div>
+        </aside>   
+    
     <article>
         <img class="photo" src="image/moi.png" width=80 height=100 alt="photo de moi">
             <h2>Murielle SPERISSEN</h2>
@@ -131,15 +120,27 @@
     <footer>
        
            
-                <p class="fbas"><i class="fas fa-home"></i>9 avenue de la gare 86400 ST-SAVIOL 
-                <p class="fbas"><i class="fas fa-phone-alt"></i>06-16-55-16-08</p>
-                <p class="fbas"><i class="fas fa-at"></i>sperissen.murielle@orange.fr</p>
+                
                 <p class="fbas"><a class="cv" href="CV_ Développeur_ Intégrateur_ Web.pdf"><i class="fas fa-newspaper fa-spin"></i>CV
                     papier</a></p>
-                <p class="fbas"><a class="cv" href="formulairecontact.html"><i class="fas fa-file-signature fa-spin"></i>Formulaire de contact
-                        </a></p></p> 
-                           
-    </footer>
+                 
+            <div class="fond">
+    
+                <form id="formulaire" action="https://formspree.io/sperissen.murielle@orange.fr" method="POST">
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <label for="nom">Nom : </label><input type="text"name="nom"id="nom" required><br>
+                        <label for="nom">Entreprise : </label><input type="text"name="nom"id="nom"><br>
+                        <label for="email">Email : </label><input type="email" name="email" id="email" required/> <br/>
+                        <label for="telephone">Téléphone : </label><input type="tel" name="telephone" id="telephone"  placeholder="05 45 59 42 16"/>
+                    </fieldset>
+                    <div class="elementbas">
+                        <textarea name="message" id="message" cols="50" rows="10"> Laissez moi un message....</textarea>
+                        <input class="bouton" type="submit" value="valider" />
+                    </div>
+                </form>
+            </div>              
+</footer>
     
 </body>
 
