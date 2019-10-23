@@ -19,17 +19,11 @@ aside
     background-color: #9e9e9e;
     font-size: 20px;
     width: 20%;
-    height: 50%;
-}
-#menu
-{
     
 }
 li
 {
-    list-style: none;
-    
-    
+    list-style: none;    
 }
 a
 {
@@ -42,8 +36,8 @@ a
     width: 40%;
     height: 40%;
     border-radius: 400%;
-    background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+   /* background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);*/
     
 }
 .cercle1
@@ -59,12 +53,31 @@ a
 {
     padding: 1% 12% 1% 10%; 
 }
-                /*section formulaire*/
-h1
+                /*section pgoto+texte*/
+h2
 {
-    
-    
+     color: red;  
 }
+article
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*footer*/
 fieldset
 {
     border-radius: 20px;
