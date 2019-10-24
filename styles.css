@@ -1,0 +1,52 @@
+body 
+{
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+}
+#conteneur      /*sa englobe tout le contenu*/
+{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+                /*header titre*/
+#corps
+ {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+  
+header
+{
+    background-color: blue;
+    height: 100px;
+}
+  
+#corps #menu
+{
+    background-color: yellow;
+    flex: 1;
+}
+  
+#corps #content
+{
+    background-color: #9090b2;
+    flex: 3;
+}
+.categorie
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkorchid;
+}
+  
+#footer
+{
+    height: 300px;
+    background-color: #00ff5a;
+}
