@@ -19,7 +19,7 @@
       <div id="corps">
                         <!-- partie menu -->
         <aside id="menu">
-                <nav id="bouton">
+                <nav>
                     <ul>
                         <li class="ovale1 ovale"><a href="cv.html"> Acceuil</a></li>
                         <li class="ovale2 ovale"><a href="experiences.html"> Expériences</a></li>
@@ -27,25 +27,31 @@
                     </ul>
                 </nav>
                 <div class="coordonnee">
-                    <p class="cor"><i class="fas fa-home"></i>9 avenue de la gare 86400 ST-SAVIOL 
+                    <p class="cor"><i class="fas fa-home"></i>9 avenue de la gare <br> 86400 ST-SAVIOL 
                     <p class="cor"><i class="fas fa-phone-alt"></i>06-16-55-16-08</p>
                     <p class="cor"><i class="fas fa-at"></i>sperissen.murielle@orange.fr</p>
+                    <p class="cor"><a class="cv" href="CV_ Développeur_ Intégrateur_ Web.pdf"><i class="fas fa-newspaper fa-spin"></i>CV papier</a></p> 
                 </div>       
             </aside>  
                     <!-- partie présentation -->
          <div id="content">
             <article>
                 <div class="h1photo">
-                    <img class="photo" src="images/moi.png" width=80 height=100 alt="photo de moi">
-                        <h2>Murielle SPERISSEN</h2>
+                    <img src="images/moi.png" width=80 height=100 alt="photo de moi">
+                        <h2>Murielle <br> SPERISSEN</h2>
                 </div>
-                    <p class="presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quisquam provident impedit eligendi explicabo!
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quisquam provident impedit eligendi explicabo!
                     Ex veniam praesentium recusandae consequuntur nam qui in assumenda tempora minima iusto aliquid,
                     voluptatibus culpa quae!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex aliquid magni? At eveniet porro
                     distinctio neque expedita ipsa tempore officiis laboriosam quis, deleniti temporibus dolorem iure
                     praesentium dolore. Delectus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sed animi, debitis ex aliquid saepe cumque nisi voluptas veniam, assumenda, qui enim laudantium officiis cum! Quam illo neque at! Mollitia.Neque, officiis officia. Quis dolorem voluptas exercitationem cum, ut autem libero id nisi tempore eligendi officiis, aut incidunt laudantium quo reprehenderit maxime! Autem, at ipsum consequatur amet iusto provident cum.
                     </p>
+                    <div class="objectif"> 
+                        <h3 class="titreobj">Objectif</h3>
+                        <p class="objtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est possimus modi tempore soluta nulla accusamus veritatis nisi odio beatae, voluptatibus sequi, qui ea ex! Atque voluptatum voluptas sunt earum unde?</p>
+                    </div>
                 </article>
          </div>
       </div>
@@ -56,12 +62,12 @@
                 <h3>PERSONNALITE</h3>
                     <ul class="moiperso">
                         <li><a href=""><p class="perso">Autonome</p></a></li>
-                        <li><a href=""><p class="perso">Sens de l'écoute </p></a></li>
-                        <li><a href=""><p class="perso">Esprit d'équipe </p></a></li>
-                        <li><a href=""><p class="perso">Ponctuelle </p></a></li>
-                        <li><a href=""><p class="perso">Polyvalente </p></a></li>
-                        <li><a href=""><p class="perso">Persévérante </p></a></li>
-                        <li><a href=""><p class="perso">Autodidacte </p></a></li>
+                        <li><a href=""><p class="perso">Sens de l'écoute</p></a></li>
+                        <li><a href=""><p class="perso">Esprit d'équipe</p></a></li>
+                        <li><a href=""><p class="perso">Ponctuelle</p></a></li>
+                        <li><a href=""><p class="perso">Polyvalente</p></a></li>
+                        <li><a href=""><p class="perso">Persévérante</p></a></li>
+                        <li><a href=""><p class="perso">Autodidacte</p></a></li>
                     </ul>
             </div>
             <div class="competences">
@@ -88,11 +94,11 @@
     </section>
                         <!-- partie footer -->
       <div id="footer">
-        <p class="cor"><a class="cv" href="CV_ Développeur_ Intégrateur_ Web.pdf"><i class="fas fa-newspaper fa-spin"></i>CV papier</a></p>
-        <div class="fond">
-            <form id="formulaire" action="https://formspree.io/sperissen.murielle@orange.fr" method="POST">
+        <h4>Vous pouvez me contacter ici<hr class="traitnoir"></h4>
+            
+              <form id="formulaire" action="https://formspree.io/sperissen.murielle@orange.fr" method="POST">
                 <fieldset>
-                    <legend>Contact</legend>
+                    <legend></legend>
                     <label for="nom">Nom : </label><input type="text"name="nom"id="nom" required><br>
                     <label for="nom">Entreprise : </label><input type="text"name="nom"id="nom"><br>
                     <label for="email">Email : </label><input type="email" name="email" id="email" required/> <br/>
@@ -101,10 +107,12 @@
                 <div class="elementbas">
                     <textarea name="message" id="message" cols="50" rows="10"> Laissez moi un message....</textarea>
                     <input class="bouton" type="submit" value="valider" />
+                    <input class="bouton" type="reset" value="remis à zéro du formulaire" />
                 </div>
             </form>
-        </div>  
-      </div>
+        </div>
+        
+      
       
     </div>
 </body>
