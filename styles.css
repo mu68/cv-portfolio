@@ -77,6 +77,10 @@ i
 {
     margin-top: 10%;
 }
+.cv:hover
+{
+
+}
 
                    /*partie présentation*/
 #corps #content
@@ -87,17 +91,30 @@ i
     background-size: cover; /* version standardisée */
     flex: 3;
 }
-
-
-
-
-
-
-
-
-
-
-                                /*partie categorie*/
+.h1photo
+{
+  margin: 3%;
+  float: left;  
+}
+img
+{
+    border-radius:0 20% ;
+}
+p
+{
+    margin: 3%;
+    text-align: justify;
+}
+.objectif  /*mettre le texte sous la photo*/
+{
+    clear: both;
+}
+.titreobj
+{
+   text-align: left; 
+   margin-left: 3%;
+}
+                               /*partie categorie*/
 .categorie
 {
     display: flex;
@@ -107,10 +124,94 @@ i
     background-size: cover; /* version standardisée */
     border: 2px solid darkorchid;
 }
+h3
+{
+    text-align: center;
+}
+.personnalite,.competences,.formation
+{
+    border: 1px solid black;
+    padding: 2% 2%;
+    background-color: #ccaaff;
+    border-radius: 20px;
+    margin: 3% 5%;   
+}
+a
+{
+    text-align: center;
+}
+
+
+
+
                                 /*partie footer*/
 #footer
 {
+    display: flex;
+    justify-content: center;
     height: 300px;
     background-color: #616161;
     border: 2px solid rgb(50, 204, 119);
-}   
+    display: flex;
+    flex-direction: row;
+}
+                            /*formulaire*/
+fieldset
+{
+    border: none;
+    margin: 20px;
+    display: flex;
+    
+}
+h4
+{ 
+    padding: 7% 2% 0 0;
+}
+.traitnoir  /*trait sous le titre*/
+{
+    width: 100%;
+    border:1px solid black;
+}
+legend
+{
+    color: black;
+    text-align: center;
+    
+}
+label 
+{
+    color: black;
+}
+input
+{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form        /*l'ensemble du formulaire*/
+{
+    display: flex;
+   
+}
+.elementbas  /*bouton*/
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   margin: 3% 0 0 9%;   
+}
+textarea
+{
+    border-color:black;
+    width: 100%;
+    height: 70%;
+}
+
+.bouton
+{
+    
+    margin: 0 5% 0 10%;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    height: 20%;
+}
+
