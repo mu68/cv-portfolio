@@ -159,13 +159,13 @@ a
 fieldset
 {
     border: none;
-    margin: 20px;
     display: flex;
-    
+    margin: 2% 5% 2% 0;
 }
 h4
 { 
     padding: 7% 2% 0 0;
+    
 }
 .traitnoir  /*trait sous le titre*/
 {
@@ -192,24 +192,26 @@ form        /*l'ensemble du formulaire*/
     display: flex;
    
 }
-.elementbas  /*bouton*/
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   margin: 3% 0 0 9%;   
-}
+
 textarea
 {
     border-color:black;
-    width: 100%;
+    width: 80%;
     height: 70%;
+    margin-top: 4%;
 }
-
+.elementbas  /*bouton*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 0 10%;
+    padding-top: 5%;   
+}
 .bouton
 {
     
-    margin: 0 5% 0 10%;
+    margin: 3% 8% 0 15%;
     background-color: #f8ceec;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     height: 20%;
