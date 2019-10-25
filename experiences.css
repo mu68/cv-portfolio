@@ -1,10 +1,16 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body 
 {
     background-color: white;
     font-family: "Open Sans", sans-serif;
     padding: 0;
     font-size: 18px;
-    margin: 0;
+    
     color: #444;
   
 }
@@ -71,17 +77,24 @@ i
                 /*coordonnee*/
 .coordonnee
 {
-    margin: 0 0 3% 10%;
+    margin: 0 0 3% 13%;
 }
 .cor 
 {
-    margin-top: 10%;
+    margin: 10%;
 }
 .cv:hover
 {
-
+        color: #ccaaff; 
+        transform: translateX(10px);
+        margin-left: 20%;        
 }
-                  /*partie présentation*/                      
+.cv 
+{
+    margin-left: 9%;
+    transition: all 0.5s ease-out; /*texte animé*/   
+}
+                                       
 #corps #content
 {
     border: 2px solid rgb(11, 85, 33);
@@ -90,76 +103,137 @@ i
     background-size: cover; /* version standardisée */
     flex: 3;
 }
+                /*partie détail des métiers*/ 
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/fondgris.png);
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */ 
+    text-align: center; 
+    padding: 5% 0; 
+}
+            /*carde autour du texte*/
+.encadrement
+{
+	border:1px solid black;
+	background-image:url(images/roche.jpg);
+	padding:0;
+	z-index:1;
+	-moz-border-radius:8px;
+	border-radius:8px;
+}
+.cadre
+{
+	margin:8px;
+	padding:8px;
+	
+	z-index:2;
+	background: #d8b0e0;
+}
+h2  /*date*/
+{
+    padding: 2% 0;
+    
+}
+p
+{
+    text-align: center;
+}
+span
+{
+    color:#a88beb ;
+    padding:7px;
+    animation: span 12s linear infinite;
+}
+@keyframes span
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
 #footer
 {
     display: flex;
     justify-content: center;
-    height: 300px;
+    padding-top: 2%;
     background-color: #616161;
     border: 2px solid rgb(50, 204, 119);
     display: flex;
     flex-direction: row;
 }
                 /*formulaire*/
-                fieldset
-                {
-                    border: none;
-                    display: flex;
-                    margin: 2% 5% 2% 0;
-                }
-                h4
-                { 
-                    padding: 7% 2% 0 0;
-                    
-                }
-                .traitnoir  /*trait sous le titre*/
-                {
-                    width: 100%;
-                    border:1px solid black;
-                }
-                legend
-                {
-                    color: black;
-                    text-align: center;
-                    
-                }
-                label 
-                {
-                    color: black;
-                }
-                input
-                {
-                    border-radius: 5px;
-                    border: 1px solid black;
-                }
-                form        /*l'ensemble du formulaire*/
-                {
-                    display: flex;
-                   
-                }
-                
-                textarea
-                {
-                    border-color:black;
-                    width: 80%;
-                    height: 70%;
-                    margin-top: 4%;
-                }
-                .elementbas  /*bouton*/
-                {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 3% 10% 0 10%;
-                    padding-top: 5%;   
-                }
-                .bouton
-                {
-                    
-                    margin: 3% 8% 0 15%;
-                    background-color: #f8ceec;
-                    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-                    height: 20%;
-                }
+fieldset
+{
+    border: none;
+    display: flex;
+    margin: 2% 5% 2% 0;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    border-radius:3%
+}
+h4
+{ 
+    padding: 7% 2% 0 0;
+    
+}
+.trait  /*trait sous le titre*/
+{
+    width: 100%;
+    border:1px solid #ccaaff;
+}
+legend
+{
+    color: black;
+    text-align: center;
+    
+}
+label 
+{
+    color: black;
+}
+input
+{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form        /*l'ensemble du formulaire*/
+{
+    display: flex;
+    
+}
+
+textarea
+{
+    border-color:black;
+    width: 80%;
+    height: 70%;
+    margin-top: 4%;
+}
+.elementbas  /*bouton*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 0 10%;
+    padding-top: 5%;   
+}
+.bouton
+{
+    
+    margin: 3% 8% 0 15%;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    height: 20%;
+}
                 
                 
