@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expériences professionnelles</title>
+    <link rel="stylesheet" href="experiences.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&ampdisplay=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/286e8b4ec4.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div id="conteneur">
+      
+      <header>
+          <h1>Expériences professionnelles</h1>
+      </header>
+      
+      <div id="corps">
+                                 <!-- partie menu -->
+        <aside id="menu">
+                <nav>
+                    <ul>
+                        <li class="ovale1 ovale"><a href="cv.html"> Acceuil</a></li>
+                        <li class="ovale2 ovale"><a href="experiences.html"> Expériences</a></li>
+                        <li class="ovale3 ovale"><a href="projets.html">Projets</a></li>
+                    </ul>
+                </nav>
+                <div class="coordonnee">
+                    <p class="cor"><i class="fas fa-home"></i>9 avenue de la gare <br> 86400 ST-SAVIOL 
+                    <p class="cor"><i class="fas fa-phone-alt"></i>06-16-55-16-08</p>
+                    <p class="cor"><i class="fas fa-at"></i>sperissen.murielle@orange.fr</p>
+                    <p class="cor"><a class="cv" href="CV_ Développeur_ Intégrateur_ Web.pdf"><i class="fas fa-newspaper fa-spin"></i>CV papier</a></p> 
+                </div>       
+            </aside>  
+         <div id="content">Body</div>
+      </div>
+                            <!-- partie footer -->
+      <div id="footer">
+        <h4>Vous pouvez me contacter ici<hr class="traitnoir"></h4>
+        
+        <form id="formulaire" action="https://formspree.io/sperissen.murielle@orange.fr" method="POST">
+            <fieldset>
+                <label for="nom">Nom : </label><input type="text"name="nom"id="nom" required><br>
+                <label for="nom">Entreprise : </label><input type="text"name="nom"id="nom"><br>
+                <label for="email">Email : </label><input type="email" name="email" id="email" required/> <br/>
+                <label for="telephone">Téléphone : </label><input type="tel" name="telephone" id="telephone"  placeholder="05 45 59 42 16"/>
+            </fieldset>
+                <textarea name="message" id="message" cols="50" rows="10"> Laissez moi un message....</textarea>
+            <div class="elementbas">
+                <input class="bouton" type="submit" value="valider" />
+                <input class="bouton" type="reset" value="remis à zéro du formulaire" />
+            </div>
+              
+          </form> 
+      </div>
+      
+    </div>
+  </body>
+</html>
