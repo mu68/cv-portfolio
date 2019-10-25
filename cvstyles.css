@@ -15,7 +15,7 @@ aside
 {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
+    align-items: center;
     background-color: #9e9e9e;
     font-size: 20px;
     width: 20%;
@@ -28,36 +28,33 @@ li
 a
 {
     text-decoration: none;
-    color: black;
+    color: red;
 }
-.cercle
+.ovale
 {
-    margin:3% 5% 0% 20%;
+    margin:3% 5% 0% 5%;
     width: 40%;
-    height: 40%;
-    border-radius: 400%;
-   /* background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);*/
+    height: 20%;
+    border-radius: 100%;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     
 }
-.cercle1
+.ovale1
 {
-    padding: 1% 10% 1% 13%;
+    padding: 1% 10% 1% 10%;
 }    
-.cercle2
+.ovale
 {
     padding: 1% 12% 1% 8%;
 }
 
-.cercle3
+.ovale3
 {
     padding: 1% 12% 1% 10%; 
 }
                 /*section pgoto+texte*/
-h2
-{
-     color: red;  
-}
+
 article
 {
     display: flex;
@@ -70,7 +67,10 @@ article
 
 
 
-
+section
+{
+    background-image: url(images/fondgris.png);
+}
 
 
 
@@ -117,7 +117,8 @@ textarea
 .elementbas  /*mesage + bouton*/
 {
     margin: 3% 0 0 9%;
-    
+    display: flex;
+
 }
 .bouton
 {
