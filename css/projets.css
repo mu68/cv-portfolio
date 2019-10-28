@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+body 
+{
+    font-family: "Open Sans", sans-serif;
+}
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+  
+#corps
+{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+header  
+{
+    background-color: #616161;
+}
+h1
+{
+    text-align: center;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    padding: 1%;
+    font-size: 140%;
+}
+                    /*partie menu*/
+#corps #menu
+{
+    background-color: #9e9e9e;
+    flex: 1;
+}
+nav     /*ovale*/
+{
+    margin-bottom: 20%;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.ovale
+{
+    
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    line-height: 150%;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    margin: 7% 5% 10% 20%;
+    text-align: center;
+}
+
+                        /*coordonnee*/
+.coordonnee
+{
+    margin: 0 0 3% 1%;
+}
+i
+{
+    padding: 2.5%;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    margin:0.5% 1% 2% 0;
+}
+.cor 
+{
+    margin: 10%;
+}
+.cv:hover
+{
+    color: #ccaaff; 
+    transform: translateX(10px); 
+    margin-left: 15%;
+}
+.cv 
+{
+    margin-left: 4.5%;
+    transition: all 0.5s linear; /*texte animé*/   
+}
+
+                        /*partie projet*/                      
+#corps #content
+{
+    background-image: url(images/fondgris.png);
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    flex: 3;
+}
+
+
+
+
+#footer
+{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: #616161;
+    display: flex;
+    flex-direction: row;
+}
+.fleche
+{
+    width: 5%;
+    height: 60%;
+}
+                /*formulaire*/
+fieldset
+{
+    border: none;
+    display: flex;
+    margin: 2% 5% 2% 0;
+}
+h4
+{ 
+    padding: 7% 2% 0 0;
+    text-decoration: underline #a88beb;
+    
+}
+.trait  /*trait sous le titre*/
+{
+    width: 100%;
+    border:1px solid #ccaaff;
+}
+legend
+{
+    color: black;
+    text-align: center;
+    
+}
+label 
+{
+    color: black;
+}
+input
+{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form        /*l'ensemble du formulaire*/
+{
+    display: flex;
+    
+}
+
+textarea
+{
+    border-color:black;
+    width: 80%;
+    height: 70%;
+    margin-top: 4%;
+}
+.elementbas  /*bouton*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 0 10%;
+    padding-top: 5%;   
+}
+.bouton
+{
+    
+    margin: 3% 8% 0 15%;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    height: 20%;
+}
+
+                
