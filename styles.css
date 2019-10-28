@@ -1,32 +1,25 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body 
 {
     background-color: white;
     font-family: "Open Sans", sans-serif;
     padding: 0;
     font-size: 18px;
-    
+    margin: 0;
     color: #444;
-  
 }
-#conteneur
+#conteneur      /*sa englobe tout le contenu*/
 {
     display: flex;
     flex-direction: column;
     margin:0;
 }
-  
 #corps
-{
+ {
     display: flex;
     flex-direction: row;
     height: auto;
 }
+  
 header  
 {
     background-color: #616161;
@@ -35,14 +28,15 @@ header
 }
 h1
 {
-    text-align: center;
+    text-align: center;    
 }
-                    /*partie menu*/
+                                    /*partie menu*/
 #corps #menu
 {
     border: 2px solid yellow;
     background-color: #9e9e9e;
     flex: 1;
+    
 }
 nav     /*ovale*/
 {
@@ -77,24 +71,18 @@ i
                 /*coordonnee*/
 .coordonnee
 {
-    margin: 0 0 3% 13%;
+    margin-bottom: 15%;
 }
 .cor 
 {
-    margin: 10%;
+    margin-top: 10%;
 }
 .cv:hover
 {
-        color: #ccaaff; 
-        transform: translateX(10px);
-        margin-left: 20%;        
+
 }
-.cv 
-{
-    margin-left: 9%;
-    transition: all 0.5s ease-out; /*texte animé*/   
-}
-                                       
+
+                   /*partie présentation*/
 #corps #content
 {
     border: 2px solid rgb(11, 85, 33);
@@ -103,93 +91,86 @@ i
     background-size: cover; /* version standardisée */
     flex: 3;
 }
-                /*partie détail des métiers*/ 
-
-section
+.h1photo
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(images/fondgris.png);
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */ 
-    text-align: center; 
-    padding: 5% 0; 
+  margin: 3%;
+  float: left;  
 }
-            /*carde autour du texte*/
-.encadrement
+img
 {
-	border:1px solid black;
-	background-image:url(images/roche.jpg);
-	padding:0;
-	z-index:1;
-	-moz-border-radius:8px;
-	border-radius:8px;
-}
-.cadre
-{
-	margin:8px;
-	padding:8px;
-	
-	z-index:2;
-	background: #d8b0e0;
-}
-h2  /*date*/
-{
-    padding: 2% 0;
-    
+    border-radius:0 20% ;
 }
 p
 {
+    margin: 3%;
+    text-align: justify;
+}
+.objectif  /*mettre le texte sous la photo*/
+{
+    clear: both;
+}
+.titreobj
+{
+   text-align: left; 
+   margin-left: 3%;
+}
+                               /*partie categorie*/
+.categorie
+{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(images/fondgris.png);
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    border: 2px solid darkorchid;
+}
+h3
+{
     text-align: center;
 }
-span
+.personnalite,.competences,.formation
 {
-    color:#a88beb ;
-    padding:7px;
-    animation: span 12s linear infinite;
+    border: 1px solid black;
+    padding: 2% 2%;
+    background-color: #ccaaff;
+    border-radius: 20px;
+    margin: 3% 5%;   
 }
-@keyframes span
+a
 {
-    from
-    {
-        transform: rotate(0deg);
-    }
-    to 
-    {
-        transform: rotate(360deg);
-    }
+    text-align: center;
 }
 
 
+
+
+                                /*partie footer*/
 #footer
 {
     display: flex;
     justify-content: center;
-    padding-top: 2%;
+    height: 300px;
     background-color: #616161;
     border: 2px solid rgb(50, 204, 119);
     display: flex;
     flex-direction: row;
 }
-                /*formulaire*/
+                            /*formulaire*/
 fieldset
 {
     border: none;
     display: flex;
     margin: 2% 5% 2% 0;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    border-radius:3%
 }
 h4
 { 
     padding: 7% 2% 0 0;
     
 }
-.trait  /*trait sous le titre*/
+.traitnoir  /*trait sous le titre*/
 {
     width: 100%;
-    border:1px solid #ccaaff;
+    border:1px solid black;
 }
 legend
 {
@@ -209,7 +190,7 @@ input
 form        /*l'ensemble du formulaire*/
 {
     display: flex;
-    
+   
 }
 
 textarea
@@ -235,5 +216,4 @@ textarea
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     height: 20%;
 }
-                
-                
+
