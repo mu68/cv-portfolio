@@ -2,7 +2,8 @@
 {
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
+    font-size: 18px;
+    box-sizing: border-box;
 }
 body
 {
@@ -58,8 +59,8 @@ a
 {
 	width: 50%;
 	height: 50%;
-	border-radius: 50%;
-	line-height: 150%;
+	border-radius: 5%;
+	
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 	margin: 7% 5% 10% 20%;
 	text-align: center;
@@ -152,80 +153,57 @@ span
 							/*partie footer*/
 #footer
 {
+    background-color: #616161;
+    /*height: 50%; */
+    padding: 2% 3%;
+}
+.form
+{
     display: flex;
     justify-content: center;
-    height: 300px;
-    background-color: #616161;
-
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
 }
 .fleche
-{
-    width: 5%;
-    height: 60%;
+{  
+    padding: 0 1% 0 1%;  
 }
-							/*formulaire*/
-fieldset
+h3
 {
-    border: none;
-    display: flex;
-    margin: 2% 5% 2% 0;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-
-}
-h4
-{ 
-    padding: 7% 2% 0 0;
+    padding: 3% 0 0 5%; 
     text-decoration: underline #a88beb;
-}
-.trait  /*trait sous le titre*/
-{
-    width: 100%;
-    border:1px solid #a88beb;
-}
-legend
-{
-    color: black;
-    text-align: center;
-    
-}
-label 
-{
-    color: black;
 }
 input
 {
-    border-radius: 5px;
-    border: 1px solid black;
+    margin-top: 5%;
+    border-radius: 10%;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
-form        /*l'ensemble du formulaire*/
+.marge
 {
-    display: flex;
-
+    margin-left: 13.7%;
+}
+.marge1
+{
+    margin-left: 12.4%;
 }
 
 textarea
 {
-    border-color:black;
-    width: 80%;
-    height: 70%;
-    margin-top: 4%;
-}
-.elementbas  /*bouton*/
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3% 10% 0 10%;
-    padding-top: 5%;   
-}
+    width: 60%;
+    height: 75%;
+    border-radius: 10%;
+    margin-left: 20%;
+} 
+             
 .bouton
 {
-
-    margin: 3% 8% 0 15%;
-    background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    height: 20%;
+   display: flex;
+   flex-direction: column;
+   width: 20%; 
 }
-                
+.btn 
+{
+    padding: 2%;
+    margin: 11% 0% 0% 0%;
+}
