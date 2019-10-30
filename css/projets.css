@@ -137,7 +137,7 @@ i
 #footer
 {
     background-color: #616161;
-    padding: 2% 3%;
+    height: auto;
 }
 .form
 {
@@ -158,7 +158,7 @@ h3
 input
 {
     margin-top: 5%;
-    border-radius: 10%;
+	border-radius: 10%;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 .marge
@@ -180,14 +180,14 @@ textarea
                 
 .bouton
 {
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: column;  
     width: 20%; 
 }
 .btn 
 {
     padding:1% 2% 1% 2%;
-	margin: 13% 0% 0% 0%;
+	margin: 13% 0% 0% 0%;	
     cursor: pointer;
 }
                     /* animation du bouton sur le haut à droite*/
