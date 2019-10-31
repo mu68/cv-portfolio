@@ -71,7 +71,7 @@ a
 {
 	width: 50%;
 	height: 50%;
-	border-radius: 10%;
+	border-radius: 20px;
 	background-image: -o-linear-gradient(135deg, #f8ceec 0%, #a88beb 74%);
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 	margin: 7% 5% 10% 20%;
@@ -122,10 +122,9 @@ a
 }
 i
 {
-	padding: 2.5%;
-	background-image: -o-linear-gradient(135deg, #f8ceec 0%, #a88beb 74%);
-	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    margin:0.5% 1% 2% 0;
+    padding: 2.5%;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    margin:0.5% 1% 2% 2%;
 }
 .cv:hover
 {
@@ -164,9 +163,9 @@ img
 }
 p
 {
-	margin: 3% 0% 3% 3%;
+	/*margin: 3% 0% 3% 3%;*/
 	
-	padding: 2%;
+	
 }
 .objectif  /*mettre le text sous la photo*/
 {
@@ -205,9 +204,8 @@ section
 	border: 1px solid black;
     background-color: #ccaaff;
     border-radius: 20px;
-    height: 30%;
-    
-    padding: 2%;
+    height: auto;
+    padding: 3% 1% 2% 1%;
     margin: 3% 5%;
 }
 
@@ -236,7 +234,7 @@ li.iconec		/*compétences*/
 }
 li.iconef	/*formation*/
 {
-	background-image: url(../images/diplome1.png);
+	background-image: url(../images/diplome.png);
 	background-repeat: no-repeat;
 	background-position: 0 20%;
 	padding: 3px 2px 2px 50px;
@@ -275,7 +273,7 @@ h4
 input
 {
 	margin-top: 5%;
-	border-radius: 10%;
+	border-radius: 20px;
 	background-image: -o-linear-gradient(135deg, #f8ceec 0%, #a88beb 74%);
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
@@ -292,7 +290,7 @@ textarea
 {
 	width: 60%;
 	height: 75%;
-	border-radius: 10%;
+	border-radius: 10px;
 	margin-left: 20%;
 } 
 				

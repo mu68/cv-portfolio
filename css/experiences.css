@@ -59,7 +59,7 @@ a
 {
 	width: 50%;
 	height: 50%;
-  border-radius: 10%;
+  border-radius: 10px;
   border-color: black;
 	display: block;  /*pour que toute la zone soit cliquable*/
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
@@ -127,7 +127,7 @@ i
 
 #corps #content
 {
-	background-image: url(images/fondgris.png);
+	background-color:rgb(247, 241, 241) ;
 	-webkit-background-size:cover;  /*ancien chrome et safari*/
 	background-size: cover;  /*version standardisée*/
 	flex: 3;
@@ -144,7 +144,7 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(images/fondgris.png);
+    background-image: url(../images/fondgris.png);
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */ 
     text-align: center; 
@@ -154,7 +154,7 @@ section
 .encadrement
 {
 	border:1px solid black;
-	background-image:url(images/roche.jpg);
+	background-image:url(../images/roche.jpg);
 	padding:0;
 	z-index:1;
 	-moz-border-radius:8px;
@@ -205,7 +205,7 @@ input
 {
     margin-top: 5%;
     border: 1% solid;
-    border-radius: 5%;
+    border-radius: 10px;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 .marge
@@ -221,7 +221,7 @@ textarea
 {
     width: 60%;
     height: 75%;
-    border-radius: 10%;
+    border-radius: 10px;
     margin-left: 20%;
     padding: 1%;
 } 
@@ -235,7 +235,7 @@ textarea
 .btn 
 {
     padding:1% 2% 1% 2%;
-	margin: 13% 0% 0% 0%;
+  	margin: 13% 0% 0% 0%;
     cursor: pointer;
 }
 
