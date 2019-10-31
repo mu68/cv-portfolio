@@ -131,8 +131,8 @@ i
 {
 	color:#ccaaff;
 	-webkit-transform: translateX(10px);
-	    -ms-transform: translateX(10px);
-	        transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	transform: translateX(10px);
 	margin-left: 15%;
 	
 }
@@ -140,19 +140,18 @@ i
 {
 	margin-left: 4.5%;
 	-webkit-transform: all 1s linear;
-	    -ms-transform: all 1s linear;
-	        transform: all 1s linear; /*texte animé*/
+	-ms-transform: all 1s linear;
+	transform: all 1s linear; /*texte animé*/
 }
 
 						/*partie présentation*/
 
 #corps #content
 {
-	background-image: url(images/fondgris.png);  /*ancien chrome et safari*/
-	background-size: cover;  /*version standardisée*/
+	background-color: rgb(247, 241, 241);
 	-webkit-box-flex: 3;
-	    -ms-flex: 3;
-	        flex: 3;
+	-ms-flex: 3;
+	flex: 3;
 }
 .imgh1
 {
@@ -181,11 +180,11 @@ p
 
 section
 {
-  background-image:url('images/fondgris.png');
-  background: no-repeat center;
-	/*background-image: url(images/fondgris.png);	*/
-    /*-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    /*background-size: cover; /* version standardisée */ 
+	background-image:url('../images/fondgris.png');
+	
+	background-size: cover;	
+    
+
 }
 .categorie
 {
@@ -203,7 +202,7 @@ section
 }
 .personnalite,.competences,.formation
 {
-	  border: 1px solid black;
+	border: 1px solid black;
     background-color: #ccaaff;
     border-radius: 20px;
     height: 30%;
@@ -218,30 +217,32 @@ h3
 	padding-bottom: 10%;
 }
 
-li.triangle
+li.iconep /* personnalité*/
 {
-	background-image: url(images/37.png);
+	background-image: url(../images/yeux.png);
 	background-repeat: no-repeat;
-	background-position: 0 50%;
+	background-position: 0 20%;
 	padding: 3px 2px 3px 50px;
-  margin: .7em 0;
+	  margin: .7em 0;
 }
-li.triangle1
+li.iconec		/*compétences*/
 {
-	background-image: url(images/11.png);
+	background-image: url(../images/pc.png);
 	background-repeat: no-repeat;
-	background-position: 0 50%;
+	background-position: 0 20%;
+	padding: 2px 2px 3px 50px;
+	margin: .7em 0;
+	
+}
+li.iconef	/*formation*/
+{
+	background-image: url(../images/diplome1.png);
+	background-repeat: no-repeat;
+	background-position: 0 20%;
 	padding: 3px 2px 2px 50px;
   	margin: .7em 0;
 }
-li.triangle2
-{
-	background-image: url(images/FlechesDroite32x32-020.png);
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding: 3px 2px 3px 50px;
-  margin: .7em 0;
-}
+
 
 /*partie footer*/
 #footer
