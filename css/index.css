@@ -30,7 +30,7 @@ body
 	-ms-flex-direction: row;
 	flex-direction: row;
 	height: auto;
-	width: 100%;
+	width: auto;
 }
 header
 {
@@ -118,7 +118,7 @@ a
 
 .coordonnee
 {
-	margin: 0 0 3% 1%;
+	padding: 0 0 3% 2%;
 }
 i
 {
@@ -137,7 +137,6 @@ i
 }
 .cv 
 {
-	margin-left: 4.5%;
 	-webkit-transform: all 1s linear;
 	-ms-transform: all 1s linear;
 	transform: all 1s linear; /*texte animé*/
@@ -161,9 +160,9 @@ img
 {
 	border-radius: 0 20%;
 }
-p
+.presentation .presentation1
 {
-	/*margin: 3% 0% 3% 3%;*/
+	margin: 4% 2% 4% 3%;
 	
 	
 }
@@ -400,4 +399,57 @@ textarea
       -webkit-transform: skew(0);
       transform: skew(0);
     }
-  }
+}
+@media screen and (max-width:900px)
+{
+	#conteneur 
+	{
+		flex-direction: column;
+		
+	}
+}
+@media screen and (max-width:600px)
+{
+	#corps
+	{
+		flex-direction: column;
+	}
+	
+	.coordonnee 
+	
+	{
+		margin:  -10% 0 2% 20%;
+	}
+	.imgh1
+	{
+		margin-left: 40%;	
+	}
+	 #content .presentation
+	{
+		flex-direction:column;
+		padding: 50% 1% 0% 2%;
+	}
+	.presentation1
+	{
+		padding: 10% 1% 10% 2%;
+	}
+	.objectif
+	{
+		padding-bottom: 2%;
+	}
+	.categorie
+	{
+		flex-direction: column;
+		margin-left: 10%;
+		width: 80%;	
+	}
+	textarea
+	{
+		margin-top: 6%;
+	}
+	.bouton
+	{
+		width: 50%;	
+	}
+
+}
