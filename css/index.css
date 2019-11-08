@@ -6,8 +6,7 @@
 }
 body
 {
-	font-family: 'Lobster', cursive,arial serif,sans-serif;
-
+	font-family: 'Kanit', sans-serif,arial,serif;
 }
 #conteneur    /*englobe tout le html*/
 {
@@ -38,12 +37,11 @@ header
 }
 h1
 {
-	font-family: 'Mukta', sans-serif,serif,arial;
 	text-align: center;
 	background-image: -o-linear-gradient(135deg, #f8ceec 0%, #a88beb 74%);
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 	padding: 1%;
-	font-size: 140%;
+	font-size: 30px;
 }
 
 					/*patie menu*/
@@ -57,7 +55,7 @@ h1
 }
 nav
 {
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 li
 {
@@ -119,17 +117,17 @@ a
 
 .coordonnee
 {
-	padding: 0 0 3% 2%;
+	margin-bottom: 5%;
 }
 i
 {
     padding: 2.5%;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    margin:0.5% 1% 2% 2%;
+    margin:0.5% 2% 2% 2%;
 }
-.cor 
+.cor,.cv 
 {
-  margin: 10%;
+  margin: 8%;
 }
 .cv:hover
 {
@@ -151,7 +149,7 @@ i
 
 #corps #content
 {
-	background-color: rgb(247, 241, 241);
+	background-color: rgb(231, 229, 229);
 	-webkit-box-flex: 3;
 	-ms-flex: 3;
 	flex: 3;
@@ -167,20 +165,17 @@ img
 }
 .presentation 
 {
-	font-family: 'Mukta', sans-serif,serif ,arial;
-	margin: 10% 2% 4% 3%;	
+	margin: 6% 2% 4% 3%;	
 }
 .presentation1
 {
-	font-family: 'Mukta', sans-serif,arial serif;
 	margin-left: 3%;
 }
 .objectif  /*mettre le text sous la photo*/
 {
-	font-family: 'Mukta', sans-serif,arial,serif;
 	clear: both;
-	margin: 2% 2% 2% 3%;
-	
+	margin: 3% 2% 2% 3%;
+	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);	
 }
 
 
@@ -201,7 +196,7 @@ section
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	    /*justify-content: space-between;*/
 		
 	
 }
@@ -213,44 +208,38 @@ section
     height: auto;
     padding: 3% 1% 2% 1%;
 	margin: 3% 5%;
-	font-family: 'Mukta', sans-serif;
+	
 }
+.personnalite
+{
+	width: 13%;
+}
+.competences
+{
+	width: 22%;
+}
+.icon 
 
+{
+	color: rgb(91, 24, 224);
+}
 h3
 {
-	font-family: 'Lobster', cursive,serif ,'sans-serif';
 	text-align: center;
 	padding-bottom: 10%;
 }
+			/*partie icone compétences*/
 
-li.iconep /* personnalité*/
+.icone
 {
-	background-image: url(../images/yeux.png);
-	background-repeat: no-repeat;
-	background-position: 0 20%;
-	padding: 3px 2px 3px 50px;
-	  margin: .7em 0;
+	width: 30%;
+	float: left;
+	padding-left: 3%;
+	margin: 1% 0;
 }
-li.iconec		/*compétences*/
-{
-	background-image: url(../images/pc.png);
-	background-repeat: no-repeat;
-	background-position: 0 20%;
-	padding: 2px 2px 3px 50px;
-	margin: .7em 0;
-	
-}
-li.iconef	/*formation*/
-{
-	background-image: url(../images/diplome.png);
-	background-repeat: no-repeat;
-	background-position: 0 20%;
-	padding: 3px 2px 2px 50px;
-  	margin: .7em 0;
-}
+
 				/*partie slider*/
-h2
-{
+
 	/*padding-left:3% ;
 }
 .slider
@@ -266,7 +255,7 @@ h2
 	height: 150%;
 	border: 2px solid black;
 	background-image: url(pantalonete.jpg);*/
-}
+/*}*/
 
 
 
@@ -279,10 +268,40 @@ h2
 				
 
 /*partie footer*/
-#footer
+.footer
 {
 	background-color: #616161; 
-	height: auto;
+	padding: 2% 2%;
+}
+.fleche
+{  
+    padding: 0 1% 0 1%;  
+}
+h4
+{
+	padding: 3% 0 0 3%; 
+	-webkit-text-decoration: underline #a88beb; 
+	text-decoration: underline #a88beb;
+}
+	/*flèches haut et bas*/
+.top 
+{
+	position: fixed; 
+	height: 25px; 
+	bottom: 10px; 
+	right: 3px; 
+	
+	padding-top: 4%;
+	padding-bottom: 2%;
+	cursor: pointer;
+}
+.bas
+{
+	position: fixed;
+	height: 25px; 
+	bottom: 10px; 
+	right: 4px;
+	cursor: pointer;
 }
 .form
 {
@@ -296,17 +315,8 @@ h2
 	flex-wrap: wrap;
 	padding-bottom: 2%;
 }
-.fleche
-{  
-	padding: 0 1% 0 1%;  
-}
-h4
-{
-	font-family: 'Lobster', cursive, serif 'sans-serif';
-	padding: 3% 0 0 5%; 
-	-webkit-text-decoration: underline #a88beb; 
-	text-decoration: underline #a88beb;
-}
+
+
 input
 {
 	margin-top: 5%;
@@ -320,7 +330,7 @@ input
 }
 .marge1
 {
-	margin-left: 12.4%;
+	margin-left: 11%;
 }
 
 textarea
@@ -348,7 +358,7 @@ textarea
 	margin: 13% 0% 0% 0%;
 	cursor: pointer;
 }	
-									/* animation du bouton sur le haut à droite */
+			/* animation du bouton sur le haut à droite */
 .btn
 {
   display: inline-block;
@@ -438,150 +448,37 @@ textarea
       transform: skew(0);
     }
 }
-.top
-{
-	position: fixed; 
- 	width: 28px; 
-  	height: 25px; 
-  	bottom: 10px; 
-  	right: 10px; 
 
-}
 				/*media queries*/
 				
-@media all and (max-width:1024px)
+@media screen and (max-width:900px)
 {
-	#conteneur 
-	{	
-		flex-direction: column;
-		max-width: 1024px;
-	}
-	#content
-	{
-		padding-right: 2%;
-	}
 	.categorie
 	{
 		display: flex;
 		flex-direction: column;
-		margin-left: 30%;
+		align-items: center;
+	}
+	.personnalite
+	{
+		width: 20%;
+	}
+	.competences
+	{
+		width:30%;
+	}
+	.formation
+	{
 		width: 40%;
 	}
-	textarea
+	.top,.bas
 	{
-		margin-top: 6%;
-	}
-	.btn 
-	{
-		width: 120%;
+		margin-right: 1%;
 	}
 }
-@media all and (max-width:900px)
+@media (max-width:500px)
 {
-	#conteneur
-	{
-		flex-direction: column;
-		max-width: 900px;
-	}
-	.ovale
-	{
-		margin: 4% 2% 2% 25%;
-	}
-	#corps
-	{
-		flex-direction: column;
-	}
 	
-	.coordonnee 
-	
-	{
-		margin:  -10% 0 2% 20%;
-	}
-	.imgh1
-	{
-		margin-left: 40%;	
-	}
-	 #content .presentation
-	{
-		flex-direction:column;
-		padding: 50% 1% 0% 2%;
-	}
-	.presentation1
-	{
-		padding: 10% 1% 10% 2%;
-	}
-	.objectif
-	{
-		padding-bottom: 2%;
-	}
-	.categorie
-	{
-		flex-direction: column;
-		margin-left: 10%;
-		width: 80%;	
-	}
-	
-	
-	.bouton
-	{
-		width: 40%;
-		margin-right: 10%;
-	}
-
 }
-@media all and (max-width:600px)
-{
-	#conteneur
-	{
-		flex-direction: column;
-		max-width: 600px;
-	}
-	.ovale
-	{
-		margin: 4% 2% 2% 25%;
-	}
-	#corps
-	{
-		flex-direction: column;
-	}
-	
-	.coordonnee 
-	
-	{
-		margin:  -10% 0 2% 20%;
-	}
-	.imgh1
-	{
-		margin-left: 40%;	
-	}
-	 #content .presentation
-	{
-		flex-direction:column;
-		padding: 50% 1% 0% 2%;
-	}
-	.presentation1
-	{
-		padding: 10% 1% 10% 2%;
-	}
-	.objectif
-	{
-		padding-bottom: 2%;
-	}
-	.categorie
-	{
-		flex-direction: column;
-		margin-left: 10%;
-		width: 80%;	
-	}
-	
-	
-	.bouton
-	{
-		width: 40%;
-		margin-right: 10%;
-	}
-
-}
-
 
 

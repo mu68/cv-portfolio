@@ -6,7 +6,7 @@
 }
 body 
 {
-    font-family: "Open Sans", sans-serif;
+	font-family: 'Kanit', sans-serif,arial,serif;
 }
 #conteneur
 {
@@ -31,7 +31,7 @@ h1
     text-align: center;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     padding: 1%;
-    font-size: 140%;
+    font-size: 30px;
 }
                     /*partie menu*/
 #corps #menu
@@ -41,7 +41,7 @@ h1
 }
 nav     /*ovale*/
 {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 li
 {
@@ -61,7 +61,7 @@ a
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     margin: 7% 5% 10% 20%;
     text-align: center;
-    display:block;	/*pour que tout le bouton soit*/
+    cursor: pointer;
 }
                             /* coin qui ce replie sur bouton lien */
 .ovale
@@ -280,130 +280,5 @@ textarea
   }
  				/*media queries*/
 				
-@media all and (max-width:1024px)
-{
-	#conteneur 
-	{	
-		flex-direction: column;
-		max-width: 1024px;
-	}
-	#content
-	{
-		padding-right: 2%;
-	}
-	.categorie
-	{
-		display: flex;
-		flex-direction: column;
-		margin-left: 30%;
-		width: 40%;
-	}
-	textarea
-	{
-		margin-top: 6%;
-	}
-	.btn 
-	{
-		width: 120%;
-	}
-}
-@media all and (max-width:900px)
-{
-	#conteneur
-	{
-		flex-direction: column;
-		max-width: 900px;
-	}
-	.ovale
-	{
-		margin: 4% 2% 2% 25%;
-	}
-	#corps
-	{
-		flex-direction: column;
-	}
-	
-	.coordonnee 
-	
-	{
-		margin:  -10% 0 2% 20%;
-	}
-	.imgh1
-	{
-		margin-left: 40%;	
-	}
-	 #content .presentation
-	{
-		flex-direction:column;
-		padding: 50% 1% 0% 2%;
-	}
-	.presentation1
-	{
-		padding: 10% 1% 10% 2%;
-	}
-	.objectif
-	{
-		padding-bottom: 2%;
-	}
-	.categorie
-	{
-		flex-direction: column;
-		margin-left: 10%;
-		width: 80%;	
-	}
-	
-	
-	.bouton
-	{
-		width: 40%;
-		margin-right: 10%;
-	}
 
-}
-@media all and (max-width:600px)
-{
-	#conteneur
-	{
-		flex-direction: column;
-		max-width: 600px;
-	}
-	.ovale
-	{
-		margin: 4% 2% 2% 25%;
-	}
-	#corps
-	{
-		flex-direction: column;
-	}
-	
-	.coordonnee 
-	
-	{
-		margin:  -10% 0 2% 20%;
-	}
-	.imgh1
-	{
-		margin-left: 40%;	
-	}
-	 #content .presentation
-	{
-		flex-direction:column;
-		padding: 50% 1% 0% 2%;
-	}
-	.presentation1
-	{
-		padding: 10% 1% 10% 2%;
-	}
-	.objectif
-	{
-		padding-bottom: 2%;
-	}
-	
-	.bouton
-	{
-		width: 40%;
-		margin-right: 10%;
-	}
-
-}
  

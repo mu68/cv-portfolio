@@ -2,12 +2,12 @@
 {
 	margin: 0;
 	padding: 0;
-    font-size: 18px;
-    box-sizing: border-box;
+  font-size: 18px;
+    
 }
 body
 {
-	font-family: arial,sans-serif, serif;
+	font-family: 'Kanit', sans-serif,arial,serif;
 
 }
 #conteneur    /*englobe tout le html*/
@@ -21,7 +21,7 @@ body
 	display: flex;
 	flex-direction: row;
 	height: auto;
-	width: 100%;
+	width: auto;
 }
 header
 {
@@ -44,7 +44,7 @@ h1
 }
 nav
 {
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 li
 {
@@ -64,82 +64,87 @@ a
 	display: block;  /*pour que toute la zone soit cliquable*/
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 	margin: 7% 5% 10% 20%;
-    text-align: center;
-    display:block;	/*pour que tout le bouton soit*/
+  text-align: center;
+  cursor: pointer;
 }
 .ovale
 {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
 }
 .ovale:before 
 {
-    pointer-events: none;
-    position: absolute;
-    content: '';
-    height: 0;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: white;
-    background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
-    z-index: 1000;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: width, height;
-    transition-property: width, height;
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
 }
-.ovale:hover:before, .ovale:focus:before, .ovale:active:before {
-    width: 25px;
-    height: 25px;
+.ovale:hover:before, .ovale:focus:before, .ovale:active:before 
+{
+  width: 25px;
+  height: 25px;
 }
 						/*coordonnee*/
-.coordonnee
+.coordonnee 
 {
-    margin: 0 0 3% 1%;
+  margin-bottom: 5%;
+ 
 }
 i
 {
-    padding: 2.5%;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    margin:0.5% 1% 2% 2%;
+  padding: 2.5%;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  margin:0.5% 2% 2% 2%;
 }
-.cor 
+.cor,.cv 
 {
-  margin: 10%;
+  margin: 8%;
+  text-align: left;
 }
 .cv:hover
 {
-        color: #ccaaff; 
-        transform: translateX(10px);
-        margin-left: 15%;        
+  color: #ccaaff; 
+  transform: translateX(10px);
+  margin-left: 15%;        
 }
 .cv 
 {
-    margin-left: 4.5%;
     transition: all 1s ease-out; /*texte animé*/   
 }
 
 
-						/*partie présentation*/
+						/*détail experiences*/
 
 #corps #content
 {
-	background-color:rgb(247, 241, 241) ;
+	background-color:rgb(231, 229, 229) ;
 	-webkit-background-size:cover;  /*ancien chrome et safari*/
 	background-size: cover;  /*version standardisée*/
 	flex: 3;
 }
-p
+.dmetiers
 {
-	margin: 3% 0% 3% 3%;
-	text-align: justify;
-	padding-right: 2%;
+  text-align: center;
+}
+article .detail
+{
+  margin: 2%;
+  text-align: left;
 } 
 					/*parie metier*/               
 section
@@ -173,8 +178,11 @@ section
 }
 h2  /*date*/
 {
-    padding: 2% 0;
-    
+    padding: 2% 0;   
+}
+p
+{
+  text-align: center;
 }
 span
 {
@@ -186,14 +194,7 @@ span
 #footer
 {
     background-color: #616161;
-    padding: 2% 3%;
-}
-.form
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 2%;
+    padding: 2% 2%;
 }
 .fleche
 {  
@@ -201,9 +202,39 @@ span
 }
 h3
 {
-    padding: 3% 0 0 5%; 
+    padding: 3% 0 0 3%; 
     text-decoration: underline #a88beb;
 }
+		/*flèches haut et bas*/
+.top 
+{
+  position: fixed; 
+  height: 25px; 
+  bottom: 10px; 
+  right: 3px; 
+  
+  padding-top: 4%;
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+.bas
+{
+  position: fixed;
+  height: 25px; 
+  bottom: 10px; 
+  right: 4px;
+  cursor: pointer;
+}
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+
+
 input
 {
     margin-top: 5%;
@@ -217,7 +248,7 @@ input
 }
 .marge1
 {
-    margin-left: 12.4%;
+    margin-left: 11%;
 }
 
 textarea
