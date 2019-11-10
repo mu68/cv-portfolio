@@ -27,7 +27,7 @@ header
 {
 	background-color: #616161;
 }
-h1
+.titre
 {
 	text-align: center;
 	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
@@ -40,7 +40,8 @@ h1
 #corps #menu
 {
 	background-color: #9e9e9e;
-	flex: 1;
+  flex: 1;
+  padding-top: 5%;
 }
 nav
 {
@@ -103,7 +104,7 @@ a
 .coordonnee 
 {
   margin-bottom: 5%;
- 
+  padding-top: 10%;
 }
 i
 {
@@ -128,25 +129,28 @@ i
 }
 
 
-						/*détail experiences*/
+						/*compétences*/
 
 #corps #content
 {
 	background-color:rgb(231, 229, 229) ;
 	-webkit-background-size:cover;  /*ancien chrome et safari*/
 	background-size: cover;  /*version standardisée*/
-	flex: 3;
+  flex: 3;
 }
-.dmetiers
+h1
 {
   text-align: center;
+  background-color:#9e9e9e ;
+  font-size: 30px;
 }
-article .detail
+
+.detail
 {
   margin: 2%;
   text-align: left;
 } 
-					/*parie metier*/               
+					/*partie metier*/               
 section
 {
     display: flex;

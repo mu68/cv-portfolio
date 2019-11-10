@@ -156,30 +156,37 @@ i
 }
 .imgh1
 {
-	margin: 3%;
+	margin: 5%;
 	float:left;
 }
 img
 {
 	border-radius: 0 20%;
 }
+.objectif  /*mettre le text sous la photo*/
+{
+	margin: 4% 2% 2% 3%;
+	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);	
+}
 .presentation 
 {
-	margin: 6% 2% 4% 3%;	
+	
+	margin: 3% 2% 4% 3%;	
 }
 .presentation1
 {
 	margin-left: 3%;
 }
-.objectif  /*mettre le text sous la photo*/
+.objectif p
 {
-	clear: both;
-	margin: 3% 2% 2% 3%;
-	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);	
+	font-weight: bold;
+}
+strong
+{
+	background-color: rgb(209, 205, 205);
 }
 
-
-							/*partie catégorie*/
+					/*partie catégorie*/
 
 section
 {
@@ -218,7 +225,7 @@ section
 {
 	width: 22%;
 }
-.icon 
+.icon /* icone des catégorie*/
 
 {
 	color: rgb(91, 24, 224);
@@ -230,6 +237,10 @@ h3
 }
 			/*partie icone compétences*/
 
+.iconecomp
+{
+	background-color: white;
+}
 .icone
 {
 	width: 30%;
@@ -237,37 +248,8 @@ h3
 	padding-left: 3%;
 	margin: 1% 0;
 }
-
-				/*partie slider*/
-
-	/*padding-left:3% ;
-}
-.slider
-{
-	width: 100%;
-	
-}
-.diapo1
-
-{
-	margin: 5%;
-	width: 20%;
-	height: 150%;
-	border: 2px solid black;
-	background-image: url(pantalonete.jpg);*/
-/*}*/
-
-
-
-
-
-
-
-
-
 				
-
-/*partie footer*/
+		/*partie footer*/
 .footer
 {
 	background-color: #616161; 
