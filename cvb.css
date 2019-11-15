@@ -1,0 +1,233 @@
+        /*partie menu*/
+.gris
+{
+    background-color: rgb(231, 229, 229);
+}
+        /*partie bannière*/
+.img
+{
+    background-repeat:no-repeat ;
+    background: cover;   
+}
+.bordure0
+{
+    border-top:3px solid rgb(219, 56, 198);
+    border-bottom:3px solid rgb(219, 56, 198);
+}
+li
+{
+    list-style-type: none;
+}
+            /*partie présentation photo et texte*/
+.photo
+{
+   margin-left: 10%;
+}
+.marge
+{
+    margin: 0;
+}
+h2
+{
+    color:rgb(180, 106, 241) ;
+}
+
+        /*partie présentation texte*/
+p
+{
+    padding: 4% 0;
+    
+}
+.objectif
+{
+    color:rgb(180, 106, 241) ;
+}
+            /*partie rediction sur autre page et aniamation*/
+
+.shadow a
+{
+    color:rgb(180, 106, 241 );
+    
+}
+.shadow
+{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    width: 50%;
+    height: 6%;
+    background: linear-gradient(0deg,#000,#262626);
+}
+.shadow:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width:calc(100% + 4px) ;
+    height:calc(100% + 4px) ;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+.shadow:after
+{
+   filter:blur(20px) ; 
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+
+
+            /*partie 3 colonnes*/
+.bordure
+{
+    border:1px solid rgb(180, 106, 241);
+}
+            /*icone compétences*/
+.iconecompetences 
+{
+    display: flex;
+    justify-content: center;
+
+}
+h3
+{
+    text-align: center;
+    font-size: 30px;
+}
+hr
+{
+    background-color: rgb(231, 229, 229);
+    
+}          
+            /*footer*/
+footer
+{
+    border-top:3px solid rgb(219, 56, 198);
+
+}
+.fond
+{
+    background-color: rgb(32, 31, 31);
+    color: white;
+    padding-left: 10%;
+}
+form
+{
+    display:inline-block;
+}
+input,textarea
+{
+    max-width: 70%;
+}
+i
+{
+    color: rgb(180, 106, 241);
+}
+span
+{
+    color: rgb(180, 106, 241);
+    font-size: 30px; 
+}
+.btn
+{
+    background-color: rgb(180, 106, 241);
+    margin: 0 4%;
+}
+
+        /*paritie coordonnée*/
+.cv
+{
+    color: rgb(180, 106, 241);
+}
+            /*flèche haut et bas*/
+.top 
+{
+    position: fixed; 
+    margin-right:5%;    
+    height: 1%; 
+    bottom: 5%; 
+    right: 3%; 
+    padding: 1%;
+    padding-bottom: 6%;
+    cursor: pointer;
+}
+.bas
+{
+    position: fixed;
+    margin-right:5%;    
+    height: 2%; 
+    bottom: 5%; 
+    right: 4%;
+    cursor: pointer;
+}
+
+            /*média queries*/
+@media screen and (max-width:800px)
+{
+    .categorie
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-wifth:600px)
+{
+    button 
+    {
+       margin-left:25% ; 
+    }  
+}            
+@media screen and (max-width:451px)
+{
+    button /*menu*/
+    {
+        margin-left: 25%;
+    }
+    .photo
+    {
+        display: none;
+    }
+    h2 
+    {
+        margin-left: 25%;
+    }
+    .categorie
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   #ancre
+   {
+
+       font-size: 15px;
+   }
+   .iconecompetences 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .top
+    {
+        margin-bottom: 5%;
+    }
+    .shadow
+    {
+        margin:0 auto;
+    }
+    
+}

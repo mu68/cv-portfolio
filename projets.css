@@ -1,0 +1,73 @@
+/*partie menu*/
+.gris
+{
+    background-color: rgb(231, 229, 229);
+}
+        /*partie bannière*/
+.img
+{
+    background-repeat:no-repeat ;
+    background: cover;   
+}
+li
+{
+    list-style-type: none;
+}
+            /*partie icone compétences*/
+                   
+            /*footer*/
+.fond
+{
+    background-color: rgb(32, 31, 31);
+    color: white;
+    padding-left: 10%;
+}
+form
+{
+    display:inline-block;
+}
+input,textarea
+{
+    max-width: 70%;
+}
+i
+{
+    color: rgb(180, 106, 241);
+}
+span
+{
+    color: rebeccapurple;
+    font-size: 30px; 
+}
+.btn
+{
+    background-color: rgb(180, 106, 241);
+    margin: 0 4%;
+}
+
+        /*partie coordonnée*/
+.cv
+{
+    color: rgb(180, 106, 241);
+}
+                /*flèche haut et bas*/       
+.top 
+{
+    position: fixed; 
+    margin-right:5%;    
+    height: 1%; 
+    bottom: 5%; 
+    right: 3%; 
+    padding: 1%;
+    padding-bottom: 6%;
+    cursor: pointer;
+}
+.bas
+{
+    position: fixed;
+    margin-right:5%;    
+    height: 2%; 
+    bottom: 5%; 
+    right: 4%;
+    cursor: pointer;
+}
