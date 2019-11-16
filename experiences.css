@@ -4,9 +4,11 @@
     background-color: rgb(231, 229, 229);
     
 }
-nav
+.texte
 {
-    
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 25%;
 }
         /*partie bannière*/
 .img
@@ -98,7 +100,8 @@ span
 .top 
 {
     position: fixed; 
-    margin-right:5%;    
+    margin-right:5%;
+    width: 15%;    
     height: 1%; 
     bottom: 5%; 
     right: 3%; 
@@ -109,7 +112,8 @@ span
 .bas
 {
     position: fixed;
-    margin-right:5%;    
+    margin-right:5%; 
+    width: 13%;   
     height: 2%; 
     bottom: 5%; 
     right: 4%;
