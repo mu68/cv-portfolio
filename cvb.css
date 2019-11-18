@@ -53,7 +53,7 @@ p
 {
     color:rgb(180, 106, 241) ;
 }
-            /*partie rediction sur autre page et aniamation*/
+            /*partie redirection sur autre page et aniamation*/
 
 .shadow a
 {
@@ -80,7 +80,7 @@ p
     width:calc(100% + 4px) ;
     height:calc(100% + 4px) ;
     z-index: -1;
-    animation: animate 20s linear infinite;
+    animation: animate 15s linear 8s;
 }
 .shadow:after
 {
