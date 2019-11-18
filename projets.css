@@ -79,3 +79,32 @@ span
     right: 4%;
     cursor: pointer;
 }
+        /*média queries*/
+@media screen and(max-width:320px)
+{
+    .container
+    {
+        width: 310px;
+    }
+}
+@media screen and(max-width:768px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+@media screen and(max-width:992px)
+{
+    .container
+    {
+        width: 970px;
+    }
+}
+@media screen and(max-width:1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+}
