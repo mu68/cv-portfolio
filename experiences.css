@@ -1,6 +1,6 @@
-.container
+body
 {
-    font-size: large;
+    font-size: x-large;
 }     
      /*partie menu*/
 .gris
@@ -20,7 +20,7 @@
     background-repeat:no-repeat ;
     background: cover;  
 }
-.bordure
+.bordure0
 {
     border-top:3px solid rgb(219, 56, 198);
     border-bottom:3px solid rgb(219, 56, 198);
@@ -58,6 +58,7 @@ h2
 li
 {
     list-style-type: none;
+    font-size: large;
 }
 .emploie      /*bordure dessus du footer*/
 {
@@ -70,6 +71,11 @@ i
 }
     
             /*footer*/
+footer
+{
+    border-top:3px solid rgb(219, 56, 198);
+
+}            
 .fond
 {
     background-color: rgb(32, 31, 31);
@@ -105,37 +111,36 @@ span
 {
     color: rgb(180, 106, 241);
 }
-            /*flèche haut et bas*/
+        /*flèche haut et bas*/
+
 .top 
 {
     position: fixed; 
-    margin-right:5%;
-    width: 15%;    
+    margin-right:1%;
+       
     height: 1%; 
     bottom: 5%; 
     right: 3%; 
-    padding: 1%;
-    padding-bottom: 6%;
+    
+    padding-bottom: 13%;
     cursor: pointer;
 }
 .bas
 {
     position: fixed;
-    margin-right:5%; 
+    margin-right:5%;
     width: 13%;   
     height: 2%; 
     bottom: 5%; 
     right: 4%;
+    padding-bottom: 9%;
     cursor: pointer;
 }
+
         /*média queries*/
 @media screen and (max-width:320px)
 {
-    .container
-    {
-        width: 100%;
-        font-size:18px;
-    }
+    
     .terre  /*logo*/
     {
         width: 100%;
@@ -148,16 +153,20 @@ span
     .imgmetier
     {
         width: 80%;
-        height:60% ;
+        margin-left: 8%;
     }
-            /*compétences*/
+            /*emploi*/
     h1 
     {
         font-size: 30px;
     }
+    ul 
+    {
+        padding: 2px 0 1px 1px;
+        font-size: 17px;
+    }
     .emploie ul
     {
-        padding-left:3%;
         font-size: 17px;
     }
     .fond
@@ -175,75 +184,115 @@ span
    }
    .coordonnee ul
    {
-       padding:0 0 8% 0;
+       padding-left:8%;
        margin-top: 0;
    }
    .top
-    {
+   {
         width: 1%;
-        margin: 2%;
-        padding: 15% 0;
+        height: 20%;
+        margin-right: 1%;
+        right: 13%;
+   }
+   .bas
+   {
+        width: 1%;
+        right: 10%;
+   }
+}
+@media screen and (max-width:576px)
+{
+    .imgmetier /*photo*/
+    {
+        margin-left: 14%;
+    }
+    .emploi
+    {
+        margin-top: 3%;
+    }
+    .emploi ul 
+    {
+       padding:0 0;
+       font-size: 20px;
+    }
+    .top
+    {
+        width: 2%;
+        height: 17%;
+        right: 6%;
     }
     .bas
     {
         width: 1%;
-        margin-right: 1%;
+        height: 10%;
+        right: 6%;
     }
 }
 @media screen and (min-width:768px)
 {
-    .container
-    {
-        width: 750px;
-    }
+    
     .imgmetier
     {
         width: 100%;
        
     }
-            /*expériences professionnelles*/
+    p 
+    {
+        font-size: 22px;
+    }
+     /*expériences professionnelles*/
+    
     .emploi ul
     {
-        padding-left:0;
-        font-size: 19px;
+        padding-left:0;  
     }
     /*footer*/
+    span 
+    {
+        font-size:x-large;
+    }
     .coordonnee ul
     {
         padding-left: 0;
-    } 
+    }
+    
     .form-group .btn
    {
         margin: 0;
    }
    .top
    {
-       width: 2%;
+       width: 1%;
        margin: 2%;
-       padding: 12% 0;
+       right: 5%;
+       height: 17%;  
    }
    .bas
    {
        width: 2%;
-       margin-right: 1%;
+       right: 1%;
+       height: 10%;  
    }            
     
 }
 @media screen and (min-width:992px)
 {
-    .container
-    {
-        width: 970px;
-    }
     .emploi
     {
         padding-left: 10%;
     }
+    .top
+   {
+       width: 1%;
+       margin: 2%;
+       
+       right: 2%;
+       
+   }
+   .bas
+   {
+       width: 2%;
+       right: -2%;  
+   }
 }
-@media screen and (min-width:1200px)
-{
-    .container
-    {
-        width: 1170px;
-    }
-}
+

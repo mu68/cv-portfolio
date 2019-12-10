@@ -1,3 +1,7 @@
+.container
+{
+    font-size: large;
+}
 /*partie menu*/
 .gris
 {
@@ -61,32 +65,28 @@ span
 {
     position: fixed; 
     margin-right:5%;
-    width: 15%;    
+    width: 15%;   
     height: 1%; 
     bottom: 5%; 
     right: 3%; 
     padding: 1%;
-    padding-bottom: 6%;
+    padding-bottom: 15%;
     cursor: pointer;
 }
 .bas
 {
     position: fixed;
-    margin-right:5%; 
-    width: 13%;    
+    margin-right:5%;
+    width: 13%;   
     height: 2%; 
     bottom: 5%; 
     right: 4%;
+    padding-bottom: 9%;
     cursor: pointer;
 }
          /*média queries*/
 @media screen and (max-width:320px)
 {
-    .container
-    {
-        width: 100%;
-        font-size:18px;
-    }
     .terre  /*logo*/
     {
         width: 100%;
@@ -95,7 +95,7 @@ span
     }
     button /*menu*/
     {
-        margin-left: 25%;
+        margin-left: 30%;
     }
        /*main corps principal*/
     
@@ -109,21 +109,26 @@ span
    {
         margin: 0;
    }
+   span 
+   {
+       font-size:x-large;
+   }
    .coordonnee ul
    {
        padding:0 0 8% 0;
        margin-top: 0;
+       font-size: 17px;
    }
    .top
     {
-        width: 1%;
-        margin: 2%;
-        padding: 15% 0;
+        width: 3%;
+        
+        height: 18%;
     }
     .bas
     {
         width: 1%;
-        margin-right: 1%;
+        height: 10%;
     }
 }
 @media screen and (min-width:768px)
@@ -147,7 +152,7 @@ span
    {
        width: 2%;
        margin: 2%;
-       padding: 12% 0;
+       height: 17px;
    }
    .bas
    {

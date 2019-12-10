@@ -176,7 +176,7 @@ span
     bottom: 5%; 
     right: 3%; 
     padding: 1%;
-    padding-bottom: 6%;
+    padding-bottom: 15%;
     cursor: pointer;
 }
 .bas
@@ -187,37 +187,48 @@ span
     height: 2%; 
     bottom: 5%; 
     right: 4%;
+    padding-bottom: 9%;
     cursor: pointer;
 }
 
             /*média queries*/
 @media screen and (max-width:320px)
 {
+        /*header*/
+    .terre
+   {
+       width: 100%;
+       height: 80%;
+   }
+   button /*menu*/
+    {
+        margin-left: 30%;
+    }
+        /*partie présentation*/
    .presentation h2
    {
        margin: -13% 0 0 13%;
    }
-   
-   .terre
-   {
-       width: 100%;
-       height: 80%;
-   } 
     .photo
     {
         width: 80px;
         height: 110px;
         margin:-8% 0 -8% 30% ;
     }
-    h2 
+    h2 /*mon nom prénom*/
     {
         font-size: 23px;
         margin:0;
     }
+            /*partie categorie*/
+    .categorie
+    {
+        width: 100%;
+    }
             /*footer*/
    span /*footer contact*/
    {
-       font-size: large;
+       font-size: x-large;
    }
    .form-group .btn
    {
@@ -225,19 +236,19 @@ span
    }
    .coordonnee ul
    {
-       padding:0 0 8% 0;
-       margin-top: 0;
+        padding:0 0 8% 0;
+        margin-top: 0;
+        
    }
    .top
    {
-       width: 1%;
-       margin: 2%;
-       padding: 15% 0;
+        width: 2%;   
+        height: 12%;
+       
    }
    .bas
    {
-    width: 1%;
-    margin-right: 1%;
+        width: 1%;
    }
 }
 @media screen and (max-width:576px)
@@ -263,12 +274,6 @@ span
         width: 80%;
         margin-left: 10%;    
     }
-    ul
-    {
-        
-        font-size: large;
-    }
-    
     .iconecompetences 
     {
         display: flex;
@@ -284,6 +289,10 @@ span
     {
         font-size: 15px;
     }
+    ul 
+    {
+        font-size:large;
+    }
     .padding ul 
     {
         padding-bottom: 8%;
@@ -291,20 +300,19 @@ span
     .top
    {
        width: 2%;
-       margin: 2%;
-       padding: 10% 0;
+       height: 18%;
    }
    .bas
    {
     width: 2%;
-    margin-right: 1%;
+    height: 12%;
    }        
 }
 @media screen and (max-width:768px)
 {
-   .shadow
+   .shadow  /*bouton animé*/
    {
-       margin: 0 auto;
+       margin: 3px auto;
    }
    .btn
    {
@@ -316,20 +324,51 @@ span
    }
    .top
    {
-       width: 2%;
+       width: 1%;
        margin: 2%;
-       padding: 10% 0;
+       right: 5%;
+       height: 17%;  
    }
    .bas
    {
-    width: 2%;
-    margin-right: 1%;
-   } 
+       width: 1%;
+       right: 6%;
+       height: 10%;  
+   }  
 }
 @media screen and (max-width:992px)
 {
-    .nav-link
-    {
-        padding-left: 0;
-    }
+   .shadow /*bouton animée*/
+   {
+       margin: 0 auto;
+   }
+   .top
+   {
+       width: 2%;
+       margin: 2%;
+       height: 18%;
+   }
+   .bas
+   {
+    width: 0%;
+    margin: 2%;
+   }
+}
+@media screen and (max-width:1200px)
+{
+   .shadow /*bouton animée*/
+   {
+       margin: 0 auto;
+   }
+   .top
+   {
+       width: 2%;
+       margin: 2%;
+       height: 18%;
+   }
+   .bas
+   {
+    width: 0%;
+    margin: 2%;
+   }
 }
