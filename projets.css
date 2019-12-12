@@ -63,25 +63,18 @@ span
                 /*flèche haut et bas*/       
 .top 
 {
-    position: fixed; 
-    margin-right:5%;
-    width: 15%;   
-    height: 1%; 
-    bottom: 5%; 
-    right: 3%; 
-    padding: 1%;
-    padding-bottom: 15%;
+    position: fixed;   
+    height: 10%; 
+    bottom: 13%; 
+    left: 76%; 
     cursor: pointer;
 }
 .bas
 {
-    position: fixed;
-    margin-right:5%;
-    width: 13%;   
-    height: 2%; 
-    bottom: 5%; 
-    right: 4%;
-    padding-bottom: 9%;
+    position: fixed;       
+    height: 3%; 
+    bottom: 6%; 
+    left: 78%;   
     cursor: pointer;
 }
          /*média queries*/

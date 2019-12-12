@@ -115,25 +115,18 @@ span
 
 .top 
 {
-    position: fixed; 
-    margin-right:1%;
-       
-    height: 1%; 
-    bottom: 5%; 
-    right: 3%; 
-    
-    padding-bottom: 13%;
+    position: fixed;   
+    height: 10%; 
+    bottom: 2%; 
+    left: 76%; 
     cursor: pointer;
 }
 .bas
 {
-    position: fixed;
-    margin-right:5%;
-    width: 13%;   
-    height: 2%; 
-    bottom: 5%; 
-    right: 4%;
-    padding-bottom: 9%;
+    position: fixed;       
+    height: 3%; 
+    bottom: 2%; 
+    left: 78%;   
     cursor: pointer;
 }
 
