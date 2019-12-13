@@ -10,9 +10,14 @@
 .texte
 {
     font-weight: bold;
-    font-size: 22px;
-    margin-left: 25%;
+    font-size: 27px;
+    color: rgb(219, 56, 198);    
 }
+.texte:hover
+{
+    background-color: rgba(180, 106, 241, 0.534);
+}
+
         /*partie bannière*/
 .img
 {
@@ -34,26 +39,22 @@ li
 {
    margin-left: 18%;
 }
-.marge
-{
-    margin: 0;
-}
-h2
-{
-    color:rgb(180, 106, 241) ;
-}
-
-        /*partie présentation texte*/
-p
-{
-    padding: 4% 0;
-    
-}
 .objectif
 {
     color:rgb(180, 106, 241) ;
 }
-            /*partie redirection sur autre page et aniamation*/
+
+            /*partie présentation texte*/
+h2
+{
+    color:rgb(180, 106, 241) ;
+}        
+p
+{
+    padding: 4% 0;    
+}
+
+        /*partie redirection sur autre page et animation*/
 
 .shadow a
 {
@@ -62,6 +63,7 @@ p
 }
 .shadow
 {
+    margin: 0 auto;
     position: relative;
     background-color: #000;
     text-align: center;
@@ -101,7 +103,6 @@ p
         background-position: 0 0;
     }
 }
-
 
 
             /*partie 3 colonnes*/
