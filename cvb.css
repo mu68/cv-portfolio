@@ -115,7 +115,6 @@ p
 {
     display: flex;
     justify-content: center;
-
 }
 h3
 {
@@ -124,14 +123,12 @@ h3
 }
 hr
 {
-    background-color: rgb(231, 229, 229);
-    
+    background-color: rgb(231, 229, 229);   
 }          
             /*footer*/
 footer
 {
     border-top:3px solid rgb(219, 56, 198);
-
 }
 .fond
 {

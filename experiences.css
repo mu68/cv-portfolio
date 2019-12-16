@@ -131,7 +131,7 @@ span
 }
 
         /*média queries*/
-@media screen and (max-width:320px)
+@media screen and (min-width:320px)
 {
     
     .terre  /*logo*/
@@ -193,7 +193,7 @@ span
         right: 10%;
    }
 }
-@media screen and (max-width:576px)
+@media screen and (min-width:576px)
 {
     .imgmetier /*photo*/
     {
