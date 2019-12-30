@@ -1,0 +1,345 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    font-size: large;
+}
+/*********************Haut de page****************************/    
+     /*partie menu*/
+.gris
+{
+    background-color: rgb(231, 229, 229);
+}
+.terre /*logo*/
+{
+    margin-left: -2%;
+}
+.texte
+{
+    font-weight: bold;
+    font-size: 27px;
+    color: rgb(219, 56, 198);    
+}
+.texte:hover
+{
+    background-color: rgba(180, 106, 241, 0.534);
+}
+
+        /*partie bannière*/
+.img
+{
+    background-repeat:no-repeat ;
+    background: cover;   
+}
+
+.bordure0
+{
+    border-top:3px solid rgb(219, 56, 198);
+    border-bottom:3px solid rgb(219, 56, 198);
+}
+li
+{
+    list-style-type: none;
+}
+/************************Page principal*******************/
+            /*partie présentation photo et texte*/
+.photo
+{
+   margin-left: 22%;
+}
+.objectif
+{
+    color:rgb(180, 106, 241) ;
+}
+
+            /*partie présentation texte*/
+h2
+{
+    color:rgb(180, 106, 241) ;
+}        
+p
+{
+    padding: 4% 0;    
+}
+
+        /*partie redirection sur autre page et animation*/
+
+.shadow a
+{
+    color:rgb(180, 106, 241 );
+    
+}
+.shadow
+{
+    margin: 0 auto;
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    width: 50%;
+    height: 6%;
+    background: linear-gradient(0deg,#000,#262626);
+}
+.shadow:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width:calc(100% + 4px) ;
+    height:calc(100% + 4px) ;
+    z-index: -1;
+    animation: animate 15s linear 8s;
+}
+.shadow:after
+{
+   filter:blur(20px) ; 
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+
+            /*partie 3 colonnes*/
+
+.bordure
+{
+    border:1px solid rgb(180, 106, 241);
+}
+h3
+{
+    text-align: center;
+    font-size: 30px;
+}
+hr
+{
+    background-color: rgb(231, 229, 229);   
+}
+i
+{
+    padding-left: 2%;
+}
+            /*icone compétences*/
+.iconecompetences 
+{
+    display: flex;
+    justify-content: center;
+   
+}
+.iconecompetences li 
+{
+    font-size: 20px;
+}
+
+
+
+/*********************Page expériences***********************/
+         /*partie compétences*/
+         h1
+         {
+             text-align: center; 
+             font-size: 35px;   
+         }
+         .imgmetier
+         {
+             margin-left: 10%;
+         }
+         p /*tout les p des mes pages*/
+         {
+             width: 90%;
+             margin-left: 3%;
+         }
+         
+                 /*partie stage*/
+         h2
+         {
+             font-size: 30px;
+             text-align: center;
+             margin: 6% 0;
+             color: rgb(180, 106, 241);
+         }
+         .important
+         {
+             border: 3px dotted rgb(180, 106, 241);
+             padding: 2%;
+         }
+             /*partie expériences professionnelles*/
+         li
+         {
+             list-style-type: none;
+             font-size: large;
+         }
+         em 
+         {
+             text-decoration: underline;
+         }
+         .emploi
+         {
+            margin-top: 2%;
+         }
+
+/************************Page de projets*****************/
+
+
+/***********************Pied de page*********************/          
+            /*footer*/
+footer
+{
+    border-top:3px solid rgb(219, 56, 198);
+}
+.fond
+{
+    background-color: rgb(32, 31, 31);
+    color: white;
+    padding-left: 10%;
+}
+form
+{
+    display:inline-block;
+}
+input,textarea
+{
+    max-width: 70%;
+}
+i
+{
+    color: rgb(180, 106, 241);
+}
+span
+{
+    color: rgb(180, 106, 241);
+    font-size: 30px; 
+}
+.btn
+{
+    background-color: rgb(180, 106, 241);
+    margin: 0 4%;
+}
+
+        /*partie coordonnée*/
+.cv
+{
+    color: rgb(180, 106, 241);
+}
+            /*flèche haut et bas*/
+.top 
+{
+    position: fixed;   
+    height: 10%; 
+    bottom: 13%; 
+    left: 77%; 
+    cursor: pointer;
+}
+.bas
+{
+    position: fixed;       
+    height: 3%; 
+    bottom: 6%; 
+    left: 77%;   
+    cursor: pointer;
+}
+        /*************Page principal********************/
+
+            /*média queries*/
+@media screen and (max-width:320px)
+{
+    
+    .container
+    {
+        padding:0 2%;     
+    }
+   button  /*menu*/
+   {
+       margin-left: 27%;
+   }
+
+   h2 /*mon et prenom*/
+   {
+       text-align: center;
+   }
+   /*partie 3 colonnes*/
+   .categorie
+   {
+       font-size: 15px;
+       margin-top: 4%;
+       
+   }
+   .pers, .mescomp ,.mesform
+   {
+       padding-left: 2%;
+   }
+   .iconecompetences
+   {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%; 
+   }
+   .iconecompetences li /*photofiltre...*/
+   {
+      margin: 0;
+      padding: 0;
+        
+   }
+    
+   
+}
+@media screen and (min-width:576px)
+{
+      
+}
+@media screen and (min-width:768px)
+{
+    
+}
+@media screen and (min-width:992px)
+{
+   
+}
+@media screen and (min-width:1200px)
+{
+   
+}
+
+            /********Page expériences********/
+
+@media screen and (min-width:320px)
+{
+   /*partie compétences*/
+   .imgmetier
+   {
+       width: 80%;
+   }     
+}            
+@media screen and (min-width:576px)
+{
+        
+}
+@media screen and (min-width:768px)
+{
+    
+}
+@media screen and (min-width:992px)
+{
+    
+}
+@media screen and (min-width:1200px)
+{
+    
+}
