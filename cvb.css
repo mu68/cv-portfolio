@@ -1,3 +1,9 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container
 {
     font-size: large;
@@ -106,9 +112,17 @@ p
 
 
             /*partie 3 colonnes*/
+.categorie
+{
+    padding: 0;
+}
 .bordure
 {
     border:1px solid rgb(180, 106, 241);
+}
+i
+{
+    padding-left: 2%;
 }
             /*icone compétences*/
 .iconecompetences 
@@ -185,238 +199,45 @@ span
             /*média queries*/
 @media screen and (min-width:320px)
 {
-    
-        /*header*/
-    .terre
+    .container
+    {
+        padding:0 2%;
+    }
+   button
    {
-       width: 100%;
-       height: 80%;
-        margin-left: -2%; 
+       margin-left: 27%;
    }
-   button /*menu*/
-    {
-        margin-left:29%;
-    }
-        /*partie présentation*/
-   .presentation h2
+   h2 /*mon et prenom*/
    {
-       margin: -13% 0 0 13%;
+       text-align: center;
    }
-    .photo
-    {
-        width: 80px;
-        height: 110px;
-        margin:-8% 0 -8% 30% ;
-    }
-    h2 /*mon nom prénom*/
-    {
-        font-size: 23px;
-        margin:0;
-    }
-            /*partie categorie*/
-    .categorie
-    {
-        width: 320px;
-        
-    }
-    .pers
-    {
-        padding-left: 30px;
-    }
-    h3 
-    {
-        padding-left:0;
-    }
-    .mescomp , .mesform
-    {
-        padding-left: 2%;
-        font-size: 20px;
-    }
-    .mesform
-    {
-        font-size:18px ;
-    }
-    .iconecompetences li
-    {
-        padding-left: 0;
-    }
-            /*footer*/
-   span /*footer contact*/
+   .categorie
    {
-       font-size: x-large;
+       font-size: 20px;
+       padding-left: 1%;
    }
-   .form-group .btn
+   .iconecompetences li /*photofiltre...*/
    {
-        margin: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
    }
-   .coordonnee
-   {
-       padding: 0;
-   }
-   .coordonnee ul
-   {
-        padding:0 0 8% 0;
-        margin-top: 0;
-        font-size: 20px;
-   }
-   .btn 
-   {
-       display: block;
-      flex-direction: column;
-   }
-   .top
-   {          
-        left: 80%;
-        bottom: 5%;
-   }
-   .bas
-   {  
-        left: 80%;
-   }
+   
+   
 }
 @media screen and (min-width:576px)
 {
-    .container
-    {
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-    }
-    button /*menu*/
-    {  
-        margin-right: 10%;
-    }
-    .photo
-    {
-       margin-left: 32%;
-    }
-    h2 
-    {
-        margin-left: 15%;
-
-    }
-    .shadow  /*bouton animée*/
-    {
-        margin: 0 auto;
-    }
-    .categorie
-    {
-        display: flex;
-        flex-direction: column;       
-    }
-    /*.pers 
-    {
-        padding-left: 40%;
-    }*/
-    .mescomp
-    {
-        padding-left: 20%;
-    }
-    .iconecompetences 
-    {
-        display: flex;
-        flex-direction: column;
-        padding-left: 100%;
-    }
-    
-            /*footer*/
- span
-    {
-        margin-left: 10%;
-    }
-    .span, form
-    {
-        padding-left: 10%;
-    }
-    #ancre
-    {
-        font-size: 15px;
-    }
-            /*coordonnée*/
-    ul 
-    {
-        font-size:large;
-    }
-    .padding ul 
-    {
-        padding-bottom: 8%;
-    }
-    .top
-   {
-       bottom: 5%; 
-       left: 89%;
-   }
-   .bas
-   {
-    width: 2%;
-    left: 89%;
-   }        
+      
 }
 @media screen and (min-width:768px)
 {
-   body 
-   {
-       width: 100%;
-   } 
-   .shadow  /*bouton animé*/
-   {
-       margin: 3px auto;
-   }
-   .btn
-   {
-       margin:0 1% 5% 0;
-   }
-   form 
-   {
-       margin-bottom: 8%;
-   }
-   .top
-   {
-       width: 1%;
-       margin: 2%;
-       right: 5%;
-       height: 17%;  
-   }
-   .bas
-   {
-       width: 1%;
-       right: 6%;
-       height: 10%;  
-   }  
+    
 }
 @media screen and (min-width:992px)
 {
-   .shadow /*bouton animée*/
-   {
-       margin: 0 auto;
-   }
-   .top
-   {
-       width: 2%;
-       margin: 2%;
-       height: 18%;
-   }
-   .bas
-   {
-    width: 0%;
-    margin: 2%;
-   }
+   
 }
 @media screen and (min-width:1200px)
 {
-   .shadow /*bouton animée*/
-   {
-       margin: 0 auto;
-   }
-   .top
-   {
-       width: 2%;
-       margin: 2%;
-       height: 18%;
-   }
-   .bas
-   {
-    width: 0%;
-    margin: 2%;
-   }
+   
 }
