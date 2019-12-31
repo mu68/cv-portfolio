@@ -1,0 +1,124 @@
+body
+{
+ background-color:#a4b0be; 
+    
+}
+h3
+{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5%;
+}
+.span
+{
+    background-color: #ffffff; /*Couleur de fond*/
+    height: 200px; /*hauteur de ton image*/
+    opacity: 0; /*pour qu'on ne le voit pas, tant que ce n'est pas survollé*/
+    position: absolute;
+    width: 200px; /*largeur de ton image*/
+    margin-top: 5%;
+    margin-bottom: 3%;
+    transition: all 0.6s ease; /*temps d'apparition au survol*/
+    display: none;  
+}
+.span:hover 
+{
+    height: 200px; /*hauteur de ton image*/
+    opacity: 0.9; /*opicité du fond lorsqu'il apparaît, si y a 0.9 c'est qu'il est un peu transparent*/
+    width: 200px; /*largeur de ton image*/ 
+}
+.image
+{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+a
+{
+    margin: 5%;
+}
+.image p
+{
+    position:relative;
+    float:left;
+    width:100px;
+    height:100px;
+    padding:15px;
+    list-style:none; 
+}
+/*permet de créer deux lignes*/
+ p:nth-child(4n)
+{
+    clear:left;
+} 
+         
+.survol .image a
+{
+    display:block;
+    overflow:hidden;
+    width:100px;
+    height:100px;
+    margin-top:0px;
+    margin-left:0px;
+    border:0px solid rgba(0,0,0,0.7);
+    transition-property:width,height,margin,z-index,border;
+    transition-duration:0.4s;
+}
+
+.survol .image a:hover
+{
+    position:absolute;
+    width:200px;
+    height:200px;
+    margin-top:-56px;
+    margin-left:-56px;
+    z-index:100;
+    border:6px solid rgba(0,0,0,0.7);
+}
+         
+.survol .image a img
+{
+    position:absolute;
+    width:100px;
+    height:100px;
+    z-index:20;
+    transition-property:width,height,z-index;
+    transition-duration:0.4s;
+}
+         
+.survol .image a:hover img
+{
+    width:200px;
+    height:200px;
+    z-index:100;
+}
+
+
+/********* Superposition simple de texte sur une image *******/
+/* Conteneur principal */
+.overlay-image 
+{
+    position: relative;
+    width: 100%;
+}
+/* Image originale */
+.overlay-image .image1 
+{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+/* Texte original */
+.overlay-image .text 
+{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    margin-left:15%;
+}

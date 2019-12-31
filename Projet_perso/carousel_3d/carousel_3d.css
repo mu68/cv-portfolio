@@ -1,0 +1,139 @@
+/*****carrousel 3d automatique*****/
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+*
+{
+    -webkit-box-sizing : border-box;
+            box-sizing : border-box;  
+}
+h3
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-size: xx-large;
+}
+
+img
+{
+    max-width:100%;
+}
+
+.contenu_carou_auto
+{
+    
+    margin:2rem auto;
+    width:420px;
+    height:279px;
+    -webkit-perspective:8000px; /*détermine la distance de mon carrousel avec l'écran de l'utilisateur*/
+            perspective:8000px /*Plus la perspective est grande, plus l'impression d'éloignement sera important. On détermine également une largeur et une longueur à l'élément (elles doivent correspondre à la taille des photos).*/
+}
+
+.caroussel-image
+{
+    -webkit-animation:rotation 24s infinite  linear;
+            animation:rotation 24s infinite  linear;
+    -webkit-transform-style:preserve-3d;/*Indique que les fils de l'élément ciblé est positionnés dans l'espace tridimensionnel.*/
+            transform-style:preserve-3d;
+    position:relative;
+}
+
+.caroussel-image img
+{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.caroussel-image img
+{
+    -webkit-filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));/* permet d'appliquer des filtres et d'obtenir des effets graphiques de flou, de saturation, etc*/
+            filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));/*hsla () définit les couleurs en utilisant le modèle Hue-saturation-lightness-alpha (HSLA)*/
+    width:400px;
+    height:266px;
+    left:10px;
+    outline:1px solid transparent; /*crée unebordure autour de l'élément,mais n'est pas forcément rectangulaire comme les border*/
+    -webkit-backface-visibility:hidden;/*Indique que les fils de l'élément ciblé doivent être positionnés dans l'espace tridimensionnel.*/
+            backface-visibility:hidden;
+}
+/* on met en place nos images qui seront en position absolute. Dans cet exemple, nous avons huit images. Il s'agit donc d'un octogone. Nous allons maintenant devoir effectuer quelques calculs. Pour connaître chaque angle de notre carrousel, il suffit de diviser 360 degrés (un cercle complet) par le nombre de faces. Ainsi nous obtenons 45 degrés (360° / 8). Comme nous connaissons la largeur de chaque face du carrousel (400px dans notre exemple), on va pouvoir trouver l'apothème de l'octogone. On reporte le nombre (ici 495px) dans chaque image sur l'axe Z via la propriété transform. On indiquera par ailleurs une rotation sur l'axe Y.*/
+.caroussel-image img:nth-child(1) /*permet de cible un élément*/
+{
+    -webkit-transform:translate3d(0,0,495px);/*permet de déplacer un élément dans l'espace tridimensionnel*/
+            transform:translate3d(0,0,495px)
+}
+
+.caroussel-image img:nth-child(2)
+{
+    -webkit-transform:rotateY(45deg) translateZ(495px);/*rotation et va avec la perpective*/
+            transform:rotateY(45deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(3)
+{
+-webkit-transform:rotateY(90deg) translateZ(495px);
+        transform:rotateY(90deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(4)
+{
+-webkit-transform:rotateY(135deg) translateZ(495px);
+        transform:rotateY(135deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(5)
+{
+-webkit-transform:rotateY(180deg) translateZ(495px);
+        transform:rotateY(180deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(6)
+{
+-webkit-transform:rotateY(225deg) translateZ(495px);
+        transform:rotateY(225deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(7)
+{
+-webkit-transform:rotateY(270deg) translateZ(495px);
+        transform:rotateY(270deg) translateZ(495px)
+}
+
+.caroussel-image img:nth-child(8)
+{
+-webkit-transform:rotateY(315deg) translateZ(495px);
+        transform:rotateY(315deg) translateZ(495px)
+}
+
+
+@-webkit-keyframes rotation
+{
+    from
+    {
+        -webkit-transform:rotatey(0);
+                transform:rotatey(0)
+    }
+    to
+    {
+        -webkit-transform:rotatey(1turn);
+                transform:rotatey(1turn)
+    }
+}
+
+
+@keyframes rotation
+{
+    from
+    {
+        -webkit-transform:rotatey(0);
+                transform:rotatey(0)
+    }
+    to
+    {
+        -webkit-transform:rotatey(1turn);
+                transform:rotatey(1turn)
+    }
+}
+
+/*****fin carrousel 3d automatique*****/
