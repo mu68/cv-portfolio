@@ -3,30 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container
-{
+    font-family: 'Raleway','Roboto','Source Sans Pro', sans-serif;
     font-size: large;
 }
+h3,h2,h1
+{
+    font-family: 'Source Sans Pro','Roboto', sans-serif;
+    font-weight: bold;
+}
+
 /*********************Haut de page****************************/    
      /*partie menu*/
 .gris
 {
     background-color: rgb(231, 229, 229);
+    padding: 0 5px;
 }
 .terre /*logo*/
 {
-    margin-left: -2%;
+    margin-left: -7%;
+}
+button 
+{
+    margin-left: 22%;
 }
 .texte
 {
     font-weight: bold;
-    font-size: 27px;
-    color: rgb(219, 56, 198);    
+    font-size: 27px;     
 }
 .texte:hover
 {
     background-color: rgba(180, 106, 241, 0.534);
+    width: 110%;
+    margin-left: 30%;    
 }
 
         /*partie bannière*/
@@ -39,7 +49,6 @@
 .bordure0
 {
     border-top:3px solid rgb(219, 56, 198);
-    border-bottom:3px solid rgb(219, 56, 198);
 }
 li
 {
@@ -49,7 +58,8 @@ li
             /*partie présentation photo et texte*/
 .photo
 {
-   margin-left: 22%;
+   margin-left: 25%;
+   margin-bottom: 3%;
 }
 .objectif
 {
@@ -118,7 +128,10 @@ p
 
 
             /*partie 3 colonnes*/
-
+.categorie
+{
+    margin-top: 6%;
+}
 .bordure
 {
     border:1px solid rgb(180, 106, 241);
@@ -159,18 +172,19 @@ h1
 }
 .imgmetier
 {
-    margin-left: 10%;
+    margin-left: 6%;
+    width: 90%;
 }
-p /*tout les p des mes pages*/
+p /*tout les p de mes pages*/
 {
     width: 90%;
-    margin-left: 3%;
+    margin-left: 7%;
 }
 
         /*partie stage*/
-h2
+.page2 /*titre*/
 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin: 6% 0;
     color: rgb(180, 106, 241);
@@ -184,7 +198,7 @@ h2
 li
 {
     list-style-type: none;
-    font-size: large;
+    font-size: 0.8em;
 }
 em 
 {
@@ -192,7 +206,7 @@ em
 }
 .emploi
 {
-margin-top: 2%;
+margin-top: 10%;
 }
 
 /************************Page de projets*****************/
@@ -332,32 +346,39 @@ footer
 {
     background-color: rgb(32, 31, 31);
     color: white;
-    padding-left: 10%;
+    padding-left: 8%;
 }
 form
 {
     display:inline-block;
 }
-input,textarea
+
+.box input,.box textarea
 {
-    max-width: 70%;
+    max-width: 80%;
+    
+    border-bottom: 4px solid rgb(219, 56, 198);
 }
-i
+.box button[type="submit"], [type="reset"]
+{
+    border-bottom:none;
+    cursor: pointer;
+    background: rgb(180, 106, 241);   
+}
+
+i /*coordonnee*/
 {
     color: rgb(180, 106, 241);
 }
 span
 {
     color: rgb(180, 106, 241);
-    font-size: 30px; 
-}
-.btn
-{
-    background-color: rgb(180, 106, 241);
-    margin: 0 4%;
+    font-size: 25px; 
 }
 
+
         /*partie coordonnée*/
+
 .cv
 {
     color: rgb(180, 106, 241);
@@ -368,7 +389,7 @@ span
     position: fixed;   
     height: 10%; 
     bottom: 13%; 
-    left: 77%; 
+    left: 90%; 
     cursor: pointer;
 }
 .bas
@@ -376,88 +397,308 @@ span
     position: fixed;       
     height: 3%; 
     bottom: 6%; 
-    left: 77%;   
+    left: 90%;   
     cursor: pointer;
 }
         /*************Page principal********************/
 
             /*média queries*/
-@media screen and (min-width:320px)
+@media screen and (min-width:360px)
 {
-    
-    .container
+  .terre
+  {
+      padding-left:7%;
+  }
+  button 
+  {
+      margin-left: 28%;
+  }
+  .photo
+  {
+      margin-left: 27%;
+  }
+  .objectif
+  {
+      margin-left: 4%;
+  } 
+  
+}    
+@media screen and (min-width:480px) 
+{
+  .terre
+  {
+      padding-left:25%;
+  }
+  button 
+  {
+      margin-left: 33%;
+  }
+  .photo
+  {
+      margin-left: 30%;
+  }
+  .coordonnee li 
     {
-        padding:0 2%;     
+        font-size: 20px;
     }
-   button  /*menu*/
-   {
-       margin-left: 27%;
-   }
-
-   h2 /*mon et prenom*/
-   {
-       text-align: center;
-   }
-   /*partie 3 colonnes*/
-   .categorie
-   {
-       font-size: 15px;
-       margin-top: 4%;
-       
-   }
-   .pers, .mescomp ,.mesform
-   {
-       padding-left: 2%;
-   }
-   .iconecompetences
-   {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%; 
-   }
-   .iconecompetences li /*photofiltre...*/
-   {
-      margin: 0;
-      padding: 0;
-        
-   }
-    
-   
-}
-@media screen and (min-width:576px)
+    .fond span, .coordonnee span
+    {
+        font-size: 1.6em;
+    }
+}   
+@media screen and (min-width:576px) 
 {
-      
+            /*logo et bouton menu*/
+    .terre
+    {
+        padding-left:0;
+    }
+    button 
+    {
+        margin-left: 0;
+    }
+            /*Présentation*/
+    .presentation
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        
+    }
+    .photo
+    {
+        margin-left: 80%;
+    }
+    .objectif .gris 
+    { 
+        padding-left:5%;
+        font-size: 1.2em;
+        width: 250%;    
+    }
+    h2 
+    {
+        font-size: 1.5em;
+        margin-left: 25%;
+    }
+    .passion
+    {
+        font-size: 1.2em;
+        width: 120%; 
+    }
+    .shadow
+    {
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+            /*Partie catégorie*/
+    .categorie h3 
+    {
+      font-size: 25px;     
+    }
+    .pers li ,.mescomp li ,.mesform li 
+    {
+        font-size: 18px;
+    }
+            /*Footer*/
+    .fond span, .coordonnee span
+    {
+        font-size: 1.1em;
+    }
+    .coordonnee li 
+    {
+        font-size: 20px;
+    }
+    .top, .bas
+    {
+        left: 95%;
+    } 
 }
 @media screen and (min-width:768px)
 {
-    
+            /*Présentation*/
+    .presentation
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;    
+    }
+    .photo
+    {
+        margin-left: 18%;
+    }
+    .objectif .gris 
+    { 
+        padding-left:2%;
+        font-size: 1em;
+        width: 100%;    
+    }
+    h2 
+    {
+        font-size: 1.5em;
+        margin-left: 1%;
+    }
+    .passion
+    {
+        font-size: 1em;
+        width: 95%;
+        padding-left: 5%;
+    }
+    .shadow
+    {
+        margin: 0 auto;
+    }
+        /*Footer*/
+    .fond span, .coordonnee span
+    {
+        font-size: 1.4em;
+    }
+    .coordonnee li 
+    {
+        font-size: 1.1em;
+    }
+   .top, .bas
+   {
+       left: 95%;
+   } 
 }
 @media screen and (min-width:992px)
 {
-   
+            /*Présentation*/
+   .texte
+   {
+       font-size: 1em;
+   }
+   .objectif p 
+   {
+        font-size: 1.2em;
+   }
+   .photo
+   {
+       margin-left: 25%;
+   }
+   h2 
+   {
+        font-size: 1.8em;
+   }
+   p 
+   {
+        font-size: 1.2em; 
+   }
+   .shadow
+   {
+       margin-top: 10%;
+   }
+        /*catégorie*/
+    .categorie h3 
+    {
+        font-size: 28px;     
+    }
+    .pers li ,.mescomp li ,.mesform li 
+    {
+        font-size: 1.1em;
+    }
+    .iconecompetences li
+    {
+        font-size: 1em;
+    }
+    /*Footer*/
+    .fond span, .coordonnee span
+    {
+        font-size: 1.6em;
+    }
+    .coordonnee li 
+    {
+        font-size: 24px;
+    }
+    .top, .bas
+   {
+       left: 97%;
+   }
 }
 @media screen and (min-width:1200px)
 {
-   
+    .texte
+   {
+       font-size: 1.3em;
+   }
+   .photo
+   {
+       margin-left: 30%;
+   }
+   .objectif .gris 
+    { 
+    padding-left:2%;
+    font-size: 1.2em;
+        
+    }
+    h2 
+    {
+        font-size: 1.7em;
+        margin-left: 1%;
+    }
+    .passion
+    {
+        font-size: 1.2em;  
+        padding-left: 5%;
+    }
+    .shadow
+    {
+        margin: 0 auto;
+    }
+    .iconecompetences li
+    {
+        font-size: 1.2em;
+    }
+    .coordonnee li 
+    {
+        font-size: 1.4em;
+    }
+    .fond span, .coordonnee span
+    {
+        font-size: 1.8em;
+    }
+    .top, .bas
+    {
+        left: 98%;
+    }
 }
 
             /********Page expériences********/
 
-@media screen and (min-width:320px)
+@media screen and (min-width:360px)
 {
    /*partie compétences*/
    .imgmetier
    {
        width: 80%;
-   }     
+       margin-left: 10%;
+   } 
+   .emploi
+   {
+       font-size: 0.9em;
+   }    
+}
+@media screen and (min-width:480px)
+{
+    .emploi
+    {
+        font-size: 1.1em;
+    }       
 }            
 @media screen and (min-width:576px)
 {
-        
+    .page2 /*titre*/
+    {
+        font-size: 1.1em;
+    }    
 }
 @media screen and (min-width:768px)
 {
-    
+  .emploi
+  {
+      margin-top: 3%;
+  }  
 }
 @media screen and (min-width:992px)
 {
