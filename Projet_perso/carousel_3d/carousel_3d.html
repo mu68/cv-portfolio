@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="carousel_3d.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>Carrousel 3D avec défilement automatique</title>
 </head>
 <body>
     <h3>Carrousel 3D avec défilement automatique</h3>
     <div class="contenu_carou_auto">
-        <div class="caroussel-image">
+        <div class="carrousel-image">
         <img src="https://picsum.photos/id/1022/400/266" alt>
         <img src="https://picsum.photos/id/1015/400/266" alt>
         <img src="https://picsum.photos/id/102/400/266" alt>
@@ -20,6 +21,20 @@
         <img src="https://picsum.photos/id/1025/400/266" alt>
         <img src="https://picsum.photos/id/1003/400/266" alt>
         </div>
-        </div>
+    </div>
+    <div id="Carrousel"></div>
+    <button id="startbtn">Start</button>
+    <button id="stopbtn">Stop</button>
+    <script>
+        startbtn.addEventListener("click", function(){
+            contenu_carou_auto.style.animation = "rotation 24s infinite  linear 4s";
+            contenu_carou_auto.style.webkitAnimation = "rotation 24s infinite  linear 4s";
+        });
+        stopbtn.addEventListener("click", function(){
+            contenu_carou_auto.animation = "";
+            contenu_carou_auto.webkitAnimation = "";
+        });
+    </script>
+  
 </body>
 </html>

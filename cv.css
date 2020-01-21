@@ -235,7 +235,12 @@ margin-top: 10%;
     font-size: 1.5em;
     text-align: center;
     margin-top: 2%;
-    color: #718093;
+    color: rgb(219, 56, 198);
+}
+.groupe .pprojet 
+{
+    
+    margin-left: 15%;
 }
 a 
 {
@@ -416,17 +421,25 @@ span
         font-size: 20px;
     }
             /*Footer*/
+    .contact
+    {
+        padding-left: 0;
+    }
     .fond span, .coordonnee span
     {
         font-size: 1.1em;
     }
+    .coordonnee
+    {
+        padding-left: 0;
+    }
     .coordonnee li 
     {
-        font-size: 20px;
+        font-size: 17px;
     }
     .top, .bas
     {
-        left: 95%;
+        left: 93%;
     } 
 }
 @media screen and (min-width:768px)
@@ -626,8 +639,88 @@ span
 }
 @media screen and (min-width:1200px)
 {
-    .emploi li,
+    .emploi li
     {
         font-size: 1.4em;
     }
 }
+
+                /*Page projets*/
+
+@media screen and (min-width:360px)
+{
+    .groupe
+    {
+        margin-left: 0.5%;
+    }
+    .groupe a 
+    {
+        padding-left: 0;
+    }
+    .groupe .pprojet
+    {
+        margin-left: 10%;  
+    }
+}
+@media screen and (min-width:480px)
+{
+    .groupe
+    {
+        margin-left: 15%;  
+    }
+}
+@media screen and (min-width:576px)
+{
+    .groupe
+    {
+        margin-left:20%;
+    }
+    .groupe .pprojet
+    {
+        margin-left: 7%;  
+    }
+}
+@media screen and (min-width:768px)
+{
+    .groupe
+    {
+       margin-left: 0.5%; 
+    }
+    .groupe  a img
+    {
+        width: 150px;
+    }
+    .groupe a 
+    {
+        font-size: 0.8em;
+    }
+    .groupe .pprojet 
+    {
+        font-size: 1em;
+        margin: 0;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .groupe
+    {
+        margin-left: 0.5%;
+    }
+    .groupe  a img
+    {
+        width: 200px;
+    }
+}
+@media screen and (min-width:1200px)
+{
+    .groupe
+    {
+        margin-left: 4%;
+    }
+}
+@media screen and (min-width:1400px)
+{
+    .groupe
+    {
+        margin-left: 7%;
+    }
