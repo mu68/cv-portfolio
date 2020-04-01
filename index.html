@@ -11,50 +11,52 @@
 
     <title>CV développeur intégrateur web - Murielle Sperissen</title>
 </head>
-<body >
-    <header >
-        <div class="menu" id="ancre0">
+<body>
+
+    <header>
+        <div class="menu" id="entete">
             <div class="inner-width">
-                <a href="#" class="logo"><img src="images/logo2.png" alt=""></a>
+                <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
                 <i class="menu-toggle-btn fas fa-bars"></i>
-            </div>    
+            </div>
             <nav class="navigation-menu">
-                <a href="index.html"><i class="fas fa-home home"></i>Acceuil</a>
-                <a href="experiences.html"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
-                <a href="projets.html"><i class="fab fa-buffer buffer"></i>Projets</a>
-                <a href="#ancre"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home home"></i>Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="experiences.html"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
+                    </li>
+                    <li>
+                        <a href="projets.html"><i class="fab fa-buffer buffer"></i>Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+                    </li>
+                </ul>
             </nav>
         </div>       
-       <div class="banniere"> 
-          <p class="banniere_dev"><img src="images/banniere2.png" class="img-banniere" alt="developpeur integrateur web"></p>
+        <div class="banniere"> 
+            <p class="banniere_dev"><img src="images/banniere.png" class="img-banniere" alt="developpeur integrateur web"></p>
         </div>
-    
-    
-        <script type="text/javascript">
-            $(".menu-toggle-btn").click(function()
-            {
-                $(this).toggleClass("fa-times");
-                $(".navigation-menu").toggleClass("active");
-            });
-        </script>
-    
-    
     </header>
     
     <main>
         <!------------Présentation avec photo------------------>
         <aside class="presentation">
-            <div><h2 class="mon_nom">Murielle SPERISSEN</h2></div>
-                <img src="images/moi2.png" class="photo" width="160" height="220" alt="photo de moi">
-                    <div class="objectif">
-                        <p class="pobjectif">
-                            <strong class="motsgras">Autodidacte et persévérante</strong> , je suis une jeune développeuse qui souhaite <strong class="motsgras">intégrer une équipe dynamique</strong> 
-                             et relever de nouveaux <strong class="motsgras">challenges</strong>, afin <strong class="motsgras">d'accroître mes compétences</strong>  dans un
-                            domaine qui me passionne. Mon objectif étant part la suite de travailler de chez moi. Mes
-                            diverses expériences professionnelles mon permis une approche différente de la <strong class="motsgras">clientèle</strong>  et
-                            de répondre à leurs besoins.
-                        </p>
-                    </div><br>
+            <div>
+                <h1 class="mon_nom">Murielle SPERISSEN</h1>
+            </div>
+            <img src="images/moi2.png" class="photo" width="160" height="220" alt="photo de moi">
+            <div class="objectif">
+                <p class="pobjectif">
+                    <strong class="motsgras">Autodidacte et persévérante</strong> , je suis une jeune développeuse qui souhaite <strong class="motsgras">intégrer une équipe dynamique</strong> 
+                        et relever de nouveaux <strong class="motsgras">challenges</strong>, afin <strong class="motsgras">d'accroître mes compétences</strong>  dans un
+                    domaine qui me passionne. Mon objectif étant part la suite de travailler de chez moi. Mes
+                    diverses expériences professionnelles mon permis une approche différente de la <strong class="motsgras">clientèle</strong>  et
+                    de répondre à leurs besoins.
+                </p>
+            </div><br>
         </aside>
         <!---------------Description------------------------->
         <section class="description">
@@ -81,19 +83,21 @@
         <!---------------Catégorie  3 colonnes------------------>
         <div class="categorie ">
             <div class="personnalite">
-                <p><i class="far fa-smile-wink smile "></i></p>
-                    <h3 class="h3index">PERSONNALITE</h3>
-                        <p class="perso">
-                        Sens de l'écoute <br>
-                        Esprit d'équipe <br>                
-                        Percévérance <br>
-                        Autodidacte <br>
-                        Polyvalente <br>
-                        Ponctuelle <br>
-                        Autonome <br>
-                        Efficacité <br>               
-                        Intégrité <br>               
-                        Rapidité <br>
+                <p>
+                    <i class="far fa-smile-wink smile "></i>
+                </p>
+                <h3 class="h3index">PERSONNALITE</h3>
+                <p class="perso">
+                Sens de l'écoute <br>
+                Esprit d'équipe <br>                
+                Percévérance <br>
+                Autodidacte <br>
+                Polyvalente <br>
+                Ponctuelle <br>
+                Autonome <br>
+                Efficacité <br>               
+                Intégrité <br>               
+                Rapidité <br>
                 </p>
             </div>
        
@@ -118,19 +122,17 @@
         
             <div class="formation">
                 <p><i class="fas fa-graduation-cap graduation-cap"></i></p>
-                    <h3 class="h3index">FORMATION</h3>
-                        <p class="form">
-                            <i class="fas fa-circle circle"></i>Certification Développement de sites web dynamiques (Option langage PHP) |2020<br>
-                            <i class="fas fa-circle circle"></i>Certification des fondamentaux du marketing numérique Google Digital Active  |  2019 <br>                
-                            <i class="fas fa-circle circle"></i>C.E.I.M Formation word,excel, works  |  1997 <br>
-                            <i class="fas fa-circle circle"></i>CAP Boulangerie  |  1994<br>                   
-                        </p>
+                <h3 class="h3index">FORMATION</h3>
+                <p class="form">
+                    <i class="fas fa-circle circle"></i>Certification Développement de sites web dynamiques (Option langage PHP) |2020<br>
+                    <i class="fas fa-circle circle"></i>Certification des fondamentaux du marketing numérique Google Digital Active  |  2019 <br>                
+                    <i class="fas fa-circle circle"></i>C.E.I.M Formation word,excel, works  |  1997 <br>
+                    <i class="fas fa-circle circle"></i>CAP Boulangerie  |  1994<br>                   
+                </p>
             </div>
         </div>
               
         <p class="permis">Permis B -Vehicule Personnel</p>
-        
-        
 
             <!---------Centre d'intérêt--------> 
 
@@ -173,7 +175,8 @@
         </section><br> <!--fin ensemble-->
 
     </main> 
-    <footer>        <footer class="fond" id="ancre">
+    
+    <footer class="fond" id="contact">
         <section class="contact-coordonnee">
             <div class="contact">
                 <i class="fas fa-pen-nib fa-3x "></i><span class="box">Me Contacter ici</span>
@@ -216,16 +219,13 @@
            
         <!------ flèche haut et bas ----------->
             <div class="top">
-                <a href="#ancre0" class="top"><i class="fas fa-arrow-up icor"></i> </a>
+                <a href="#entete" class="top"><i class="fas fa-arrow-up icor"></i> </a>
             </div>
             <div class="bas">
-                <a href="#ancre" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
+                <a href="#contact" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
             </div>
     </footer>
-        
-    
-    </footer>
 
-    
+    <script type="text/javascript" src="cv.js"></script>
 </body>
 </html>
