@@ -12,33 +12,33 @@
     <title>Expérience Professionnelle - Murielle Sperissen</title>
 </head>
 <body>
+
     <header>
-        <div class="menu" id="ancre0">
+        <div class="menu" id="entete">
             <div class="inner-width">
-                <a href="#" class="logo"><img src="images/logo2.png" alt=""></a>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
                 <i class="menu-toggle-btn fas fa-bars"></i>
-            </div>    
+            </div>
             <nav class="navigation-menu">
-                <a href="index.html"><i class="fas fa-home home"></i>Acceuil</a>
-                <a href="experiences.html"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
-                <a href="projets.html"><i class="fab fa-buffer buffer"></i>Projets</a>
-                <a href="#ancre"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home home"></i>Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="experiences.html"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
+                    </li>
+                    <li>
+                        <a href="projets.html"><i class="fab fa-buffer buffer"></i>Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+                    </li>
+                </ul>
             </nav>
         </div>       
-       <div class="banniere"> 
-          <p class="banniere_dev"><img src="images/banniere2.png" class="img-banniere" alt="developpeur integrateur web"></p>
+        <div class="banniere"> 
+            <p class="banniere_dev"><img src="images/banniere.png" class="img-banniere" alt="developpeur integrateur web"></p>
         </div>
-    
-    
-        <script type="text/javascript">
-            $(".menu-toggle-btn").click(function()
-            {
-                $(this).toggleClass("fa-times");
-                $(".navigation-menu").toggleClass("active");
-            });
-        </script>
-    
-    
     </header>
 
     <main>
@@ -126,11 +126,11 @@
             
     </main>
 
-    <footer>        <footer class="fond" id="ancre">
+    <footer class="fond" id="contact">
         <section class="contact-coordonnee">
             <div class="contact">
                 <i class="fas fa-pen-nib fa-3x "></i><span class="box">Me Contacter ici</span>
-                <form method="post" action="" >
+                <form method="post" action="https://formspree.io/sperissen.murielle@orange.fr">
                     <div class="nom">
                         <label for="nom">Nom</label>
                         <input type="name" required>  
@@ -153,30 +153,32 @@
                     </div><br>
                 </form>
             </div>
-                    <!------------Coordonnee---------------->
+            <!------------Coordonnee---------------->
     
             <div class="coordonnee">
                 <i class="fas fa-poll fa-3x icor"></i><span class="box1">Coordonnée</span>
-                <ul class="adresse">
-                    <li><i class="fas fa-envelope icor"></i>9 Avenue de la gare 86400 ST-SAVIOL</li><br>
-                    <li><i class="fas fa-mobile-alt icor"></i>06-16-55-16-08</li><br>
-                    <li><i class="fas fa-at icor"></i>sperissen.murielle@orange.fr</li><br>
-                    <li><a class="cv" href="fichiers/cv-developpeur-integrateur-web-murielle-sperissen.pdf" target="_blank">
-                        <i class="fas fa-file-alt icor"></i>Télécharger mon CV</a></li>
-                </ul>
+                <div class="adresse">
+                    <p><i class="fas fa-envelope icor"></i>9 Avenue de la gare <br>86400 ST-SAVIOL</p>
+                    <p><i class="fas fa-mobile-alt icor"></i>06-16-55-16-08</p>
+                    <p><i class="fas fa-at icor"></i>sperissen.murielle@orange.fr</p>
+                    <p>
+                        <a class="cv" href="fichiers/cv-developpeur-integrateur-web-murielle-sperissen.pdf" target="_blank">
+                            <i class="fas fa-file-alt icor"></i>Télécharger mon CV
+                        </a>
+                    </p>
+                </div>
             </div>
         </section>
            
         <!------ flèche haut et bas ----------->
-            <div class="top">
-                <a href="#ancre0" class="top"><i class="fas fa-arrow-up icor"></i> </a>
-            </div>
-            <div class="bas">
-                <a href="#ancre" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
-            </div>
+        <div class="top">
+            <a href="#entete" class="top"><i class="fas fa-arrow-up icor"></i> </a>
+        </div>
+        <div class="bas">
+            <a href="#contact" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
+        </div>
     </footer>
-        
-    
-    </footer>
+
+    <script type="text/javascript" src="cv.js"></script>
 </body>
 </html>
