@@ -2,290 +2,230 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <script src="https://kit.fontawesome.com/286e8b4ec4.js" crossorigin="anonymous"></script>
-    <!-- style bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Typographie - Font Face -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- mon style -->
     <link rel="stylesheet" href="cv.css">
-
-    <title>CV Murielle Sperissen</title>
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <script src="https://kit.fontawesome.com/286e8b4ec4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro&display=swap" rel="stylesheet">
     
-<body>
-    <div class="container-fluid">
-        <!-----------------------------------------------
-                Partie menu
-            ------------------------------------------------>
-        <header class="row  gris" id="ancre0">
-            <div class="col-sm-12 px-0">
-                <nav class="navbar navbar-expand-lg navbar-light  border-menu gris pl-5">
-                    <a class="navbar-brand" href="#">
-                        <img class="terre" src="images/logo1.png" alt="logos">
-                    </a>
-                    <button class="navbar-toggler pl-3 " type="button" data-toggle="collapse"
-                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-
-                            <li class="nav-item active ">
-                                <p><a class="nav-link pl-5 texte " href="index.html">Acceuil<span
-                                            class="sr-only">(current)</span></a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="experiences.html"> Expériences</a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="projets.html">Projets</a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="#ancre">contact</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- partie banniere -->
-        <div class="row bordure0">
-            <div class="col-sm-12 px-0 ">
-                <h1><img src="images/banniere2.png" class="d-block w-100 " alt="developpeur integrateur web"></h1>
-            </div>
+    <title>CV développeur intégrateur web</title>
+</head>
+<body >
+    <header >
+        <div class="menu" id="ancre0">
+            <div class="inner-width">
+                <a href="#" class="logo"><img src="images/logo2.png" alt=""></a>
+                <i class="menu-toggle-btn fas fa-bars"></i>
+            </div>    
+            <nav class="navigation-menu">
+                <a href="index.php"><i class="fas fa-home home"></i>Acceuil</a>
+                <a href="experiences.php"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
+                <a href="projets.php"><i class="fab fa-buffer buffer"></i>Projets</a>
+                <a href="#ancre"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+            </nav>
+        </div>       
+       <div class="banniere"> 
+          <p class="banniere_dev"><img src="images/banniere2.png" class="img-banniere" alt="developpeur integrateur web"></p>
         </div>
-        <div class="main">
-            <!-- partie présentation -->
-            <div class="row presentation">
-                <div class="col-sm-4 mt-3 px-0">
-                    <img src="images/moi2.png" class="photo" width="160" height="220" alt="photo de moi">
+    
+    
+        <script type="text/javascript">
+            $(".menu-toggle-btn").click(function()
+            {
+                $(this).toggleClass("fa-times");
+                $(".navigation-menu").toggleClass("active");
+            });
+        </script>
+    
+    
+    </header>
+    
+    <main>
+        <!------------Présentation avec photo------------------>
+        <aside class="presentation">
+            <div><h2 class="mon_nom">Murielle SPERISSEN</h2></div>
+                <img src="images/moi2.png" class="photo" width="160" height="220" alt="photo de moi">
                     <div class="objectif">
-                        <p class="mt-2 ml-2 gris">
-                            Autodidacte et persévérante, je suis une jeune développeuse qui souhaite intégrer une équipe
-                            dynamique et relever de nouveaux challenges, afin d'accroître mes compétences dans un
-                            domaine qui me passionne. Mon objectif étant part la suite de travailler en freelance. Mes
-                            diverses expériences professionnelles mon permis une approche différente de la clientèle et
+                        <p class="pobjectif">
+                            <strong class="motsgras">Autodidacte et persévérante</strong> , je suis une jeune développeuse qui souhaite <strong class="motsgras">intégrer une équipe dynamique</strong> 
+                             et relever de nouveaux <strong class="motsgras">challenges</strong>, afin <strong class="motsgras">d'accroître mes compétences</strong>  dans un
+                            domaine qui me passionne. Mon objectif étant part la suite de travailler de chez moi. Mes
+                            diverses expériences professionnelles mon permis une approche différente de la <strong class="motsgras">clientèle</strong>  et
                             de répondre à leurs besoins.
                         </p>
-                    </div>
-                </div>
-                <div class="col-sm-8 mt-1 mb-3 px-0">
-                    <h2 class="h2index ml-3">Murielle Sperissen</h2>
-                    <p class="passion">
-                        <strong class="motsgras"> Passionné par l'informatique</strong> depuis de nombreuses années, j'ai cherché à me
-                        dépanner sur des problèmes en tous genres sur mon PC et aujourd'hui, je dépanne les PC des
-                        autres, et même à distance suivant le cas. Ayant déjà commencé en <strong class="motsgras"> autodidacte</strong>
-                        un site web sur mes <strong class="motsgras"> passions créatives</strong> (tricot, crochet, couture …). Je voyais
-                        la magie opérer après un bout de code sur mon site et décidas d'aller plus loin.
-                    </p>
-                    <p class="passion">
-                        J'ai donc tout naturellement choisi d'orienter ma reconversion vers le <strong class="motsgras"> développement
-                            intégrateur web</strong>. J'ai <strong class="motsgras"> la soif d'apprendre</strong> toujours de <strong class="motsgras">
-                            nouveaux langages et technologie</strong>. Je cherche continuellement de nouvelles
-                        ressources sur Internet pour <strong class="motsgras"> m'améliorer et rester à jour</strong>.
-                        Internet est aujourd'hui partout et tourné vers l'avenir, Google est mon ami.
-                    </p>
-                    <div class="shadow">
-                        <a href="experiences.html">Plus de détail: ici </a>
-                    </div>
-                </div>
-            </div>
-            <!-- partie 3 colonnes -->
-            <div class="row gris mb-2  p-0 categorie">
-                <div class="col-sm-4   p-0 bordure">
-                    <h3 class="h3index pt-2">PERSONNALITE</h3>
-                    <hr>
-                    <ul class="pers">
-                        <li><i class="fas fa-female"></i> Autonome</li>
-                        <li><i class="fas fa-female"></i> Sens de l'écoute</li>
-                        <li><i class="fas fa-female"></i> Esprit d'équipe</li>
-                        <li><i class="fas fa-female"></i> Ponctuelle</li>
-                        <li><i class="fas fa-female"></i> Polyvalente</li>
-                        <li><i class="fas fa-female"></i> Percévérance</li>
-                        <li><i class="fas fa-female"></i> Autodidacte</li>
-                        <li><i class="fas fa-female"></i> Rapidité</li>
-                        <li><i class="fas fa-female"></i> Efficacité</li>
-                        <li><i class="fas fa-female"></i> Intégrité</li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 p-0 bordure">
-                    <h3 class="h3index pt-2">COMPETENCES</h3>
-                    <hr>
-                    <ul class="mescomp">
-                        <li><i class="fas fa-laptop"></i> Conception de bannières</li>
-                        <li><i class="fas fa-laptop"></i> Réparer d'ordinateur </li>
-                        <li><i class="fas fa-laptop"></i> Installation de logiciels </li>
-                        <li><i class="fas fa-laptop"></i> Changer un écran de pc</li>
-                        <li><i class="fas fa-laptop"></i> Assemblage de Pc </li>
-                        <li><i class="fas fa-laptop"></i> Formater et réinstaller l'OS</li>
-                        <li><i class="fas fa-laptop"></i> Retouche d'image/photo</li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 p-0 bordure">
-                    <h3 class="h3index pt-2">FORMATION</h3>
-                    <hr>
-                    <ul class="mesform">
-                        <li><i class="fas fa-scroll"></i> CAP Boulangerie</li>
-                        <li><i class="fas fa-scroll"></i> C.E.I.M Formation word,excel, works</li>
-                        <li><i class="fas fa-scroll"></i> Certification des fondamentaux du marketing numérique
-                            Google Digital Active</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- partie Barre de progression -->
-            <div class="row blockbar">
-                <div class="col-sm-4  mt-3 mb-4">
-                    <div class="progress-bar1 couleur">
-                    <p class="mt-2">Bureautique</p>
-                        
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-3 mb-4">
-                    <div class="progress-bar2 couleur">
-                        <p class="mt-2">Réparation de PC</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-3 mb-4">
-                    <div class="progress-bar3 couleur">
-                        <p class="mt-2">Photofiltre</p> 
                     </div><br>
-                
-                </div>
-            </div>
-        </div>
-        <div class="row gris mb-3">
-            <div class="col-md-12 ">
-                <h1 class="h1interet">Centre d'interêt</h1>
-            </div>      
-        </div>
-        <div class="ensemble">
-            <div class="row   ml-5 ">     
-                <div class=" col-sm-3">            
-                    <figure class="interet">
-                        <img  src="images/informatique.jpg" alt="informatique">
-                        <figcaption> Informatique</figcaption>
-                    </figure>
-                </div>
-                <div class=" col-sm-3">               
-                    <figure class="interet">
-                        <img src="images/tricot.jpg" alt="tricot">
-                        <figcaption> Tricot</figcaption>
-                    </figure>
-                </div>       
-                <div class=" col-sm-3">
-                    <figure class="interet">
-                        <img src="images/crochet.jpg" alt="crochet">
-                        <figcaption>Crochet </figcaption>
-                    </figure>
-                </div> 
-                <div class=" col-sm-3">
-                    <figure class="interet">
-                        <img src="images/savon_main.jpg" alt="crochet">
-                        <figcaption>Diy produits <br> d'entretien /<br>cosmétique </figcaption>
-                    </figure>
-                </div>                                 
-            </div>
-            <div class="row mt-1 ml-5">
-                <div class=" col-sm-3">
-                    <figure class="interet">
-                        <img src="images/eponge_eco.jpg" alt="crochet">
-                        <figcaption>Eponge <br> écologique </figcaption>
-                    </figure>
-                </div> 
-                <div class=" col-sm-3">
-                    <figure class="interet">
-                        <img  src="images/ecureuil.jpg" alt="écureuil sur tuile">
-                        <figcaption>Décore <br> sur tuile </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-3">
-                    <figure class="interet">
-                        <img  src="images/dpchat.jpg" alt="chat">
-                        <figcaption>Diamond <br> painting </figcaption>
-                    </figure>
-                </div>
-                <div class=" col-sm-3">
-                    <figure class="interet">
-                        <img  src="images/lampe_carre.jpg" alt="lampe en bois">
-                        <figcaption>Object en<br> bois </figcaption>
-                    </figure>
-                </div>       
-            </div>       
-        </div>
-        <!--fin de main-->
-        <!-- footer -->
-        <footer class="row pl-2 fond " id="ancre">
-            <div class="col-sm-6 contact">
-                <div class="box">
-                    <i class="fas fa-pen-nib fa-3x mr-1 mb-5 mt-4"></i><span>Me Contacter ici</span>
-                    <form class=" w-100 ">
-                        <div class="form-group formulaire ">
-                            <label for="exampleFormControlInput1">Nom</label>
-                            <input type="name" required="" class="form-control" id="exampleFormControlInput1">  
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlInput1">Société</label>
-                            <input type="name" required="" class="form-control" id="exampleFormControlInput1">                          
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" required="" class="form-control" id="exampleFormControlInput1">
-                                
-                        </div>
+        </aside>
+        <!---------------Description------------------------->
+        <section class="description">
+            <p class="passion">
+                <strong class="motsgras"> Passionnée par l'informatique</strong> depuis de nombreuses années, j'ai cherché à me
+                dépanner sur des problèmes en tous genres sur mon PC et aujourd'hui, je dépanne les PC des
+                autres, et même à distance suivant le cas. Ayant déjà commencé en <strong class="motsgras"> autodidacte</strong>
+                un site web sur mes <strong class="motsgras"> passions créatives</strong> (tricot, crochet, couture …). Je voyais
+                la magie opérer après un bout de code sur mon site et décidas d'aller plus loin.
+            </p><br>
+            <p class="passion">
+                J'ai donc tout naturellement choisi d'orienter ma reconversion vers le <strong class="motsgras"> développement
+                    intégrateur web</strong>. J'ai <strong class="motsgras"> la soif d'apprendre</strong> toujours de <strong class="motsgras">
+                    nouveaux langages et technologie</strong>. Je cherche continuellement de nouvelles
+                ressources sur Internet pour <strong class="motsgras"> m'améliorer et rester à jour</strong>.
+                Internet est aujourd'hui partout et tourné vers l'avenir, Google est mon ami.
+            </p><br>
+                 <!------ Shadow---------->
+            <div class="shadow">
+                <a href="experiences.php">Plus de détail: ici </a>
+            </div><br>
+        </section>
 
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea required="" class="form-control" id="exampleFormControlTextarea1"></textarea>
-                            
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn mb-1">Envoyer</button>
-                            <button type="reset" class="btn mb-1">Retour</button>
-                        </div>
-                    </form>
-                </div>
+        <!---------------Catégorie  3 colonnes------------------>
+        <div class="categorie ">
+            <div class="personnalite">
+                <p><i class="far fa-smile-wink smile "></i></p>
+                    <h3 class="h3index">PERSONNALITE</h3>
+                        <p class="perso">
+                        Sens de l'écoute <br>
+                        Esprit d'équipe <br>                
+                        Percévérance <br>
+                        Autodidacte <br>
+                        Polyvalente <br>
+                        Ponctuelle <br>
+                        Autonome <br>
+                        Efficacité <br>               
+                        Intégrité <br>               
+                        Rapidité <br>
+                </p>
             </div>
-            <div class="col-sm-6 coordonnee">
-                <i class="fas fa-poll fa-3x  mr-2 mb-5 mt-4"></i><span>Coordonnée</span>
-                <ul class="mt-2">
-                    <li><i class="fas fa-envelope mr-1"></i>9 Avenue de la gare 86400 ST-SAVIOL</li><br>
-                    <li><i class="fas fa-mobile-alt mr-1"></i>06-16-55-16-08</li><br>
-                    <li><i class="fas fa-at mr-1"></i>sperissen.murielle@orange.fr</li><br>
-                    <li><a class="cv" href="fichiers/cv-developpeur-integrateur-web-murielle-sperissen.pdf" target="_blank">
-                        <i class="fas fa-file-alt mr-1"></i>Télécharger mon CV</a></li>
+       
+        
+            <div class="competence">
+                <p><i class="fas fa-cogs cogs"></i></p>
+                    <h3 class="h3index">COMPETENCE</h3>
+                        <p class="comp">
+                            <i class="fas fa-desktop desktop"></i>Maîtrice d'internet<br>
+                            <i class="fas fa-tools tools"></i>Réparation de PC<br>
+                            <img class="social" src="images/share.png" alt="logo réseaux sociaux"> Réseaux sociaux<br>
+                            <img src="https://img.icons8.com/color/26/000000/python.png"/>Python / Django<br> 
+                            <i class="fab fa-html5 html5"></i>Html <i class="fab fa-css3-alt css3"></i>Css<br> 
+                            <i class="fas fa-folder-open folder"></i>Bureautique <br> 
+                            <i class="fas fa-film film"></i>Photofiltre<br>
+                            <i class="fab fa-wordpress wordpress"></i>Wordpress<br>    
+                            <i class="fab fa-php php"></i>Php Objet<br>    
+                            <i class="fab fa-laravel laravel"></i>laravel<br>                       
+                        </p>
+            </div>
+      
+        
+            <div class="formation">
+                <p><i class="fas fa-graduation-cap graduation-cap"></i></p>
+                    <h3 class="h3index">FORMATION</h3>
+                        <p class="form">
+                            <i class="fas fa-circle circle"></i>Certification Développement de sites web dynamiques (Option langage PHP) |2020<br>
+                            <i class="fas fa-circle circle"></i>Certification des fondamentaux du marketing numérique Google Digital Active  |  2019 <br>                
+                            <i class="fas fa-circle circle"></i>C.E.I.M Formation word,excel, works  |  1997 <br>
+                            <i class="fas fa-circle circle"></i>CAP Boulangerie  |  1994<br>                   
+                        </p>
+            </div>
+        </div>
+              
+        <p class="permis">Permis B -Vehicule Personnel</p>
+        
+        
+
+            <!---------Centre d'intérêt--------> 
+
+        <h1 class="h1interet">Centre d'intérêt</h1>
+                           
+        <section class="ensemble ">               
+            <div class="interet informatique">                
+                    <p><img  src="images/informatique.jpg" alt="informatique"></p>
+                    <p> Informatique <br> Technologie</p> 
+            </div>
+            <div class="interet tricot">               
+                    <p><img src="images/tricot.jpg" alt="tricot"></p>
+                    <p> Tricot</p>  
+            </div>
+            <div class="interet diy">               
+                    <p><img src="images/savon_main.jpg" alt="savon_main"></p>
+                    <p> Diy d'entretien<br>cosmétique </p>  
+            </div>
+            <div class="interet crochet">                
+                    <p><img src="images/crochet.jpg" alt="crochet"></p>
+                    <p> Crochet </p> 
+            </div>
+            
+            <div class="interet eponge">                
+                    <p><img src="images/eponge_eco.jpg" alt="éponge ecologique"></p>
+                    <p> Eponge <br> écologique </p> 
+            </div>
+            <div class="interet decor">               
+                    <p> <img  src="images/ecureuil.jpg" alt="écureuil sur tuile"></p>
+                    <p> Décore <br> sur tuile</p>  
+            </div>
+            <div class="interet diam">                
+                    <p><img  src="images/dpchat.jpg" alt="chat"></p>
+                    <p> Diamond <br> painting</p> 
+            </div>
+            <div class="interet objet">               
+                    <p><img  src="images/lampe_carre.jpg" alt="lampe en bois"></p>
+                    <p> Object <br>en bois </p>  
+            </div>          
+        </section><br> <!--fin ensemble-->
+
+    </main> 
+    <footer>        <footer class="fond" id="ancre">
+        <section class="contact-coordonnee">
+            <div class="contact">
+                <i class="fas fa-pen-nib fa-3x "></i><span class="box">Me Contacter ici</span>
+                <form method="post" action="" >
+                    <div class="nom">
+                        <label for="nom">Nom</label>
+                        <input type="name" required>  
+                    </div><br>
+                    <div class="société">
+                        <label for="societe">Société</label>
+                        <input type="name" required>                          
+                    </div><br>
+                    <div class="email ">
+                        <label for="email">Email</label>
+                        <input type="email" required>      
+                    </div><br>
+                    <div class="message ">
+                        <label for="message">Message</label>
+                        <textarea name="message" required></textarea>    
+                    </div><br>
+                    <div class="bouton">
+                        <button type="submit" class="btn">Envoyer</button>
+                        <button type="reset" class="btn ">Retour</button>
+                    </div><br>
+                </form>
+            </div>
+                    <!------------Coordonnee---------------->
+    
+            <div class="coordonnee">
+                <i class="fas fa-poll fa-3x icor"></i><span class="box1">Coordonnée</span>
+                <ul class="adresse">
+                    <li><i class="fas fa-envelope icor"></i>9 Avenue de la gare 86400 ST-SAVIOL</li><br>
+                    <li><i class="fas fa-mobile-alt icor"></i>06-16-55-16-08</li><br>
+                    <li><i class="fas fa-at icor"></i>sperissen.murielle@orange.fr</li><br>
+                    <li><a class="cv" href="CV dev 2020.pdf" target="_blank">
+                        <i class="fas fa-file-alt icor"></i>Télécharger mon CV</a></li>
                 </ul>
             </div>
-            <!-- flèche haut et bas -->
+        </section>
+           
+        <!------ flèche haut et bas ----------->
             <div class="top">
-                <a href="#ancre0" class="top"><i class="fas fa-arrow-up "></i> </a>
-
+                <a href="#ancre0" class="top"><i class="fas fa-arrow-up icor"></i> </a>
             </div>
             <div class="bas">
-                <a href="#ancre" class="bas"><i class="fas fa-arrow-down"></i> </a>
+                <a href="#ancre" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
             </div>
-        </footer>
-    </div> <!-- fin du container-->
+    </footer>
+        
+    
+    </footer>
 
-
-
-    <!-- scrype boostrap a toujours mettre a la fin du body -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-        <script scr="cv.js"></script>
+    
 </body>
-
 </html>
