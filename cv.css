@@ -108,7 +108,7 @@ a
     cursor: pointer;
 }
     /*----BANNIERE----*/
-p .banniere_dev /*problème de ligne blance*/
+p .banniere_dev /*problème de ligne blanche*/
 {
    min-height: 312px;
 }
@@ -361,8 +361,8 @@ p .banniere_dev /*problème de ligne blance*/
 }
 .interet img
 {
-    width: 50px;
-    height: 60px;
+    width: 30px;
+    height: 40px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 15px #555;
             box-shadow: 0px 0px 15px #555;
