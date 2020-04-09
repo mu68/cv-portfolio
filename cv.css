@@ -328,14 +328,6 @@ p .banniere_dev /*problème de ligne blanche*/
     color: rgb(180, 106, 241) ;
     margin-right: 2%;
 }
-        /*----Permis----*/
-.permis
-{
-    text-align: center;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-bottom: 3%;
-}
 
 /*--Partie centre d'interêt--
 ----------------------------*/
@@ -356,8 +348,9 @@ p .banniere_dev /*problème de ligne blanche*/
 }
 .interet
 {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 8%;
+    font-size: 0.8em;
 }
 .interet img
 {
@@ -367,26 +360,7 @@ p .banniere_dev /*problème de ligne blanche*/
     -webkit-box-shadow: 0px 0px 15px #555;
             box-shadow: 0px 0px 15px #555;
 }
-.interet p
-{
-    font-size: 0.8em;
-}
-.tricot
-{
-    margin-left: 20%;
-}
-.crochet
-{
-    margin-left: 18%;
-}
-.decor
-{
-    margin-left: 25%;
-}
-.objet 
-{
-    margin-left: 30%;
-}
+
 /****************************************
             MEDIA QUERIES  index
 *****************************************/
@@ -409,11 +383,7 @@ p .banniere_dev /*problème de ligne blanche*/
     {
         padding-left: 28%;
     }
-    /*---Centre d'intérêt---*/
-    .ensemble
-    {
-        margin-left: 10%;
-    }
+    
 }
 @media screen and (min-width:576px)
 {
@@ -492,6 +462,10 @@ p .banniere_dev /*problème de ligne blanche*/
         font-size: 1.1em;
     }
     /*---Centre d'intérêt---*/
+    .ensemble
+    {
+        margin-left: 8%;
+    }
     
 }
 @media screen and (min-width:992px)
