@@ -147,7 +147,7 @@ p .banniere_dev /*problème de ligne blanche*/
 -----------------*/
 .passion
 {
-    margin: 0 2%;
+    margin: 2%;
 }
 
 /***Shadow animé et redirection page***/
@@ -221,6 +221,10 @@ p .banniere_dev /*problème de ligne blanche*/
 }
 /*-- Catégorie 3 colonnes--
 --------------------------*/
+.h2interet
+{
+    margin-top: 5%;
+}
 .h3index
 {
     text-align: center;
@@ -331,7 +335,7 @@ p .banniere_dev /*problème de ligne blanche*/
 
 /*--Partie centre d'interêt--
 ----------------------------*/
-.h1interet
+.h2interet
 {
     text-align: center;
     font-size: 1.4em;
@@ -366,22 +370,29 @@ p .banniere_dev /*problème de ligne blanche*/
 *****************************************/
 @media screen and (min-width:480px)
 {
+    /**Présentation **/
     .mon_nom
     {
-        margin-left: 30%;
+        margin-left: 28%;
     }
     .photo
     {
         margin-left: 32%;
     }
+    
     /*---Catégorie  3 colonnes---*/
-    .pers, .mescomp, .mesform
+    .pers, .comp, .form
     {
         margin-left: 4%;
     }
     .comp
     {
-        padding-left: 28%;
+        padding-left: 24%;
+    }
+    .interet
+    {
+        margin-left: 25%;
+        margin-right:10% ;
     }
     
 }
@@ -389,7 +400,7 @@ p .banniere_dev /*problème de ligne blanche*/
 {
     .mon_nom
     {
-        margin-left: 28%;
+        margin-left: 26%;
         font-size: 1.5em;
     }
     .photo
@@ -397,60 +408,54 @@ p .banniere_dev /*problème de ligne blanche*/
         margin-left: 36%;
         }
     /*---Catégorie  3 colonnes---*/
-    .pers, .mescomp, .mesform
+    .pers
     {
         margin-left: 8%;
     }
+    .comp
+    {
+        padding-left: 28%;
+    }
+    .form
+    {
+        margin-left: 2%;
+    }
 
     /*---Centre d'intérêt---*/
-    .h1interet
+    .h2interet
     {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     .ensemble
     {
         margin-left: 0;
     }
-    .tricot
+    .interet
     {
-        margin-left: 15%;
+        margin-left: 28%;
+       
     }
-    .diy 
-    {
-        margin-left: 20%;
-    }
-    .crochet
-    {
-        margin-left: 15%;
-    }
-    .eponge 
-    {
-        margin-left: 22%;
-    }
-    .decor
-    {
-        margin-left: 15%;
-    }
-    .diam
-    {
-        margin-left: 25%;
-    }
-    .objet 
-    {
-        margin-left: 30%;
-    }
+    
 }
 @media screen and (min-width:768px)
 {
+    .navigation-menu, ul
+    {
+        float: none;
+        display: flex;
+        flex-direction: row;
+         margin-left: 2%;
+    }
     .mon_nom
     {
-        margin-left: 32%;
+        margin-left: 30%;
     }
     .photo
     {
-        margin-left: 40%;
+        margin-left: 38%;
     }
     /*---Catégorie  3 colonnes---*/
+
     .h3index 
     {
         font-size: 1.2em;
@@ -461,6 +466,11 @@ p .banniere_dev /*problème de ligne blanche*/
         width: 60%;
         font-size: 1.1em;
     }
+    .comp
+    {
+        padding-left: 24%;
+    }
+    
     /*---Centre d'intérêt---*/
     .ensemble
     {
@@ -873,7 +883,7 @@ button[type="submit"], [type="reset"]
 *****************************************/
 
 /*---------------------------
-        --FOOTER---
+        --FOOTER---(
 ----------------------------*/
 @media screen and (min-width:480px)
 {         
@@ -906,8 +916,9 @@ button[type="submit"], [type="reset"]
      -------------------------*/
     .contact, .coordonnee
     {
-        margin-left: 8%;
+        margin-left: 15%;
     }
+    
     .box, .box1/*me contacter ici et coordonnee*/
     {
         font-size: 1.8em;
@@ -965,6 +976,14 @@ button[type="submit"], [type="reset"]
 }
 @media screen and (min-width:768px)
 {
+    .contact i
+    {
+        margin-left: 12%;
+    }
+    .coordonnee
+    {
+        margin-left: 24%;
+    }
     .box, .box1/*me contacter ici et coordonnee*/
     {
         font-size: 1.8em;
@@ -984,13 +1003,27 @@ button[type="submit"], [type="reset"]
         flex-direction: row;
         margin-left: 2%;
     }
+    .contact, .coordonnee
+    {
+        margin-left: 5%;
+    }
     .contact
     {
         margin-right: 2%;
+        
     }
+    .contact i
+    {
+        margin-left: 0%;
+    }
+    
     .box, .box1/*me contacter ici et coordonnee*/
     {
         font-size: 1.7em;
+    }
+    .adresse i
+    {
+        margin-left: 0;
     }
     input, textarea
     {
