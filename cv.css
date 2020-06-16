@@ -8,7 +8,7 @@
             box-sizing: border-box;
     font-family: 'Raleway','Roboto','Source Sans Pro', sans-serif;
     font-size: large;    
-    /*background-color: #9fd637; */    
+        
 }
 
 h1,h2,h3
@@ -221,9 +221,10 @@ p .banniere_dev /*problème de ligne blanche*/
 }
 /*-- Catégorie 3 colonnes--
 --------------------------*/
-.h2interet
+.h2index
 {
-    margin-top: 5%;
+    margin: 3% 0;
+    
 }
 .h3index
 {
@@ -335,7 +336,7 @@ p .banniere_dev /*problème de ligne blanche*/
 
 /*--Partie centre d'interêt--
 ----------------------------*/
-.h2interet
+.h2index
 {
     text-align: center;
     font-size: 1.4em;
@@ -422,7 +423,7 @@ p .banniere_dev /*problème de ligne blanche*/
     }
 
     /*---Centre d'intérêt---*/
-    .h2interet
+    .h2index
     {
         font-size: 1.5em;
     }
@@ -472,17 +473,42 @@ p .banniere_dev /*problème de ligne blanche*/
     }
     
     /*---Centre d'intérêt---*/
-    .ensemble
+    
+    .interet 
     {
-        margin-left: 8%;
+       margin-left: 15%; 
+    }
+    .couture
+    {
+        margin-left: 14%;
+    }
+    .boulangerie
+    {
+        margin-left: 21%;
+    }
+    .lampe_carre
+    {
+        margin-left: 22%;
     }
     
 }
 @media screen and (min-width:992px)
 {
+    .menu a 
+    {
+        margin-left: 5%;
+    }
+    .navigation-menu ul
+    {
+        margin-left: 15%;
+    }
+    .navigation-menu ul li a .suitcase
+    {
+        margin-left: 9%;
+    }
     .mon_nom
     {
-        margin-left: 35%;
+        margin-left: 37%;
     }
     .photo
     {
@@ -497,11 +523,11 @@ p .banniere_dev /*problème de ligne blanche*/
     }
     .personnalite, .competence
     {
-        width: 40%;   
+        width: 40%;  
     }
     .personnalite
     {
-        padding-bottom: 7%;
+        padding-bottom: 9%;
         margin-left: 5%;
     }
     .competence
@@ -513,46 +539,146 @@ p .banniere_dev /*problème de ligne blanche*/
         width: 80%;
         margin-left: 10%;
     }
+    .cogs
+    {
+        margin-left: 47%;
+    }
+    .graduation-cap
+    {
+        margin-left: 48%;
+    }
+    .perso, .comp, .form
+    {
+        font-size: large;
+    }
     /*---Centre d'intérêt---*/
     .ensemble
     {
         margin-left: 0;
+        font-size: 1.4em;
     }
-    .informatique
+    .tricotcrochet
     {
-        margin-left: 10%;
+        margin-left: 13%;
     }
-    .eponge 
-    {
-        margin-left: 10%;
-    }
-    .decor
-    {
-        margin-left: 17%;
-    }
-    .diam
-    {
-        margin-left: 18%;
-    }
-    .objet 
-    {
-        margin-left: 18%;
-    }
-}
-@media screen and (min-width:1200px)
-{
-    .informatique, .eponge
-    {
-        margin-left: 5%;
-    }
-}
-@media screen and (min-width:1500px)
-{
-    .informatique, .eponge
+    .couture
     {
         margin-left: 12%;
     }
+    .boulangerie
+    {
+        margin-left: 20%;
+    }
+    .lampe_carre
+    {
+        margin-left: 21%;
+    }
+   
+}
+@media screen and (min-width:1200px)
+{
+        /*menu*/
+
+    .navigation-menu ul
+    {
+        margin-left: 22%;
+    }
+    .mon_nom
+    {
+        margin-left: 40%;
+    }
+    .photo
+    {
+        margin-left: 43%;
+    }
+        /*presentation*/
+
+        .pobjectif, .passion, .motsgras
+        {
+            font-size: 1.1em;
+        }
+        /*catégorie 3 colonnes*/
+
+        .h2index
+        {
+            font-size: 1.5em;
+        }
+        .categorie
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: 3%;
+        }
+        .personnalite, .formation, .competence
+        { 
+            width: 30%;
+            margin-left: 2%;
+            margin-right: 1%;   
+        }
+        .personnalite
+        {
+            padding-bottom: 3.5%;
+        }
+        .competence
+        {
+            padding-bottom: 1.5%;
+        }
+        .h3index
+        {
+            margin-bottom: 4%;
+        }
+        .comp
+        {
+            margin-left: 0%;
+        }
+        .perso, .comp, .form
+        {
+            font-size: 1.1em;
+        }
+        /*centre d'interet*/
+
+        .h2index
+        {
+            padding-bottom: 2%;
+        }
+        .couture
+        {
+          margin-left: 12.5%;
+        }
+        .boulangerie
+        {
+          margin-left: 19%;
+        }
+        .lampe_carre
+        {
+          margin-left: 20%;
+        }
+}
+@media screen and (min-width:1500px)
+{
+        body 
+        {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        /*categorie 3 colonnes*/
     
+        .personnalite, .formation
+        {
+            padding-bottom: 4%;
+        }
+        /*centre d'interet*/
+
+        .boulangerie
+        {
+            margin-left: 18%;
+        }
+        .lampe_carre
+        {
+            margin-left: 19%;
+        }
+      
 }
 /****************************************
     Page  Experiences professionnelles
@@ -611,6 +737,10 @@ em,.employeur,.detail
     color:rgb(180, 106, 241 ) ;
 
 }
+em
+{
+    color:rgb(99, 15, 168) ;
+}
 .pemploi
 {
     padding: 2%;   
@@ -629,7 +759,7 @@ em
 }
 
 /************************************
-           MEDIA QUERIES expériences
+    MEDIA QUERIES expériences
 *************************************/
 @media screen and (min-width:480px)
 {
@@ -637,31 +767,62 @@ em
     {
         margin-left: 18%;
     }
+    .h2expe
+    {
+        font-size: 1.2em;
+    }
 }
 @media screen and (min-width:576px)
 {
+    .h1expe
+    {
+        font-size: 1.5em;
+    }
+    .h2expe
+    {
+        font-size: 1.5em;
+    }
     .imgmetier
     {
         margin-left: 23%;
     
     }
-    .page2p, .page2pp
-    {
-       
-        font-size: 1em;
-        
+    .page2p, .page2pp, strong
+    {  
+        font-size: 1.2em;   
     }
+    .page2p, .page2pp
+    {  
+        font-size: 1.2em;
+        width: 75%;
+        margin-left: 15%;   
+    }
+        
 }
 @media screen and (min-width:768px)
 {
+    .h1expe
+    {
+        font-size: 1.8em;
+    }
     .imgmetier
     {
         margin-left: 30%;
-    
+    }
+    .pemploi
+    {
+        font-size: 1.1em;
+    }
+    .emploi ul
+    {
+        display: flex;
+        flex-direction: column;     
+        margin: 2%;
     }
 }
 @media screen and (min-width:992px)
 {
+    /*partie competences*/
     .stage, .asso_vente, .usine_resto
     {
         display: flex;
@@ -669,6 +830,11 @@ em
         justify-content: space-around;
         margin: 2% ;
     }
+    .page2p, .page2pp
+    {  
+        margin-left: 3%;   
+    }
+    
     .imgmetier
     {
         margin-left: 10%;
@@ -690,9 +856,18 @@ em
     {
         border-bottom: 3px dotted rgb(180, 106, 241);
     }
+    /*Métiers*/
+    .pemploi
+    {
+        padding-left: 10%;
+    }
 }
 @media screen and (min-width:1200px)
 {
+    .h1expe
+    {
+        font-size: 2.1em;
+    }
     .imgmetier
     {
         margin-left: 22%;
@@ -701,6 +876,11 @@ em
     {
         width: 530px;
     }
+     /*Métiers*/
+     .pemploi
+     {
+         padding-left: 18%;
+     }
 }
 @media screen and (min-width:1500px)
 {
@@ -714,6 +894,12 @@ em
     .page2p, .page2pp
     {
         width: 630px;
+    }
+    /*Métiers*/
+    .pemploi
+    {
+        font-size: 1.8em;
+        padding-left: 6%;
     }
 }
 
@@ -743,16 +929,21 @@ em
     margin-top: 2%;
     color: rgb(219, 56, 198);
 }
+.groupe
+{
+    margin-left: 16%;
+}
 
 p a .imgprojets
 {
-    margin: 4% 0 6% 15%;
+    margin: 4% 4% 6% 15%;
     width: 200px;
     height: 100px;
 }
 .pprojet 
 {   
     margin-left: 15%;
+    width: 200px;
 }
 a 
 {
@@ -762,6 +953,69 @@ a
 {
     border: 1px solid  rgb(219, 56, 198);
     margin: 4% 0;
+}
+
+/**********************************
+        Media queries projets
+*********************************/
+@media screen and (min-width:480px)
+{
+    
+}
+@media screen and (min-width:576px)
+{
+    .groupe
+    {
+        margin-left: 22%;  
+    }   
+        
+}
+@media screen and (min-width:768px)
+{
+    .h2projet
+    {
+        margin-bottom: 5%;
+    }
+    .groupe
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-bottom: 5%; 
+    } 
+    .groupe div
+    {
+        margin-left: 3%;
+    }  
+}
+@media screen and (min-width:992px)
+{
+    .h1projet
+    {
+        font-size: 1.8em;
+    }
+    .groupe div
+    {
+       margin-left: 8%; 
+    }
+    .groupe div a
+    {
+        font-size: 1.1em;
+    } 
+}
+@media screen and (min-width:1200px)
+{
+    .groupe div
+    {
+       margin-left: 11%; 
+    } 
+}
+@media screen and (min-width:1500px)
+{
+    .groupe div
+    {
+       margin-left:13%; 
+    } 
 }
 
 /*-----------------------------------
@@ -980,13 +1234,25 @@ button[type="submit"], [type="reset"]
     {
         margin-left: 12%;
     }
+    .coordonnee .titrecoord 
+    {
+        margin-left: 20%;
+    }
     .coordonnee
     {
-        margin-left: 24%;
+        margin-left: 8%;
     }
     .box, .box1/*me contacter ici et coordonnee*/
     {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+    .adresse
+    {
+        margin-left: 8%;
+    }
+    .adresse p
+    {
+        font-size: 1.5em;
     }
     /*-----Mes flèches-------
 -------------------------*/   
@@ -1016,10 +1282,14 @@ button[type="submit"], [type="reset"]
     {
         margin-left: 0%;
     }
-    
+    form, .adresse
+    {
+        margin-top: 16%;
+    }
     .box, .box1/*me contacter ici et coordonnee*/
     {
         font-size: 1.7em;
+
     }
     .adresse i
     {
@@ -1036,6 +1306,10 @@ button[type="submit"], [type="reset"]
     .icor, li
     {
         font-size: 1.1em;
+    }
+    .adresse p 
+    {
+        font-size: 1.6em;
     }    
 }
 @media screen and (min-width:1200px)
