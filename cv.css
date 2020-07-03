@@ -272,61 +272,61 @@ p .banniere_dev /*problème de ligne blanche*/
 {
     font-size: 0.8em;
 }
- /*---icone competence--*/
- .desktop
- {
+/*---icone competence--*/
+.desktop
+{
     margin: 2%;
     color: #0abde3;
- }
- .tools
- {
+}
+.tools
+{
     margin: 2%;
     color: #e2c51e;
- }
- .social
- {
-     font-size: 3em;
- }
- .network
- {
+}
+.social
+{
+    font-size: 3em;
+}
+.network
+{
     margin: 2%;
     color: #ff6b6b;
- }
- .folder
- {
+}
+.folder
+{
     margin: 2%;
     color: #a929b5;
- }
- .html5
- {
+}
+.html5
+{
     margin: 2%;
     color: #e54d26;
- }
- .css3
- {
+}
+.css3
+{
     margin: 2%;
     color: #264ee4;
- }
- .php
- {
+}
+.php
+{
     margin: 2%;
     color: #777bb3;
- }
- .film
- {
+}
+.film
+{
     margin: 2%;
     color: #9fd637;
- }
- .laravel
- {
+}
+.laravel
+{
     margin: 2%;
     color: #fa503a;
- }
- .wordpress
- {
+}
+.wordpress
+{
     margin: 2%;
     color: #327ba4;
- }
+}
 .form .circle
 {
     font-size: 0.7em;
@@ -434,7 +434,6 @@ p .banniere_dev /*problème de ligne blanche*/
     .interet
     {
         margin-left: 28%;
-       
     }
     
 }
@@ -445,7 +444,7 @@ p .banniere_dev /*problème de ligne blanche*/
         float: none;
         display: flex;
         flex-direction: row;
-         margin-left: 2%;
+        margin-left: 2%;
     }
     .mon_nom
     {
@@ -476,7 +475,7 @@ p .banniere_dev /*problème de ligne blanche*/
     
     .interet 
     {
-       margin-left: 15%; 
+        margin-left: 15%; 
     }
     .couture
     {
@@ -573,7 +572,6 @@ p .banniere_dev /*problème de ligne blanche*/
     {
         margin-left: 21%;
     }
-   
 }
 @media screen and (min-width:1200px)
 {
@@ -644,15 +642,15 @@ p .banniere_dev /*problème de ligne blanche*/
         }
         .couture
         {
-          margin-left: 12.5%;
+            margin-left: 12.5%;
         }
         .boulangerie
         {
-          margin-left: 19%;
+            margin-left: 19%;
         }
         .lampe_carre
         {
-          margin-left: 20%;
+            margin-left: 20%;
         }
 }
 @media screen and (min-width:1500px)
@@ -678,7 +676,6 @@ p .banniere_dev /*problème de ligne blanche*/
         {
             margin-left: 19%;
         }
-      
 }
 /****************************************
     Page  Experiences professionnelles
@@ -728,8 +725,8 @@ p .banniere_dev /*problème de ligne blanche*/
 -----------------------*/
 .emploi
 {
-  margin:8% 7% 0;
-  font-size: 0.6em;
+    margin:8% 7% 0;
+    font-size: 0.6em;
 }
 em,.employeur,.detail
 {
@@ -876,11 +873,11 @@ em
     {
         width: 530px;
     }
-     /*Métiers*/
-     .pemploi
-     {
-         padding-left: 18%;
-     }
+    /*Métiers*/
+    .pemploi
+    {
+        padding-left: 18%;
+    }
 }
 @media screen and (min-width:1500px)
 {
@@ -931,19 +928,23 @@ em
 }
 .groupe
 {
-    margin-left: 16%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
 }
-
 p a .imgprojets
 {
-    margin: 4% 4% 6% 15%;
+    margin: 4% 4% 3% 20%;
     width: 200px;
     height: 100px;
 }
-.pprojet 
-{   
-    margin-left: 15%;
-    width: 200px;
+.Carteresponsive
+{
+    margin-left: 30%;
+}
+.Galeriephoto
+{
+    margin-left: 32%;
 }
 a 
 {
@@ -960,15 +961,25 @@ a
 *********************************/
 @media screen and (min-width:480px)
 {
-    
+    .groupe
+    {
+        margin-left: 8%;  
+    } 
+    .nomcarteresponsive
+    {
+        margin-left: 24%;
+    }
+    .nomgaleriephoto
+    {
+        margin-left: 28%;
+    }
 }
 @media screen and (min-width:576px)
 {
     .groupe
     {
-        margin-left: 22%;  
-    }   
-        
+        margin-left: 16%;  
+    }    
 }
 @media screen and (min-width:768px)
 {
@@ -980,12 +991,20 @@ a
     {
         display: flex;
         flex-direction: row;
-        margin-left: 0;
+        margin-left: 8%;
         margin-bottom: 5%; 
     } 
     .groupe div
     {
-        margin-left: 3%;
+        margin-left: 7%;
+    }  
+    .nomcarteresponsive
+    {
+        margin-left: 32%;
+    }
+    .nomgaleriephoto
+    {
+        margin-left: 40%;
     }  
 }
 @media screen and (min-width:992px)
@@ -994,28 +1013,37 @@ a
     {
         font-size: 1.8em;
     }
+    .groupe
+    {
+        margin-left: 14%;  
+    }
     .groupe div
     {
-       margin-left: 8%; 
+        margin-left: 8%; 
     }
     .groupe div a
     {
-        font-size: 1.1em;
+        font-size: 1.2em;
     } 
 }
 @media screen and (min-width:1200px)
 {
     .groupe div
     {
-       margin-left: 11%; 
+        margin-left: 11%; 
     } 
 }
 @media screen and (min-width:1500px)
 {
     .groupe div
     {
-       margin-left:13%; 
-    } 
+        margin-left:13%; 
+    }
+    .groupe
+    {
+        margin-left: 16%;  
+    }
+   
 }
 
 /*-----------------------------------

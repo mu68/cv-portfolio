@@ -9,15 +9,14 @@
 }
 body
 {
- background: ; 
+ background-color:#b6b6b6; 
     
 }
 h3
 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
-    font-size: xx-large;
+    margin-bottom: 20%;
+    font-size: 1.5em;
+    margin-left: 2%;
 }
 
 img
@@ -32,7 +31,8 @@ img
     width:420px;
     height:279px;
     -webkit-perspective:8000px; /*détermine la distance de mon carrousel avec l'écran de l'utilisateur*/
-            perspective:8000px /*Plus la perspective est grande, plus l'impression d'éloignement sera important. On détermine également une largeur et une longueur à l'élément (elles doivent correspondre à la taille des photos).*/
+        perspective:8000px /*Plus la perspective est grande, plus l'impression d'éloignement sera important. On détermine également une largeur et une longueur à l'élément (elles doivent correspondre à la taille des photos).*/
+        overflow-x:scroll;
 }
 
 .carrousel-image
@@ -42,6 +42,7 @@ img
     -webkit-transform-style:preserve-3d;/*Indique que les fils de l'élément ciblé est positionnés dans l'espace tridimensionnel.*/
             transform-style:preserve-3d;
     position:relative;
+    
 }
 
 .carrousel-image img
@@ -58,11 +59,11 @@ img
     width:400px;
     height:266px;
     left:10px;
-    outline:1px solid transparent; /*crée unebordure autour de l'élément,mais n'est pas forcément rectangulaire comme les border*/
+    outline:1px solid transparent; /*crée une bordure autour de l'élément,mais n'est pas forcément rectangulaire comme les border*/
     -webkit-backface-visibility:hidden;/*Indique que les fils de l'élément ciblé doivent être positionnés dans l'espace tridimensionnel.*/
             backface-visibility:hidden;
 }
-/* on met en place nos images qui seront en position absolute. Dans cet exemple, nous avons huit images. Il s'agit donc d'un octogone. Nous allons maintenant devoir effectuer quelques calculs. Pour connaître chaque angle de notre carrousel, il suffit de diviser 360 degrés (un cercle complet) par le nombre de faces. Ainsi nous obtenons 45 degrés (360° / 8). Comme nous connaissons la largeur de chaque face du carrousel (400px dans notre exemple), on va pouvoir trouver l'apothème de l'octogone. On reporte le nombre (ici 495px) dans chaque image sur l'axe Z via la propriété transform. On indiquera par ailleurs une rotation sur l'axe Y.*/
+/* on met en place nos images qui seront en position absolute. J'ai huit images. Il s'agit donc d'un octogone. Nous allons maintenant devoir effectuer quelques calculs. Pour connaître chaque angle de notre carrousel, il suffit de diviser 360 degrés (un cercle complet) par le nombre de faces. Ainsi nous obtenons 45 degrés (360° / 8). Comme nous connaissons la largeur de chaque face du carrousel (400px dans notre exemple), on va pouvoir trouver l'apothème de l'octogone. On reporte le nombre (ici 495px) dans chaque image sur l'axe Z via la propriété transform. On indiquera par ailleurs une rotation sur l'axe Y.*/
 .carrousel-image img:nth-child(1) /*permet de cible un élément*/
 {
     -webkit-transform:translate3d(0,0,495px);/*permet de déplacer un élément dans l'espace tridimensionnel*/
@@ -146,6 +147,7 @@ img
 {
     display: flex;
     justify-content: center;
+    animation-play-state: paused;
 }
 .div
  {
@@ -157,6 +159,36 @@ img
     height: 60px;
     margin: 5px;
 }
-   /* Déclaration de la méthode .stop() au click*/
+.carrousel /*bouton retour*/
+{
+    margin: 5%;
+    /*background-color: #333;*/
+    color: #fff;
+    border-radius: 12px;
+    background: #333;
+    box-shadow: inset 32px 32px 64px #323434, 
+            inset -32px -32px 64px #c6ced2;
+    padding:2%;
+    font-size: 1em;
+}
 
-/*****fin carrousel 3d automatique*****/
+/******************************************
+        Media queries
+******************************************/
+@media screen and (min-width:480px)
+{
+        h3 
+        {
+           text-align: center;
+           font-size: 1.5em;
+        }
+}
+@media screen and (min-width:576px)
+{
+        h3 
+        {
+           font-size: 1.7em;
+        }
+}
+   
+
