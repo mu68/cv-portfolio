@@ -130,24 +130,25 @@ p .banniere_dev /*problème de ligne blanche*/
 ----------------------------*/
 .mon_nom
 {
-    margin: 2% 0 2% 17%;
+    margin: 4% 0 2% 23%;
 }
 .photo
 {
-    margin: 3% 24%;
+    margin: 4% 24%;
 }
 .pobjectif
 {
     color:rgb(180, 106, 241) ;
-    margin: 0 2%;
+    margin: 0 4%;
     background-color:  rgb(231, 229, 229);
     padding: 3%;
+    margin-bottom: 4%;
 }
 /*-- Description--
 -----------------*/
 .passion
 {
-    margin: 2%;
+    margin: 2% 2% 6% 2%;
 }
 
 /***Shadow animé et redirection page***/
@@ -223,7 +224,7 @@ p .banniere_dev /*problème de ligne blanche*/
 --------------------------*/
 .h2index
 {
-    margin: 3% 0;
+    margin: 7% 0;
     
 }
 .h3index
@@ -938,13 +939,21 @@ p a .imgprojets
     width: 200px;
     height: 100px;
 }
-.Carteresponsive
+.carteresponsive
 {
     margin-left: 30%;
 }
-.Galeriephoto
+.galeriephoto
 {
-    margin-left: 32%;
+    margin-left: 33%;
+}
+.carousel3d
+{
+    margin-left: 33%;
+}
+.blogwordpress
+{
+    margin-left: 30%;
 }
 a 
 {
@@ -963,7 +972,7 @@ a
 {
     .groupe
     {
-        margin-left: 8%;  
+        margin-left: 12%;  
     } 
     .nomcarteresponsive
     {
@@ -991,21 +1000,14 @@ a
     {
         display: flex;
         flex-direction: row;
-        margin-left: 8%;
+        margin-left: 1%;
         margin-bottom: 5%; 
-    } 
+    }  
     .groupe div
     {
-        margin-left: 7%;
-    }  
-    .nomcarteresponsive
-    {
-        margin-left: 32%;
+        margin-left: 2%; 
     }
-    .nomgaleriephoto
-    {
-        margin-left: 40%;
-    }  
+     
 }
 @media screen and (min-width:992px)
 {
@@ -1015,11 +1017,11 @@ a
     }
     .groupe
     {
-        margin-left: 14%;  
+        margin-left: 4%;  
     }
     .groupe div
     {
-        margin-left: 8%; 
+        margin-left: 5%; 
     }
     .groupe div a
     {
@@ -1030,18 +1032,18 @@ a
 {
     .groupe div
     {
-        margin-left: 11%; 
+        margin-left: 9%; 
     } 
 }
 @media screen and (min-width:1500px)
 {
     .groupe div
     {
-        margin-left:13%; 
+        margin-left:10%; 
     }
     .groupe
     {
-        margin-left: 16%;  
+        margin-left: 9%;  
     }
    
 }
