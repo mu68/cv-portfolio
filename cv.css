@@ -24,22 +24,37 @@ h3,h2,h1
 }
 .terre /*logo*/
 {
-    margin-left: -7%;
+   margin-left: -7%;
 }
 button 
 {
     margin-left: 22%;
 }
+li
+{
+    display: inline-block;
+    margin: 2%;
+    padding-right: 3%;
+    border-radius: 15px;
+    background: #b74dc6;
+    box-shadow: -9px -9px 2px #9a41a6, 
+            9px 9px 2px #d459e6;
+    height: 30%;
+}
 .texte
 {
     font-weight: bold;
-    font-size: 27px;     
+    font-size: 27px;
 }
-.texte:hover
+@media(hover:hover)
 {
-    background-color: rgba(180, 106, 241, 0.534);
-    width: 110%;
-    margin-left: 30%;    
+    li:hover{
+        border-radius: 35px;
+        background: linear-gradient(145deg, #d2b36b, #f9d57f);
+        box-shadow: 30px 30px 60px #6e5e38, 
+                    -30px -30px 60px #ffffb6;
+
+    }    
 }
 
         /*partie bannière*/
@@ -57,6 +72,60 @@ li
 {
     list-style-type: none;
 }
+
+                                /*****animation bienvenue******/
+.animation
+{
+    text-align: center;
+    font-size: 4em;
+    color:rgb(219, 56, 198)
+}
+.tracking-out-expand-fwd 
+{
+    -webkit-animation: tracking-out-expand-fwd 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: tracking-out-expand-fwd 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}                                
+@-webkit-keyframes tracking-out-expand-fwd 
+{
+    0% 
+    {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+    }
+    60% 
+    {
+        opacity: 0.8;
+    }
+    100% 
+    {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+                transform: translateZ(300px);
+        opacity: 0;
+    }
+    }
+@keyframes tracking-out-expand-fwd 
+    {
+    0% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+    }
+    60% 
+    {
+        opacity: 0.8;
+    }
+    100% 
+    {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+                transform: translateZ(300px);
+        opacity: 0;
+    }
+    }
+
+
 /************************Page principal*******************/
             /*partie présentation photo et texte*/
 .photo
@@ -77,7 +146,7 @@ li
 }        
 p
 {
-    padding: 4% 0;    
+    padding: 6% ;    
 }
 .motsgras
 {
@@ -264,7 +333,7 @@ figcaption
 {
     text-align: center; 
     font-size: 1.5em;
-    padding-top: 3%;  
+    padding-top: 2%;  
 }
 .imgmetier
 {
@@ -291,19 +360,64 @@ p /*tout les p de mes pages*/
     padding: 2%;
 }
     /*partie expériences professionnelles*/
-li
+.slide-right 
+{
+    -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ /** animation slide-right**/
+@-webkit-keyframes slide-right 
+{
+0% 
+{
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% 
+{
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+}
+}
+@keyframes slide-right 
+{
+0% 
+{
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% 
+{
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+}
+}
+.emploi 
+{
+   
+} 
+.liemploi
 {
     list-style-type: none;
     font-size: 0.8em;
+    padding-left: 1%;
+    width: 80%;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #707272, #fff);
+    box-shadow: 10px 10px 10px #313030, 
+                -10px -10px 10px #ffff;
 }
 em 
 {
-    text-decoration: underline;
+    text-decoration: underline;   
 }
-.emploi
+.espace
 {
-margin-top: 10%;
+    margin-left: 2%;
+    color: black;
 }
+
 
 /************************Page de projets*****************/
 .bodyproj
