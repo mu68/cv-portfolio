@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/286e8b4ec4.js" crossorigin="anonymous"></script>
-    <!-- style bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- mon style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cv.css">
-    <title>Projets</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <script src="https://kit.fontawesome.com/286e8b4ec4.js" crossorigin="anonymous"></script>
+
+    <title>Mon Portfolio - Murielle Sperissen</title>
 </head>
+<body>
 
-<body class="bodyproj">
-    <div class="container-fluid pl-2">
-        <!-- partie menu -->
-        <header class="row  gris" id="ancre0">
-            <div class="col-sm-12 px-0">
-                <nav class="navbar navbar-expand-lg navbar-light  border-menu gris pl-5">
-                    <a class="navbar-brand" href="#">
-                        <img class="terre" src="images/logo1.png" alt="logos">
-                    </a>
-                    <button class="navbar-toggler pl-3 " type="button" data-toggle="collapse"
-                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-
-                            <li class="nav-item active ">
-                                <p><a class="nav-link pl-5 texte " href="index.html">Acceuil<span
-                                            class="sr-only">(current)</span></a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="experiences.html"> Expériences</a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="projets.html">Projets</a></p>
-                            </li>
-                            <li class="nav-item">
-                                <p><a class="nav-link pl-5 texte" href="#ancre">contact</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+    <header>
+        <div class="menu" id="entete">
+            <div class="inner-width">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                <i class="menu-toggle-btn fas fa-bars"></i>
             </div>
-        </header>
-        <!-- partie banniere -->
-        <div class="row bordure0">
-            <div class="col-sm-12 px-0">
-                <img src="images/banniere2.png" class="d-block w-100 " alt="banniere developpeur integrateur web">
-            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home home"></i>Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="experiences.html"><i class="fas fa-suitcase suitcase"></i>Expériences</a>
+                    </li>
+                    <li>
+                        <a href="projets.html"><i class="fab fa-buffer buffer"></i>Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact"><i class="fas fa-pen-nib pen-nib"></i>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>       
+        <div class="banniere"> 
+            <p class="banniere_dev"><img src="images/banniere.png" class="img-banniere" alt="developpeur integrateur web"></p>
         </div>
         <div class="main">
                 
@@ -84,134 +68,91 @@
             </div>
             <hr>
 
-            <h2 class="h2projet">Sites dynamiques</h2>
-            <div class="row groupe">
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/10/300/200" alt=""></a></p class="mb-0">
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="#">Place futur projets</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1001/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="#">Place futur projets</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1000/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="#">Place futur projets</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/100/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="#">Place futur projets</a></p>
-                </div>
+    <main>
+        <h1 class="h1projet">Mes projets</h1>
+        
+        <h2 class="h2projet">Site</h2>
+        <div class="groupe">
+            
+            <div>
+                <p><a href="mumu-crea-passion.com"><img class="imgprojets" src="images/couverture.png" alt="photo de couverture"></a></p>
+                <p><a href="mumu-crea-passion.com"> <span class="blogwordpress">Sous Wordpress</span></a></p>
             </div>
-            <hr>
-            <h2 class="h2projet">blogs</h2>
-            <div class="row groupe">
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href="https://sperissenmurielle.wixsite.com/mes-creations"target="_blank"><img src="https://picsum.photos/id/1006/300/200" alt=""></a></p class="mb-0">
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"> <a href="https://sperissenmurielle.wixsite.com/mes-creations"target="_blank">Wix.com Mes créations</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1004/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"> <a href="#">Place futur projets</a> </p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1008/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"> <a href="#">Place futur projets</a> </p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1005/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"> <a href="#">Place futur projets</a></p>
-                </div>
-            </div>
-            <hr>
+        <hr class="traitrose">    
+        </div>  
             <h2 class="h2projet">Animation</h2>
-            <div class="row groupe">
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href="projet_perso/carousel_3d/carousel_3d.html"><img src="https://picsum.photos/id/104/300/200" alt=""></a></p class="mb-0">
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="projet_perso/carousel_3d/carousel_3d.html">Carousel 3D</a></p>
+            <div class="groupe">
+                
+                <div>
+                    <p><a href="projet_perso/carte_responsive_hover_effect/carte_responsive.html"><img class="imgprojets" src="images/carte.jpg" alt="carte_responsive"></a></p>
+                    <p><a href="projet_perso/carte_responsive_hover_effect/carte_responsive.html"> <span class="carteresponsive">Carte responsive</span></a></p>
                 </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href="projet_perso/carte_responsive_hover_effect/carte_responsive.html"><img src="https://picsum.photos/id/1048/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="projet_perso/carte_responsive_hover_effect/carte_responsive.html">Carte responsive </a></p>
+                <div>
+                    <p><a href="projet_perso/Galerie_photo_hover_transition/galerie_photo.html"><img class="imgprojets" src="images/galerie_photo.jpg" alt="galerie_photo"></a></p>
+                    <p><a href="projet_perso/Galerie_photo_hover_transition/galerie_photo.html"> <span class="galeriephoto">Galerie photo</span></a></p>
                 </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href="projet_perso/Galerie_photo_hover_transition/galerie_photo.html"><img src="https://picsum.photos/id/1029/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="projet_perso/Galerie_photo_hover_transition/galerie_photo.html">Galerie photo</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p class="mb-0 ml-0"><a href=""><img src="https://picsum.photos/id/1032/300/200" alt=""></a></p>
-                    <p class="mb-0 pl-2 px-0 mr-0 pprojet"><a href="#">Place futur projets</a> </p>
+                <div>
+                    <p><a href="projet_perso/carousel_3d/carousel_3d.html"><img class="imgprojets" src="images/carousel_3d.JPG" alt="carousel_3d"></a></p>
+                    <p><a href="projet_perso/carousel_3d/carousel_3d.html"> <span class="carousel3d">Carousel_3d</span></a></p>
                 </div>
             </div>           
-        </div><br>
-        <!--fin de main-->
-                                    <!-- footer -->
-        <footer class="row pl-2 fond " id="ancre">
-            <div class="col-sm-6">
-                <div class="box">
-                    <i class="fas fa-pen-nib fa-3x mr-1 mb-5 mt-4"></i><span>Me Contacter ici</span>
-                    <form class=" w-100 ">
-                        <div class="form-group formulaire ">
-                            <label for="exampleFormControlInput1">Nom</label>
-                            <input type="name" required="" class="form-control" id="exampleFormControlInput1">  
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlInput1">Société</label>
-                            <input type="name" required="" class="form-control" id="exampleFormControlInput1">                          
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" required="" class="form-control" id="exampleFormControlInput1">
-                                
-                        </div>
 
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea required="" class="form-control" id="exampleFormControlTextarea1"></textarea>
-                            
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn mb-1 mx-0">Envoyer</button>
-                            <button type="reset" class="btn mb-1 mx-0">Retour</button>
-                        </div>
-                    </form>
+                    
+    </main>
+
+    <footer class="fond" id="contact">
+        <section class="contact-coordonnee">
+            <div class="contact">
+                <i class="fas fa-pen-nib fa-3x "></i><span class="box">Me Contacter ici</span>
+                <form method="post" action="https://formspree.io/sperissen.murielle@orange.fr">
+                    <div class="nom">
+                        <label for="nom">Nom</label>
+                        <input type="name" required>  
+                    </div><br>
+                    <div class="société">
+                        <label for="societe">Société</label>
+                        <input type="name" required>                          
+                    </div><br>
+                    <div class="email ">
+                        <label for="email">Email</label>
+                        <input type="email" required>      
+                    </div><br>
+                    <div class="message ">
+                        <label for="message">Message</label>
+                        <textarea name="message" required></textarea>    
+                    </div><br>
+                    <div class="bouton">
+                        <button type="submit" class="btn">Envoyer</button>
+                        <button type="reset" class="btn ">Retour</button>
+                    </div><br>
+                </form>
+            </div>
+            <!------------Coordonnee---------------->
+    
+            <div class="coordonnee">
+                <i class="fas fa-poll fa-3x icor titrecoord"></i><span class="box1">Coordonnée</span>
+                <div class="adresse">
+                    <p><i class="fas fa-envelope icor"></i>9 Avenue de la gare 86400 ST-SAVIOL</p>
+                    <p><i class="fas fa-mobile-alt icor"></i>06-16-55-16-08</p>
+                    <p><i class="fas fa-at icor"></i>sperissen.murielle@orange.fr</p>
+                    <p>
+                        <a class="cv" href="fichiers/cv-developpeur-integrateur-web-murielle-sperissen.pdf" target="_blank">
+                            <i class="fas fa-file-alt icor"></i>Télécharger mon CV
+                        </a>
+                    </p>
                 </div>
             </div>
-            <div class="col-sm-6 coordonnee">
-                <i class="fas fa-poll fa-3x  mr-2 mb-5 mt-4"></i><span>Coordonnée</span>
-                <ul class="mt-2">
-                    <li><i class="fas fa-envelope mr-1"></i>9 Avenue de la gare 86400 ST-SAVIOL</li><br>
-                    <li><i class="fas fa-mobile-alt mr-1"></i>06-16-55-16-08</li><br>
-                    <li><i class="fas fa-at mr-1"></i>sperissen.murielle@orange.fr</li><br>
-                    <li><a class="cv" href="CV Développeur Intégrateur Web.pdf" target="_blank"><i
-                                class="fas fa-file-alt mr-1"></i>Télécharger mon CV</a></li>
-                </ul>
-            </div>
-            <!-- flèche haut et bas -->
-            <div class="top">
-                <a href="#ancre0" class="top"><i class="fas fa-arrow-up "></i> </a>
+        </section>
+           
+        <!------ flèche haut et bas ----------->
+        <div class="top">
+            <a href="#entete" class="top"><i class="fas fa-arrow-up icor"></i> </a>
+        </div>
+        <div class="bas">
+            <a href="#contact" class="bas"><i class="fas fa-arrow-down icor"></i> </a>
+        </div>
+    </footer>
 
-            </div>
-            <div class="bas">
-                <a href="#ancre" class="bas"><i class="fas fa-arrow-down"></i> </a>
-            </div>
-        </footer>
-    </div>
-    <!--fin du container-->
-    
-
-    <!-- scrype boostrap a toujours mettre a la fin du body -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="cv.js"></script>
 </body>
-
 </html>

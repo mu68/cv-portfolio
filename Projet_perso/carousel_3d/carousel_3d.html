@@ -12,20 +12,27 @@
     <h3>Carrousel 3D avec défilement automatique</h3>
     <div class="contenu_carou_auto">
         <div class="carrousel-image">
-        <img src="https://picsum.photos/id/1022/400/266" alt>
-        <img src="https://picsum.photos/id/1015/400/266" alt>
-        <img src="https://picsum.photos/id/102/400/266" alt>
-        <img src="https://picsum.photos/id/0/400/266" alt>
-        <img src="https://picsum.photos/id/1016/400/266" alt>
-        <img src="https://picsum.photos/id/1011/400/266" alt>
-        <img src="https://picsum.photos/id/1025/400/266" alt>
-        <img src="https://picsum.photos/id/1003/400/266" alt>
+            <img src="../images/alsace.jpg" alt="maison alsacienne"/>
+            <img src="../images/chat.jpg" alt="chat"/>
+            <img src="../images/fleur_orange.jpg" alt="fleur orange"/>
+            <img src="../images/architecture1.jpg" alt="architecture"/>
+            <img src="../images/montagne1.jpg" alt="montagne"/>
+            <img src="../images/tigre.jpg" alt="tigre"/>
+            <img src="../images/automne.jpg" alt="forêt d'automne"/>
+            <img src="../images/orchidée.jpg" alt="orchidée"/>
         </div>
     </div>
     <div id="Carrousel"></div>
-    <button id="startbtn">Start</button>
-    <button id="stopbtn">Stop</button>
-    <script>
+    <div class="btn_retour_stop">
+        <form>
+            <input class="carousel" type = "button" value = "Retour au projet"  onclick = "history.go(-1)">
+        </form>
+    </div>
+    
+    <button id="stopbtn pause">Stop</button>
+    
+    
+    <script language="javascript">
         startbtn.addEventListener("click", function(){
             contenu_carou_auto.style.animation = "rotation 24s infinite  linear 4s";
             contenu_carou_auto.style.webkitAnimation = "rotation 24s infinite  linear 4s";

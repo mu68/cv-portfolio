@@ -2,8 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    background: #333;   
+    background: #a4b0be;   
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
 }
 h3
@@ -14,17 +13,20 @@ h3
 }
 .container
 {
-  width: 1000px;
-  position: relative;
-  display: flex;
-  justify-content: center;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 25%;
+    margin-right: 0;
+  
 }
 .container .carte
 {
     position: relative;
-    margin-left: 5%;
+   
+    
 }
 .container .carte .face
 {
@@ -48,14 +50,12 @@ h3
    transform: translateY(0); 
 }
 .container .carte .face1 .content
-{
-    
+{  
     transition: 0.5s;
 }
 .container .carte:hover .face1 .content img /*image réduit*/
 {
     max-width: 100px;
-
 }
 .container .carte .face.face1 .content h2 /*titre en blanc*/
 {
@@ -100,5 +100,78 @@ h3
 {
    background: #333;
    color: #fff; 
+}
+.cartes /*bouton retour*/
+{
+    margin: 0 0 5% 30%;
+    /*background-color: #333;*/
+    color: #fff;
+    border-radius: 12px;
+    background: #333;
+    box-shadow: inset 32px 32px 64px #323434, 
+            inset -32px -32px 64px #c6ced2;
+    padding:2%;
+    font-size: 1em;
+}
+
+/**********************************
+        Media queries projets
+*********************************/
+@media screen and (min-width:480px)
+{
+    .cartes
+    {
+        margin-left: 35%;
+    } 
+}
+@media screen and (min-width:576px)
+{
+    .groupe
+    {
+        margin-left: 22%;  
+    }   
+        
+}
+@media screen and (min-width:768px)
+{
+    .cartes
+    {
+        margin-left: 40%;
+    } 
+}
+@media screen and (min-width:992px)
+{
+    .container
+   {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+   }
+   .container, .carte
+   {
+       margin-left: 1%;
+   }
+   .cartes
+    {
+        margin-left: 43%;
+    }    
+}
+@media screen and (min-width:1200px)
+{
+    .container
+    {
+        margin-left: 3%;
+    }
+    .cartes
+    {
+        margin-left: 45%;
+    }  
+}
+@media screen and (min-width:1500px)
+{
+    .cartes
+    {
+        margin-left: 47%;
+    }  
 }
 

@@ -7,156 +7,155 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-family: 'Raleway','Roboto','Source Sans Pro', sans-serif;
-    font-size: large;
-}
-h3,h2,h1
-{
-    font-family: 'Source Sans Pro','Roboto', sans-serif;
-    font-weight: bold;
+    font-size: large;    
+        
 }
 
-/*********************Haut de page****************************/    
-     /*partie menu*/
-.gris
+h1,h2,h3
 {
-    background-color: rgb(231, 229, 229);
-    padding: 0 5px;
+    font-weight: bold;
+    font-size: 1em;
 }
-.terre /*logo*/
+a
 {
-   margin-left: -7%;
-}
-button 
-{
-    margin-left: 22%;
+    text-decoration: none;
 }
 li
 {
-    display: inline-block;
-    margin: 2%;
-    padding-right: 3%;
-    border-radius: 15px;
-    background: #b74dc6;
-    box-shadow: -9px -9px 2px #9a41a6, 
-            9px 9px 2px #d459e6;
-    height: 30%;
+    list-style: none;
 }
-.texte
+/*-----------------------------------*/
+            /*HEADER*/
+/*-----------------------------------*/
+a
 {
-    font-weight: bold;
-    font-size: 27px;
+    text-decoration: none;  
 }
-@media(hover:hover)
+.menu
 {
-    li:hover{
-        border-radius: 35px;
-        background: linear-gradient(145deg, #d2b36b, #f9d57f);
-        box-shadow: 30px 30px 60px #6e5e38, 
-                    -30px -30px 60px #ffffb6;
+  height: 90px; 
+  background: rgb(231, 229, 229); 
+}
+.inner-width
+{
+    max-width: 1500px;
+    padding: 0 10px;
+    margin: auto;
+    
+}
+.logo 
+{
+    float: left;
+    padding: 20px 0;
+}
+.logo img
+{
+    height: 50px;
+}
+.navigation-menu 
+{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    margin-right: 3%;
+}
+.navigation-menu a
+{
+   margin-left: 10px;
+   color: rgb(180, 106, 241); 
+   text-transform: uppercase;
+   font-size: 18px;
+   padding: 12px 20px; 
+   border-radius: 4px;
+   transition: .3s linear;
+}
+.navigation-menu a:hover
+{
+    background: #fff;
+    color: #2f3640;
+    transition: scale(1.1) ;
+}
+.navigation-menu i
+{
+    margin-right: 8px;
+    font-size: 19px;
+}
+.home
+{
+    color:#ff6b6b ;
+}
+.suitcase
+{
+    color: #0abde3;
+}
+.buffer
+{
+    color: #f1ab13;
+}
+.pen-nib
+{
+    color:#1dd1a1 ;
+}
+.menu-toggle-btn 
+{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: rgb(180, 106, 241);
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+    /*----BANNIERE----*/
+p .banniere_dev /*problème de ligne blanche*/
+{
+   min-height: 312px;
+}
+.banniere_dev img
+{ 
+    display: block;
+    width: 100%;
+    background-repeat:repeat ;
+    background: cover;
+    border-top:3px solid rgb(219, 56, 198); 
+    border-bottom:3px solid rgb(219, 56, 198);
+}
 
-    }    
-}
 
-        /*partie bannière*/
-.img
+/****************************************
+             Page  Index
+*****************************************/
+/*-- Présentation avec photo--
+----------------------------*/
+.mon_nom
 {
-    background-repeat:no-repeat ;
-    background: cover;   
+    margin: 4% 0 2% 23%;
 }
-
-.bordure0
-{
-    border-top:3px solid rgb(219, 56, 198);
-}
-li
-{
-    list-style-type: none;
-}
-
-                                /*****animation bienvenue******/
-.animation
-{
-    text-align: center;
-    font-size: 4em;
-    color:rgb(219, 56, 198)
-}
-.tracking-out-expand-fwd 
-{
-    -webkit-animation: tracking-out-expand-fwd 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            animation: tracking-out-expand-fwd 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}                                
-@-webkit-keyframes tracking-out-expand-fwd 
-{
-    0% 
-    {
-        -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-        opacity: 1;
-    }
-    60% 
-    {
-        opacity: 0.8;
-    }
-    100% 
-    {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(300px);
-                transform: translateZ(300px);
-        opacity: 0;
-    }
-    }
-@keyframes tracking-out-expand-fwd 
-    {
-    0% {
-        -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-        opacity: 1;
-    }
-    60% 
-    {
-        opacity: 0.8;
-    }
-    100% 
-    {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(300px);
-                transform: translateZ(300px);
-        opacity: 0;
-    }
-    }
-
-
-/************************Page principal*******************/
-            /*partie présentation photo et texte*/
 .photo
 {
-   margin-left: 25%;
-   margin-bottom: 3%;
+    margin: 4% 24%;
 }
-.objectif
+.pobjectif
 {
     color:rgb(180, 106, 241) ;
+    margin: 0 4%;
+    background-color:  rgb(231, 229, 229);
+    padding: 3%;
+    margin-bottom: 4%;
+}
+/*-- Description--
+-----------------*/
+.passion
+{
+    margin: 2% 2% 6% 2%;
 }
 
-            /*partie présentation texte*/
-.h2index
-{
-    color:rgb(180, 106, 241) ;
-    font-size: 1.6em;
-}        
-p
-{
-    padding: 6% ;    
-}
-.motsgras
-{
-    font-size: 1.1em;
-}
-        /*partie redirection sur autre page et animation*/
+/***Shadow animé et redirection page***/
 
 .shadow a
 {
-    color:rgb(180, 106, 241 );
+    color:rgb(180, 106, 241) ;
     
 }
 .shadow
@@ -167,8 +166,8 @@ p
     text-align: center;
     width: 50%;
     height: 6%;
-    background: -webkit-gradient(linear,left bottom, left top,from(#000),to(#262626));
     background: -o-linear-gradient(bottom,#000,#262626);
+    background: -webkit-gradient(linear,left bottom, left top,from(#000),to(#262626));
     background: linear-gradient(0deg,#000,#262626);
 }
 .shadow:before
@@ -221,214 +220,705 @@ p
         background-position: 0 0;
     }
 }
-
-
-            /*partie 3 colonnes*/
-.categorie
+/*-- Catégorie 3 colonnes--
+--------------------------*/
+.h2index
 {
-    margin-top: 6%;
+    margin: 7% 0;
+    
 }
-.bordure
-{
-    border:1px solid rgb(180, 106, 241);
-}
-h3
+.h3index
 {
     text-align: center;
-    font-size: 1.8em;
+    margin-bottom: 5px;
 }
-hr
+.personnalite p .smile .graduation-cap
 {
-    background-color: rgb(231, 229, 229);   
+    font-size: 50px;
+    margin-bottom: 7px; 
+    
 }
-i
+.personnalite
 {
-    padding-left: 2%;
+    text-align: center;
 }
-.bordure li
+.personnalite, .formation, .competence
 {
-    font-size: 1em;
+    background-color: rgb(231, 229, 229);
+    width: 90%;
+    height: 40%;
+    padding: 15px;
+    margin: 5%;
+    border: 2px solid rgb(255, 0, 221);
 }
-            /*Barre de progression*/
+.comp
+{
+    padding-left: 20%;
+}
+.smile
+{
+    color: #f1ab13;
+}
+.cogs
+{
+    margin-left: 45%;
+    color:#ff6b6b
+}
+.graduation-cap
+{
+    margin-left: 45%;
+    color:#9fd637
+}
+.perso, .form, .comp
+{
+    font-size: 0.8em;
+}
+/*---icone competence--*/
+.desktop
+{
+    margin: 2%;
+    color: #0abde3;
+}
+.tools
+{
+    margin: 2%;
+    color: #e2c51e;
+}
+.social
+{
+    font-size: 3em;
+}
+.network
+{
+    margin: 2%;
+    color: #ff6b6b;
+}
+.folder
+{
+    margin: 2%;
+    color: #a929b5;
+}
+.html5
+{
+    margin: 2%;
+    color: #e54d26;
+}
+.css3
+{
+    margin: 2%;
+    color: #264ee4;
+}
+.php
+{
+    margin: 2%;
+    color: #777bb3;
+}
+.film
+{
+    margin: 2%;
+    color: #9fd637;
+}
+.laravel
+{
+    margin: 2%;
+    color: #fa503a;
+}
+.wordpress
+{
+    margin: 2%;
+    color: #327ba4;
+}
+.form .circle
+{
+    font-size: 0.7em;
+    color: rgb(180, 106, 241) ;
+    margin-right: 2%;
+}
 
-.progress-bar1, .progress-bar2, .progress-bar3
-{ 
-    width: 280px;
-    height: 25px;
-    padding: 1px;
-    background-color: #191919;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-}
-.progress-bar1:before, .progress-bar2:before, .progress-bar3:before
-{ 
-    content: '';
-    display: block;
-    position: absolute;  
-    height: 24px;
-    background: #999;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-}
-.progress-bar1:before
-{  
-     
-    width: 150px;  
-} 
-.progress-bar2:before
-{   
-    width: 220px;
-}            
-.progress-bar3:before 
-{  
-    width: 110px; 
-}            
-.couleur:before 
-{ 
-    background: rgb(180, 106, 241);   
-}
-.couleur p 
-{
-    color: rgb(219, 56, 198);
-    text-align: center;
-}  
-        /*Partie centre d'interêt*/
-.h1interet
+/*--Partie centre d'interêt--
+----------------------------*/
+.h2index
 {
     text-align: center;
-    margin-top: 1%;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    background-color: rgb(231, 229, 229);
+    padding: 3% 0;
 }
 .ensemble
 {
-    margin-left: 5%;
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.interet
+{
+    margin-left: 10%;
+    margin-bottom: 8%;
+    font-size: 0.8em;
 }
 .interet img
 {
-    width: 90px;
-    height: 100px;
+    width: 30px;
+    height: 40px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 15px #555;
             box-shadow: 0px 0px 15px #555;
 }
-figcaption
+
+/****************************************
+            MEDIA QUERIES  index
+*****************************************/
+@media screen and (min-width:480px)
 {
-    padding-left: 4%;
+    /**Présentation **/
+    .mon_nom
+    {
+        margin-left: 28%;
+    }
+    .photo
+    {
+        margin-left: 32%;
+    }
+    
+    /*---Catégorie  3 colonnes---*/
+    .pers, .comp, .form
+    {
+        margin-left: 4%;
+    }
+    .comp
+    {
+        padding-left: 24%;
+    }
+    .interet
+    {
+        margin-left: 25%;
+        margin-right:10% ;
+    }
+    
 }
+@media screen and (min-width:576px)
+{
+    .mon_nom
+    {
+        margin-left: 26%;
+        font-size: 1.5em;
+    }
+    .photo
+    {
+        margin-left: 36%;
+        }
+    /*---Catégorie  3 colonnes---*/
+    .pers
+    {
+        margin-left: 8%;
+    }
+    .comp
+    {
+        padding-left: 28%;
+    }
+    .form
+    {
+        margin-left: 2%;
+    }
 
+    /*---Centre d'intérêt---*/
+    .h2index
+    {
+        font-size: 1.5em;
+    }
+    .ensemble
+    {
+        margin-left: 0;
+    }
+    .interet
+    {
+        margin-left: 28%;
+    }
+    
+}
+@media screen and (min-width:768px)
+{
+    .navigation-menu, ul
+    {
+        float: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+    }
+    .mon_nom
+    {
+        margin-left: 30%;
+    }
+    .photo
+    {
+        margin-left: 38%;
+    }
+    /*---Catégorie  3 colonnes---*/
 
+    .h3index 
+    {
+        font-size: 1.2em;
+    }  
+    .personnalite, .competence, .formation
+    {
+        margin-left: 20%;
+        width: 60%;
+        font-size: 1.1em;
+    }
+    .comp
+    {
+        padding-left: 24%;
+    }
+    
+    /*---Centre d'intérêt---*/
+    
+    .interet 
+    {
+        margin-left: 15%; 
+    }
+    .couture
+    {
+        margin-left: 14%;
+    }
+    .boulangerie
+    {
+        margin-left: 21%;
+    }
+    .lampe_carre
+    {
+        margin-left: 22%;
+    }
+    
+}
+@media screen and (min-width:992px)
+{
+    .menu a 
+    {
+        margin-left: 5%;
+    }
+    .navigation-menu ul
+    {
+        margin-left: 15%;
+    }
+    .navigation-menu ul li a .suitcase
+    {
+        margin-left: 9%;
+    }
+    .mon_nom
+    {
+        margin-left: 37%;
+    }
+    .photo
+    {
+        margin-left: 42%;
+    }
+    /*---Catégorie  3 colonnes---*/
+    .categorie
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;  
+    }
+    .personnalite, .competence
+    {
+        width: 40%;  
+    }
+    .personnalite
+    {
+        padding-bottom: 9%;
+        margin-left: 5%;
+    }
+    .competence
+    {
+        margin-left: 5%;
+    }
+    .formation
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cogs
+    {
+        margin-left: 47%;
+    }
+    .graduation-cap
+    {
+        margin-left: 48%;
+    }
+    .perso, .comp, .form
+    {
+        font-size: large;
+    }
+    /*---Centre d'intérêt---*/
+    .ensemble
+    {
+        margin-left: 0;
+        font-size: 1.4em;
+    }
+    .tricotcrochet
+    {
+        margin-left: 13%;
+    }
+    .couture
+    {
+        margin-left: 12%;
+    }
+    .boulangerie
+    {
+        margin-left: 20%;
+    }
+    .lampe_carre
+    {
+        margin-left: 21%;
+    }
+}
+@media screen and (min-width:1200px)
+{
+        /*menu*/
 
+    .navigation-menu ul
+    {
+        margin-left: 22%;
+    }
+    .mon_nom
+    {
+        margin-left: 40%;
+    }
+    .photo
+    {
+        margin-left: 43%;
+    }
+        /*presentation*/
 
-/*********************Page expériences***********************/
-         /*partie compétences*/
+        .pobjectif, .passion, .motsgras
+        {
+            font-size: 1.1em;
+        }
+        /*catégorie 3 colonnes*/
+
+        .h2index
+        {
+            font-size: 1.5em;
+        }
+        .categorie
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: 3%;
+        }
+        .personnalite, .formation, .competence
+        { 
+            width: 30%;
+            margin-left: 2%;
+            margin-right: 1%;   
+        }
+        .personnalite
+        {
+            padding-bottom: 3.5%;
+        }
+        .competence
+        {
+            padding-bottom: 1.5%;
+        }
+        .h3index
+        {
+            margin-bottom: 4%;
+        }
+        .comp
+        {
+            margin-left: 0%;
+        }
+        .perso, .comp, .form
+        {
+            font-size: 1.1em;
+        }
+        /*centre d'interet*/
+
+        .h2index
+        {
+            padding-bottom: 2%;
+        }
+        .couture
+        {
+            margin-left: 12.5%;
+        }
+        .boulangerie
+        {
+            margin-left: 19%;
+        }
+        .lampe_carre
+        {
+            margin-left: 20%;
+        }
+}
+@media screen and (min-width:1500px)
+{
+        body 
+        {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        /*categorie 3 colonnes*/
+    
+        .personnalite, .formation
+        {
+            padding-bottom: 4%;
+        }
+        /*centre d'interet*/
+
+        .boulangerie
+        {
+            margin-left: 18%;
+        }
+        .lampe_carre
+        {
+            margin-left: 19%;
+        }
+}
+/****************************************
+    Page  Experiences professionnelles
+*****************************************/
 .h1expe
 {
-    text-align: center; 
-    font-size: 1.5em;
-    padding-top: 2%;  
+    text-align: center;
+    font-size: 1.4em;
+    background-color: rgb(231, 229, 229);
+    padding: 3% 0;
 }
+/*------ Compétences---------
+----------------------------*/
 .imgmetier
 {
-    margin-left: 6%;
-    width: 90%;
+    margin: 4% 0 4% 3%;
+    width: 300px;
+    height: 200px;
 }
-p /*tout les p de mes pages*/
+.h2expe
 {
-    width: 90%;
-    margin-left: 7%;
-}
-
-        /*partie stage*/
-.h2expe /*titre*/
-{
-    font-size: 1.3em;
     text-align: center;
-    margin: 6% 0;
-    color: rgb(180, 106, 241);
+    margin: 1% 0 6% 0;
+    color:rgb(180, 106, 241 ) ;
+    
+}
+.page2p
+{
+    margin: 2% 3% 2% 4%;
+    font-size: 1em;
+    border-bottom: 2px solid rgb(180, 106, 241 );
+}
+.page2pp
+{
+    margin: 2% 3% 8% 4% ;
+    font-size: 1em;  
 }
 .important
 {
     border: 3px dotted rgb(180, 106, 241);
     padding: 2%;
-}
-    /*partie expériences professionnelles*/
-.slide-right 
-{
-    -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    margin: 2%;
+    font-size: 1em;
 }
 
- /** animation slide-right**/
-@-webkit-keyframes slide-right 
+/*------ Métiers---------
+-----------------------*/
+.emploi
 {
-0% 
-{
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    margin:8% 7% 0;
+    font-size: 0.6em;
 }
-100% 
+em,.employeur,.detail
 {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    font-size: 0.9em;
+    color:rgb(180, 106, 241 ) ;
+
 }
+em
+{
+    color:rgb(99, 15, 168) ;
 }
-@keyframes slide-right 
+.pemploi
 {
-0% 
-{
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-}
-100% 
-{
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-}
-}
-.emploi 
-{
-   
-} 
-.liemploi
-{
-    list-style-type: none;
-    font-size: 0.8em;
-    padding-left: 1%;
-    width: 80%;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #707272, #fff);
-    box-shadow: 10px 10px 10px #313030, 
-                -10px -10px 10px #ffff;
+    padding: 2%;   
+    width: 98%;
+    border-radius: 4px;
+    background: #e2e7e7;
+    margin-bottom: 2%; 
 }
 em 
 {
     text-decoration: underline;   
 }
-.espace
+.employeur
 {
-    margin-left: 2%;
-    color: black;
+    margin-left: 2%; 
+}
+
+/************************************
+    MEDIA QUERIES expériences
+*************************************/
+@media screen and (min-width:480px)
+{
+    .imgmetier
+    {
+        margin-left: 18%;
+    }
+    .h2expe
+    {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:576px)
+{
+    .h1expe
+    {
+        font-size: 1.5em;
+    }
+    .h2expe
+    {
+        font-size: 1.5em;
+    }
+    .imgmetier
+    {
+        margin-left: 23%;
+    
+    }
+    .page2p, .page2pp, strong
+    {  
+        font-size: 1.2em;   
+    }
+    .page2p, .page2pp
+    {  
+        font-size: 1.2em;
+        width: 75%;
+        margin-left: 15%;   
+    }
+        
+}
+@media screen and (min-width:768px)
+{
+    .h1expe
+    {
+        font-size: 1.8em;
+    }
+    .imgmetier
+    {
+        margin-left: 30%;
+    }
+    .pemploi
+    {
+        font-size: 1.1em;
+    }
+    .emploi ul
+    {
+        display: flex;
+        flex-direction: column;     
+        margin: 2%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    /*partie competences*/
+    .stage, .asso_vente, .usine_resto
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2% ;
+    }
+    .page2p, .page2pp
+    {  
+        margin-left: 3%;   
+    }
+    
+    .imgmetier
+    {
+        margin-left: 10%;
+    }
+    .h2expe
+    {
+        text-align: center;
+        margin: 1% 0 3% 0;
+        color:rgb(180, 106, 241 ) ;
+        
+    }
+    .page2p, .page2pp
+    {
+        width: 380px;
+        border-bottom: none;
+        
+    }
+    .important
+    {
+        border-bottom: 3px dotted rgb(180, 106, 241);
+    }
+    /*Métiers*/
+    .pemploi
+    {
+        padding-left: 10%;
+    }
+}
+@media screen and (min-width:1200px)
+{
+    .h1expe
+    {
+        font-size: 2.1em;
+    }
+    .imgmetier
+    {
+        margin-left: 22%;
+    }
+    .page2p, .page2pp
+    {
+        width: 530px;
+    }
+    /*Métiers*/
+    .pemploi
+    {
+        padding-left: 18%;
+    }
+}
+@media screen and (min-width:1500px)
+{
+    .imgmetier
+    {
+        margin-left: 20%;
+        width: 400px;
+        height: 300px;
+
+    }
+    .page2p, .page2pp
+    {
+        width: 630px;
+    }
+    /*Métiers*/
+    .pemploi
+    {
+        font-size: 1.8em;
+        padding-left: 6%;
+    }
 }
 
 
-/************************Page de projets*****************/
-.bodyproj
+/********************************
+            Projets
+*********************************/
+
+.bodyprojet
 {
-    background-color: rgba(180, 106, 241, 0.534);
+    background-color:#f4dcfb;
 }
+/*--- sites vitrines----
+-----------------------*/
+
 .h1projet
 {
     text-align: center;
-    padding-top: 3%;
-    font-size: 1.8em;
+    font-size: 1.4em;
+    background-color: rgb(231, 229, 229);
+    padding: 3% 0;
 }
 .h2projet
 {
@@ -437,57 +927,181 @@ em
     margin-top: 2%;
     color: rgb(219, 56, 198);
 }
-.groupe .pprojet 
+.groupe
 {
-    
-    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+p a .imgprojets
+{
+    margin: 4% 4% 3% 20%;
+    width: 200px;
+    height: 100px;
+}
+.carteresponsive
+{
+    margin-left: 30%;
+}
+.galeriephoto
+{
+    margin-left: 33%;
+}
+.carousel3d
+{
+    margin-left: 33%;
+}
+.blogwordpress
+{
+    margin-left: 30%;
 }
 a 
 {
     color:black;
 }            
-hr 
+.traitrose 
 {
-    background: rgb(219, 56, 198);
+    border: 1px solid  rgb(219, 56, 198);
+    margin: 4% 0;
 }
-/***********************Pied de page*********************/          
-            /*footer*/
+
+/**********************************
+        Media queries projets
+*********************************/
+@media screen and (min-width:480px)
+{
+    .groupe
+    {
+        margin-left: 12%;  
+    } 
+    .nomcarteresponsive
+    {
+        margin-left: 24%;
+    }
+    .nomgaleriephoto
+    {
+        margin-left: 28%;
+    }
+}
+@media screen and (min-width:576px)
+{
+    .groupe
+    {
+        margin-left: 16%;  
+    }    
+}
+@media screen and (min-width:768px)
+{
+    .h2projet
+    {
+        margin-bottom: 5%;
+    }
+    .groupe
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+        margin-bottom: 5%; 
+    }  
+    .groupe div
+    {
+        margin-left: 2%; 
+    }
+     
+}
+@media screen and (min-width:992px)
+{
+    .h1projet
+    {
+        font-size: 1.8em;
+    }
+    .groupe
+    {
+        margin-left: 4%;  
+    }
+    .groupe div
+    {
+        margin-left: 5%; 
+    }
+    .groupe div a
+    {
+        font-size: 1.2em;
+    } 
+}
+@media screen and (min-width:1200px)
+{
+    .groupe div
+    {
+        margin-left: 9%; 
+    } 
+}
+@media screen and (min-width:1500px)
+{
+    .groupe div
+    {
+        margin-left:10%; 
+    }
+    .groupe
+    {
+        margin-left: 9%;  
+    }
+   
+}
+
+/*-----------------------------------
+            Footer
+-----------------------------------*/
 footer
 {
     border-top:3px solid rgb(219, 56, 198);
-    
 }
 .fond
 {
     background-color: rgb(32, 31, 31);
-    color: white;
-    padding-left: 8%;
+    color: white;   
+}
+
+/**---Contact------
+-----------------*/
+.contact
+{
+    color: rgb(180, 106, 241);
+    margin: 5% 0 5% 6%;
+}
+.box, .box1/*me contacter ici et coordonnee*/
+{
+    margin: 0  0 10% 5%;
+    font-size: 1.3em;
 }
 form
 {
-    display:inline-block;
+    margin-top: 4%;
 }
-.box input
+label
 {
-    width: 100%;
+    margin-left: 2%;
+}
+input
+{
+    width: 90%;
     height: 10%;
     padding: 1px;
     background-color: #ffffff;
     border-radius: 16px; 
 }
-.box textarea
+textarea
 {
-    width: 100%;
-    height: 20%;
+    width: 90%;
+    height: 150px;
     padding: 2px;
     background-color: #ffffff;
-    border-radius: 70px;
+    border-radius: 60px;
 }
-.box input,.box textarea
+input,textarea
 {       
     border-bottom: 4px solid rgb(219, 56, 198);
 }
-.box button[type="submit"], [type="reset"]
+button[type="submit"], [type="reset"]
 {
    
     width: 40%;
@@ -495,35 +1109,49 @@ form
     border-bottom:none;
     cursor: pointer;
     background: rgb(180, 106, 241);
-    margin-left: 6%;
+    margin-left: 4%;
     padding: 2px; 
     border:3px solid rgb(219, 56, 198);  
 }
 
-i /*coordonnee*/
+/*-----------coordonnee------------*/
+.coordonnee
+{
+    padding-bottom: 5%;
+    margin: 5% 0 0% 6%;
+    
+}
+.box1
 {
     color: rgb(180, 106, 241);
 }
-span
+.icor /* les i des coordonnée*/
 {
     color: rgb(180, 106, 241);
-    font-size: 25px; 
+    margin: 2%;
+    
 }
-
-
-        /*partie coordonnée*/
-
+.icor, li
+{
+    font-size: 0.8em;
+}
+.adresse
+{
+    margin-top: 4%;
+}
 .cv
 {
     color: rgb(180, 106, 241);
+    
 }
-            /*flèche haut et bas*/
+
+/*-------flèche haut et bas------------*/
 .top 
 {
     position: fixed;   
     height: 10%; 
     bottom: 13%; 
-    left: 90%; 
+    left: 92%; 
     cursor: pointer;
 }
 .bas
@@ -531,542 +1159,244 @@ span
     position: fixed;       
     height: 3%; 
     bottom: 6%; 
-    left: 90%;   
+    left: 92%;   
     cursor: pointer;
 }
-        /*************Page principal********************/
+/****************************************
+             Media queries
+*****************************************/
 
-            /*média queries*/
-@media screen and (min-width:360px)
-{
-  .terre
-  {
-      padding-left:7%;
-  }
-  button 
-  {
-      margin-left: 28%;
-  }
-  .photo
-  {
-      margin-left: 27%;
-  }
-  .objectif
-  {
-      margin-left: 4%;
-  } 
-  .blockbar /*barre de progression*/
-  {
-      margin-left: 4%;
-  }
-  .ensemble /*Centre d'interêt*/
-  {
-    margin-left: 8%;
-  }
-}    
-@media screen and (min-width:480px) 
-{
-  .terre
-  {
-      padding-left:25%;
-  }
-  button 
-  {
-      margin-left: 33%;
-  }
-  .photo
-  {
-      margin-left: 30%;
-  }
-  .h2index 
-  {
-      padding-left: 18%;
-  }
-  .blockbar /*barre de progression*/
-  {
-      margin-left: 12%;
-  }
-  .h1interet
-  {
-      font-size: 1.7em;
-  }
-  .ensemble /*Centre d'interêt*/
-  {
-    margin-left: 20%;
-  }
-        /*footer*/
-  .coordonnee li 
+/*---------------------------
+        --FOOTER---(
+----------------------------*/
+@media screen and (min-width:480px)
+{         
+
+    .box, .box1/*me contacter ici et coordonnee*/
     {
-        font-size: 20px;
+        font-size: 1.7em;
     }
-    .fond span, .coordonnee span
-    {
-        font-size: 1.6em;
-    }
-}   
-@media screen and (min-width:576px) 
-{
-            /*logo et bouton menu*/
-    .terre
-    {
-        padding-left:0;
-    }
-    button 
-    {
-        margin-left: 0;
-    }
-            /*Présentation*/
-    .presentation
-    {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-left: 10%;   
-    }
-    .h2index 
-    {
-        padding-left: 20%;
-        font-size: 1.5em;
-    }
-    .photo
-    {
-        margin-left: 80%;
-    }
-    .objectif .gris 
-    { 
-        padding-left:5%;
-        font-size: 1.2em;
-        width: 250%;    
-    }   
-    .passion
+    label
     {
         font-size: 1.2em;
-        width: 120%; 
     }
-    .shadow
+    .icor, li
     {
-        margin-top: 20%;
-        margin-left: 40%;
+        font-size: 1em;
     }
-            /*Partie catégorie*/
+    .bouton
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cv
+    {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:576px)
+{
+    /*---Mecontacter ici------
+     -------------------------*/
+    .contact, .coordonnee
+    {
+        margin-left: 15%;
+    }
     
-            
-    .categorie .h3index 
+    .box, .box1/*me contacter ici et coordonnee*/
     {
-      font-size: 25px;     
+        font-size: 1.8em;
     }
+    label
+    {
+        font-size: 1.4em;
+    }
+    .bouton
+    {
+        margin-left: 8%;
+    } 
+     
+}
 
-    .pers li ,.mescomp li ,.mesform li 
+@media screen and (max-width:700px)
+{
+
+    /*------MENU RESPONSIVE---------
+    ------------------------------*/
+    .menu-toggle-btn 
     {
-        font-size: 20px;
+        display: block !important;  
     }
-    .blockbar /*barre de progression*/
-  {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-             flex-direction: column; 
-     margin-left: 20%;
-  }
-  .h1interet
-  {
-      font-size: 2em;
-  }
-  .ensemble /*Centre d'interêt*/
-  {
-    margin-left:-15%;
-  }
-  .col-sm-3
-  {
-      padding-left: 2%;
-      padding-right: 0;
-  }
-            /*Footer*/
-    .contact
-    {
-        padding-left: 0;
+    .navigation-menu{
+        position: fixed;
+        width: 100%;
+        max-width: 250px;
+        background: #9fa0a1;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 5px 10px;
+        box-sizing: border-box;
     }
-    .fond span, .coordonnee span
+    .navigation-menu::before
     {
-        font-size: 1.1em;
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #9fa0a1;
+        position: absolute;
+        top: -10px;
+        right: 20px; 
+    }
+    .navigation-menu a 
+    {
+        display:block;
+        margin: 10px 0;
+    }
+    .navigation-menu.active
+    {
+       display: block; 
+    }
+}
+@media screen and (min-width:768px)
+{
+    .contact i
+    {
+        margin-left: 12%;
+    }
+    .coordonnee .titrecoord 
+    {
+        margin-left: 20%;
     }
     .coordonnee
     {
-        padding-left: 0;
+        margin-left: 8%;
     }
-    .coordonnee li 
+    .box, .box1/*me contacter ici et coordonnee*/
     {
-        font-size: 17px;
+        font-size: 2em;
     }
+    .adresse
+    {
+        margin-left: 8%;
+    }
+    .adresse p
+    {
+        font-size: 1.5em;
+    }
+    /*-----Mes flèches-------
+-------------------------*/   
     .top, .bas
     {
-        left: 93%;
+        left: 96%;
+    }    
+}
+@media screen and (min-width:992px)
+{
+    .contact-coordonnee
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
     }
-    .box input, .box textarea
+    .contact, .coordonnee
+    {
+        margin-left: 5%;
+    }
+    .contact
+    {
+        margin-right: 2%;
+        
+    }
+    .contact i
+    {
+        margin-left: 0%;
+    }
+    form, .adresse
+    {
+        margin-top: 16%;
+    }
+    .box, .box1/*me contacter ici et coordonnee*/
+    {
+        font-size: 1.7em;
+
+    }
+    .adresse i
+    {
+        margin-left: 0;
+    }
+    input, textarea
     {
         width: 90%;
     }
-    .box button[type="submit"], [type="reset"]
-    {
-        margin-left: 2%;    
-    } 
-}
-@media screen and (min-width:768px)
-{
-            /*Présentation*/
-    .presentation
-    {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        margin: 0;
-        padding: 0;    
-    }
-    .photo
-    {
-        margin-left: 18%;
-    }
-    .objectif .gris 
-    { 
-        padding-left:2%;
-        font-size: 1em;
-        width: 100%;    
-    }
-    .h2index 
-    {
-        font-size: 1.5em;
-        margin-left: 1%;
-    }
-    .passion
-    {
-        font-size: 1em;
-        width: 95%;
-        padding-left: 5%;
-    }
-    .shadow
-    {
-        margin: 0 auto;
-    }
-    .blockbar /*barre de progression*/
-    {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-           -ms-flex-direction: column;
-               flex-direction: column; 
-       margin-left: 28%;
-    }
-    .h1interet
-    {
-        font-size: 2.2em;
-    }
-    .ensemble /*Centre d'interêt*/
-    {
-      margin-left:-15%;
-    }
-    .col-sm-3
-    {
-        padding-left: 6%;
-        padding-right: 0;
-    }
-        /*Footer*/
-    .fond span, .coordonnee span
-    {
-        font-size: 1.4em;
-    }
-    .coordonnee li 
-    {
-        font-size: 1.1em;
-    }
-    
-   .top, .bas
-   {
-       left: 95%;
-   } 
-}
-@media screen and (min-width:992px)
-{
-            /*Présentation*/
-   .texte
-   {
-       font-size: 1em;
-   }
-   .objectif p 
-   {
-        font-size: 1.2em;
-   }
-   .photo
-   {
-       margin-left: 25%;
-   }
-   .h2index 
-   {
-        font-size: 1.8em;
-   }
-   p 
-   {
-        font-size: 1.2em; 
-   }
-   .shadow
-   {
-       margin-top: 10%;
-   }
-        /*catégorie*/
-    .categorie .h3index /*titre page d'acceuil*/ 
-    {
-        font-size: 28px;     
-    }
-    .pers li ,.mescomp li ,.mesform li 
-    {
-        font-size: 1.1em;
-    }
-    .blockbar /*barre de progression*/
-    {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-orient: horizontal;
-       -webkit-box-direction: normal;
-           -ms-flex-direction: row;
-               flex-direction: row; 
-       margin-left: 0.5%;
-    }
-    .h1interet
-    {
-        font-size: 2.4em;
-    }
-    /*Centre d'interêt*/
-    .col-sm-3
-    {
-        padding-left: 8%;
-        padding-right: 0;
-    }
-    /*Footer*/
-    .fond span, .coordonnee span
-    {
-        font-size: 1.6em;
-    }
-    .coordonnee li 
-    {
-        font-size: 24px;
-    }
-    .box button[type="submit"], [type="reset"]
-    {
-        margin-left: 8%;
-        width: 30%;
-    }
-    .top, .bas
-   {
-       left: 97%;
-   }
-}
-@media screen and (min-width:1200px)
-{
-    .texte
-   {
-       font-size: 1.3em;
-   }
-   .photo
-   {
-       margin-left: 30%;
-   }
-   .objectif .gris 
-    { 
-    padding-left:2%;
-    font-size: 1.2em;
-        
-    }
-    .h2index 
-    {
-        font-size: 1.7em;
-        margin-left: 1%;
-    }
-    .passion
-    {
-        font-size: 1.2em;  
-        padding-left: 5%;
-    }
-    .shadow
-    {
-        margin: 0 auto;
-    }
-        /*barre de progression*/
-    .blockbar 
-    { 
-       margin-left: 3%;
-    }
-    .couleur p 
-    {
-        font-size: 1.3em;
-    }
-        /*Centre d'interêt*/
-    .h1interet
-    {
-        font-size: 2.4em;
-    }  
-    .col-sm-3
-    {
-        padding-left: 11%;
-        padding-right: 0;
-    }
-        /*footer*/
-    .coordonnee li 
-    {
-        font-size: 1.4em;
-    }
-    .fond span, .coordonnee span
-    {
-        font-size: 1.8em;
-    }
-    .top, .bas
-    {
-        left: 98%;
-    }
-}
-
-            /********Page expériences********/
-
-@media screen and (min-width:360px)
-{
-   /*partie compétences*/
-   .imgmetier
-   {
-       width: 80%;
-       margin-left: 10%;
-   } 
-   .emploi
-   {
-       font-size: 0.9em;
-   }    
-}
-@media screen and (min-width:480px)
-{
-    .emploi li
-    {
-        font-size: 1em;
-    }       
-}            
-@media screen and (min-width:576px)
-{
-    .page2 /*titre*/
-    {
-        font-size: 1.1em;
-    }
-        
-}
-@media screen and (min-width:768px)
-{
-  .emploi
-  {
-      margin-top: 3%;
-  }  
-}
-@media screen and (min-width:992px)
-{
-    .emploi li,strong
-    {
-        font-size: 1.2em;
-    } 
-}
-@media screen and (min-width:1200px)
-{
-    .emploi li
-    {
-        font-size: 1.4em;
-    }
-}
-
-                /*Page projets*/
-
-@media screen and (min-width:360px)
-{
-    .groupe
-    {
-        margin-left: 0.5%;
-    }
-    .groupe a 
-    {
-        padding-left: 0;
-    }
-    .groupe .pprojet
-    {
-        margin-left: 10%;  
-    }
-}
-@media screen and (min-width:480px)
-{
-    .groupe
-    {
-        margin-left: 15%;  
-    }
-}
-@media screen and (min-width:576px)
-{
-    .groupe
-    {
-        margin-left:20%;
-    }
-    .groupe .pprojet
-    {
-        margin-left: 7%;  
-    }
-}
-@media screen and (min-width:768px)
-{
-    .groupe
-    {
-       margin-left: 0.5%; 
-    }
-    .groupe  a img
-    {
-        width: 150px;
-    }
-    .groupe a 
-    {
-        font-size: 0.8em;
-    }
-    .groupe .pprojet 
-    {
-        font-size: 1em;
-        margin: 0;
-    }
-}
-@media screen and (min-width:992px)
-{
-    .groupe
-    {
-        margin-left: 0.5%;
-    }
-    .groupe  a img
-    {
-        width: 200px;
-    }
-}
-@media screen and (min-width:1200px)
-{
-    .groupe
-    {
-        margin-left: 4%;
-    }
-}
-@media screen and (min-width:1400px)
-
-{
-    .groupe
+    .bouton
     {
         margin-left: 7%;
     }
+    .icor, li
+    {
+        font-size: 1.1em;
+    }
+    .adresse p 
+    {
+        font-size: 1.6em;
+    }    
+}
+@media screen and (min-width:1200px)
+{
+    
+    .bouton
+    {
+        margin-left: 9%;
+    }
+    .contact
+    {
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .coordonnee
+    {
+        margin-left: 20%;
+    }
+    /*-----Mes flèches-------
+-------------------------*/   
+    .top, .bas
+    {
+        left: 97%;
+    } 
+}    
+
+
+/****************************************
+             MEDIA QUERIES projet
+*****************************************/
+
+
+@media screen and (min-width:480px)
+{
+   
+}
+@media screen and (min-width:576px)
+{
+
+}  
+
+@media screen and (min-width:768px)
+{
+    
+}
+@media screen and (min-width:992px)
+{
+    
+
+}
+@media screen and (min-width:1200px)
+{
+    
+
+}
+@media screen and (min-width:1500px)
+{
+    
+
 }
